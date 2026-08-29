@@ -1,11 +1,13 @@
 # Kindred Care — program board
 
-**Readiness: TRL UNKNOWN / CRL UNKNOWN / IRL UNKNOWN** · Last updated: 29 Aug 2026
+**Readiness: TRL 4 / CRL 2 / IRL 1** · Last updated: 29 Aug 2026
 **Cadence:** full review Monday, midweek check Thursday.
 
-The triple is UNKNOWN because no evidence has been audited yet — not because the work
-has not happened. Hector's build and the ACU conversations are live; they simply have
-not been put through a gate review. **Baselining the three ladders is milestone one.**
+Baselined 29 Aug 2026 against the MVP Board snapshot of 28 Aug 2026 — see
+`reviews/2026-08-29.md` for the gate review. Standing position: **the build is no
+longer the constraint.** 97 of 148 MVP stories shipped and ~193 hours of loop time
+remaining, against no named buyer, no written regulatory position, no HREC approval and
+no verified entity. Six of the eight live blockers are Brad's, not Hector's.
 
 Status vocabulary — use these and no others:
 `NOT STARTED` · `IN PROGRESS` · `BLOCKED (on: …)` · `DONE (evidence: …)` · `SLIPPED (was DD MMM YYYY)` · `UNKNOWN (as at DD MMM YYYY)`
@@ -18,15 +20,29 @@ Status vocabulary — use these and no others:
 | UNKNOWN | Grant rounds in play (TRGS, district innovation funds, CEQ, MRFF, Industry Growth Program) | — |
 | UNKNOWN | ACU JV / reporting deadlines | — |
 | Y2.5 of PhD | Paper 5 data window (Kindred Care transcripts) | Transcript collection must be consented and HREC-covered before this, not after |
+| **Late Sep – Oct 2026 (est.)** | MVP build complete, from ~193h of loop time at 2 tracks | Product finished ~5 months before the next district funding window — that gap is where entity, HREC, regulatory position, assurance pack and beachhead must be closed |
 
 ## Product track (TRL)
+**TRL 4.** Build is ahead of both other tracks. TRL 5 fails on four gates, three of which are not build work.
+
 | Milestone | Owner | Due | Status | Evidence | As at |
 |---|---|---|---|---|---|
-| Baseline TRL against the ladder with Hector | Brad + Hector | — | NOT STARTED | — | 29 Aug 2026 |
-| Document current safety design (crisis detection, escalation, scope limits, incident log) | Hector | — | UNKNOWN | — | 29 Aug 2026 |
-| Written privacy and data-handling position (storage, retention, sub-processors, consent) | Brad | — | UNKNOWN | — | 29 Aug 2026 |
-| Warmth-trap measurement design | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| **Written regulatory classification position (TGA / not a device) — needed before the first district conversation, not before the pilot** | Brad, with advice | — | NOT STARTED | — | 29 Aug 2026 |
+| MVP build complete | Hector | UNKNOWN — ~193h loop time, ~2–2½ weeks of continuous sessions at 2 tracks | IN PROGRESS | 97/148 shipped; suites green 1354/578/668/267 | 28 Aug 2026 |
+| Safety gate (TRL 5) | Hector | — | DONE (evidence: MVP Board — deterministic T1/T2/T3, T3 unsuppressible, no-LLM net proven with a poison model, non-degradable supervisor, 000 guard, staffed escalation queue, break-glass audit, non_diagnostic structurally mandatory) | MVP Board 28 Aug 2026 | 28 Aug 2026 |
+| Safety gate residuals — live incident log and review process; escalation directory pointed at real services | Hector + Brad | — | NOT STARTED | — | 29 Aug 2026 |
+| Privacy gate (TRL 5) — architecture | Hector | — | DONE (evidence: transcripts-only CI-enforced no-recording gate, 41 fixture tests; retention on access_ends_at; tiered re-consent; k-floor; AU data residency Sydney/Melbourne) | MVP Board 28 Aug 2026 | 28 Aug 2026 |
+| **Privacy gate (TRL 5) — legal sign-off on privacy notice and S11 ToS** | Brad | — | BLOCKED (on: lawyer not instructed) | — | 29 Aug 2026 |
+| Close Q1 cross-tenant exposure — outreach gate identity-reveal across any institution | Hector | — | IN PROGRESS | Owner-ruled, sits in Ready | 28 Aug 2026 |
+| Close Q2 cross-tenant exposure — all six roles can read mothers' free text | Hector | — | IN PROGRESS | Owner-ruled, sits in Ready | 28 Aug 2026 |
+| FIX-DB-001 — identity-sequence defect, migration 0082, HIGH | Hector | — | IN PROGRESS | In loop, Track A round 1 | 28 Aug 2026 |
+| **Warmth-trap measurement design (TRL 6 gate)** | Brad | — | NOT STARTED | Analytics & evals epic 0 of 12 | 29 Aug 2026 |
+| **Analytics & evals epic — the evidence engine (Director, HREC and platform views)** | Hector | — | NOT STARTED | 0 of 12; downstream of FIX-DB-001 | 28 Aug 2026 |
+| **Written TGA classification position — gates TRL 5 in this channel** | Brad, with advice | — | NOT STARTED | — | 29 Aug 2026 |
+| Admin console deployed (shell merged, deploy story pending) | Hector | — | IN PROGRESS | Track B | 28 Aug 2026 |
+| Knowledge / RAG epic closed | Hector | — | IN PROGRESS | 8 of 10; 038 opening, 039 next | 28 Aug 2026 |
+| LiveAvatar vendor decision (D-23) | Brad | — | NOT STARTED | Named out-of-loop on the board | 28 Aug 2026 |
+| STT/TTS vendor credentialing | Brad + Hector | — | NOT STARTED | Named out-of-loop on the board | 28 Aug 2026 |
+| First consented real user — **do not cross before HREC coverage and consent wording are settled** | Brad | — | NOT STARTED | — | 29 Aug 2026 |
 
 ## Market track (CRL)
 Lead motion: **B2B into NSW Local Health Districts and QLD Hospital and Health Services** (working direction, 29 Aug 2026). B2C is a month-12 option conditional on dedicated resourcing.
@@ -64,7 +80,9 @@ Lead motion: **B2B into NSW Local Health Districts and QLD Hospital and Health S
 ## Governance / firewall
 | Milestone | Owner | Due | Status | Evidence | As at |
 |---|---|---|---|---|---|
-| Confirm consent wording at point of collection covers Paper 5 research use | Brad + CI | — | UNKNOWN | — | 29 Aug 2026 |
+| **Confirm consent wording at point of collection covers Paper 5 research use — before the first consented user, not before the first pilot** | Brad + CI | — | BLOCKED (on: HREC approval, listed out-of-loop) | — | 29 Aug 2026 |
+| Resolve ACU / HREC approvals — ADR-008 k-values, S9e copy. Establish who is waiting on whom | Brad + ACU | — | BLOCKED (on: unclear ownership) | — | 29 Aug 2026 |
+| Name who staffs the ACU approval seat (content_sme_acu) in production, and the turnaround | Brad + ACU | — | NOT STARTED | ACU approval inbox VS-090 shipped; seat unstaffed as far as evidenced | 29 Aug 2026 |
 | Named ACU counterpart for commercial matters, distinct from supervisory panel | Brad | — | UNKNOWN | — | 29 Aug 2026 |
 | Agree publication rule — negative findings are never withheld | Brad + ACU | — | NOT STARTED | — | 29 Aug 2026 |
 | JV steering group / decision rights when Brad and ACU disagree | Brad + ACU | — | UNKNOWN | — | 29 Aug 2026 |
@@ -84,4 +102,6 @@ rather than letting an investor discover it.
 ## Gate review history
 | Date | Level claimed | Result | Missing evidence |
 |---|---|---|---|
-| — | — | — | — |
+| 29 Aug 2026 | TRL 5 | **FAIL** — assessed TRL 4 | Legal sign-off; warmth-trap measurement; written TGA position; two unfixed cross-tenant exposures; no consented users |
+| 29 Aug 2026 | CRL 3 | **FAIL** — assessed CRL 2 | No named district, sponsor, budget line, pricing hypothesis, competitor list or assurance pack |
+| 29 Aug 2026 | IRL 2 | **FAIL** — assessed IRL 1 | Entity status unresolved; IP ownership unverified |

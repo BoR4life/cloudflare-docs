@@ -15,6 +15,47 @@ before it goes into a document. This sector's rules and program names change yea
 
 ---
 
+## The domain — maternal and perinatal
+
+Confirmed from the MVP Board (28 Aug 2026): ten maternal-issue codes in the ontology,
+EDD and DOB capture with life stage derived on read, support tickets carrying free text
+mothers wrote about themselves. Elena is a supervised conversational agent for
+**mothers**, delivered B2B2C — the institution enrols, the mother uses it.
+
+That narrows the LHD/HHS target from "health services" to a reachable set:
+
+| Service line | Who sponsors it | Why it fits |
+|---|---|---|
+| **Maternity services** | Director of Nursing and Midwifery; Maternity Service Manager | The enrolment-code model maps cleanly onto an antenatal booking-in |
+| **Child and family health** | Director of Community Health; CFH nursing leads | Continuity after discharge is a known gap and a funded priority |
+| **Perinatal mental health** | Perinatal and Infant Mental Health leads | Highest need, **highest regulatory exposure** — see below |
+| **Women's and children's directorates** | Executive Director, Women's and Children's | Where the budget line usually sits in a district |
+
+Three consequences:
+
+1. **ACU's placement relationships are more targeted than they first appeared.** ACU
+   teaches midwifery and nursing. A midwifery placement partnership is a standing
+   relationship with exactly the maternity sponsor above. Ask for the placement map by
+   *discipline*, not just by district.
+2. **The regulatory line is sharper here, and it runs through perinatal mental health.**
+   Antenatal education, information and companionship framings are ordinarily outside
+   medical device regulation. Screening for perinatal depression or anxiety, triaging
+   risk, or informing a clinical decision is ordinarily inside it. Elena already runs
+   deterministic T1/T2/T3 safety triggers with escalation to a staffed clinical queue —
+   that is a safety control, not a screening claim, and the distinction has to be made
+   explicitly and in writing before anyone describes it to a district. Get advice.
+3. **Assess the National Safety and Quality Digital Mental Health Standards
+   deliberately.** For a perinatal cohort with crisis escalation, they are the most
+   likely applicable accreditation framework, and accreditation would be a genuine
+   differentiator in this buyer set. Decide rather than drift.
+
+**What not to say in a first meeting.** Anything that sounds like screening, monitoring
+a condition, assessing risk, or supporting a clinical decision. What is said in the
+first meeting becomes the intended purpose, and the intended purpose is what determines
+whether this is a regulated device.
+
+---
+
 ## What you are actually selling into
 
 **There is no such buyer as "NSW Health" or "Queensland Health".** There are roughly
@@ -46,7 +87,7 @@ it needs four different people:
 
 | Role | Who they typically are | What they need from you |
 |---|---|---|
-| **Executive sponsor** | Director of Nursing and Midwifery, Executive Director Allied Health, Chief Digital/Information Officer, Director of Clinical Governance | A problem they already own, and a defensible way to explain it upward |
+| **Executive sponsor** | Director of Nursing and Midwifery, Maternity Service Manager, Executive Director Women's and Children's, Director of Clinical Governance | A problem they already own, and a defensible way to explain it upward |
 | **Clinical champion** | A unit manager, NUM, or senior clinician | That it makes their week easier and does not create risk |
 | **Budget owner** | A program, service line, or improvement fund | A number that fits the line they control |
 | **Gatekeepers** | Procurement, ICT security, privacy, clinical governance | Documents (see the assurance pack below) |
@@ -92,7 +133,8 @@ of Nursing — which is precisely the executive sponsor role above.
 
 **This is the JV's real go-to-market asset and it is currently unworked.** Concrete
 action: ask the ACU counterpart for the map of placement partner districts and services,
-by state, with the named academic who holds each relationship. Pick the beachhead where
+by state and **by discipline** — midwifery placements are the ones that matter — with
+the named academic who holds each relationship. Pick the beachhead where
 the relationship is strongest, not where the market looks biggest.
 
 Log every ACU-sourced introduction in the board with what was promised on both sides.
@@ -223,8 +265,8 @@ distraction:
 
 **One district. One service line. One measurable problem.** Not "aged care", not
 "health services". The specific cohort, the specific handover, the specific gap. Which
-cohort is currently UNKNOWN and depends on the product definition — it is question 2
-on the open list.
+cohort is narrowed by the domain — maternity, child and family health, or perinatal
+mental health — but not yet chosen. It is question 23 on the open list.
 
 ## The artefacts this track must keep current
 
@@ -238,3 +280,26 @@ on the open list.
 
 Anything on that list that does not exist is a milestone on the board with an owner and
 a date. Not a wish.
+
+
+## What the build already gives this track for free
+
+From the MVP Board, and worth knowing before writing a single proposal:
+
+- **B2B2C is already in the schema** — multi-tenant by institution, plans,
+  sponsorships, seat caps, enrolment codes, usage ledger, entitlement. The commercial
+  model a district needs is built, not planned.
+- **Australian data residency is already true** — inference in Sydney, data in
+  Melbourne. This is normally a months-long objection and it is already answered.
+- **Per-institution escalation directories with a 000 reserved-number guard.** A
+  district can point escalation at its own services.
+- **Transcripts only, no recording, CI-enforced.** A strong answer to the question
+  every privacy officer asks first.
+- **Safety controls proven by planted mutation, not assertion.** When a district's
+  clinical governance committee asks how you know the safety net works, "here is the
+  mutation that proves it, and here is the poison model that fails the build if the LLM
+  is ever invoked in the safety path" is a better answer than almost anyone else gives.
+
+Most of the assurance pack's hardest content already exists inside the build. What is
+missing is that nobody has written it down in the form a district asks for it. That is
+a documentation task, not an engineering one, and it can start immediately.

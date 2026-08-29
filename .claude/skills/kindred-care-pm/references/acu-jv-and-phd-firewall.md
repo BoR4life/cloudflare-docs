@@ -2,13 +2,21 @@
 
 ## The structural problem, stated plainly
 
-ACU occupies **four** roles at once in Brad's world:
+ACU occupies **five** roles at once in Brad's world:
 
 1. **30% owner** of Kindred Care — a commercial counterparty
 2. **Ethics approver** — the HREC that governs the PhD, including Paper 5, which uses
    Kindred Care transcripts
 3. **Academic supervisor's employer** — Prof Robert Tai (CI) and the co-supervisors
-4. **Potential go-to-market channel** — nursing schools, clinical networks, credibility
+4. **Potential go-to-market channel** — nursing and midwifery schools, clinical placement relationships, credibility
+5. **An approval role inside the running product** — there is a `content_sme_acu`
+   console role and an ACU approval inbox (VS-090), and corpus documents cannot reach
+   the live index without ACU approval
+
+The fifth is different in kind from the other four: it carries an **operational
+dependency**. If the ACU approval seat is unstaffed or slow, the knowledge pipeline
+stalls in production, not merely in governance. Who holds that seat, and against what
+turnaround, is a live open question.
 
 Brad occupies three: CEO of the venture, Student Investigator on the ethics
 application, and PhD candidate. He also holds an Innovation Fellowship at The Ohio
@@ -64,6 +72,7 @@ occasionally an answer from someone without authority to give it.
 | Supervision, publication sequence, thesis | Supervisory panel |
 | JV terms, IP, equity, revenue | ACU commercialisation / the JV counterpart, in writing |
 | Channel introductions, pilots in ACU networks | The commercial counterpart, logged in the board |
+| Corpus approval turnaround, `content_sme_acu` staffing | An operational counterpart with a named person and an SLA — not the supervisory panel, and not an ad-hoc favour |
 
 Where a matter is genuinely both — a pilot inside an ACU network that also produces
 research data is the standard example — it goes to **both**, in writing, and the
