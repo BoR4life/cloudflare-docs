@@ -1,0 +1,289 @@
+<title>Kindred Care Control Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+  :root{
+    --ground:#F6F9F8; --surface:#FFFFFF; --surface-2:#EFF4F3;
+    --ink:#141F1D; --ink-2:#42544F; --ink-3:#6E817C;
+    --line:#DBE4E1; --line-2:#C6D3CF;
+    --accent:#0F6E63; --accent-soft:#DCEDEA; --accent-ink:#0B4F47;
+    --crit:#A6342B; --crit-soft:#F6E3E0;
+    --warn:#96650E; --warn-soft:#F7EBD6;
+    --good:#2C6E4A; --good-soft:#DFEDE4;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#0E1716; --surface:#151F1D; --surface-2:#1B2725;
+      --ink:#E8F0EE; --ink-2:#A9BAB6; --ink-3:#83948F;
+      --line:#26332F; --line-2:#33433E;
+      --accent:#4FBFAE; --accent-soft:#16302C; --accent-ink:#8FD9CD;
+      --crit:#E8867A; --crit-soft:#33201D;
+      --warn:#DDAE5A; --warn-soft:#302716;
+      --good:#7CC49A; --good-soft:#182C22;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0E1716; --surface:#151F1D; --surface-2:#1B2725;
+    --ink:#E8F0EE; --ink-2:#A9BAB6; --ink-3:#83948F;
+    --line:#26332F; --line-2:#33433E;
+    --accent:#4FBFAE; --accent-soft:#16302C; --accent-ink:#8FD9CD;
+    --crit:#E8867A; --crit-soft:#33201D;
+    --warn:#DDAE5A; --warn-soft:#302716;
+    --good:#7CC49A; --good-soft:#182C22;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:36px 24px 72px;display:flex;flex-direction:column;gap:34px}
+  a{color:var(--accent-ink)}
+  h1,h2,h3{margin:0;text-wrap:balance}
+
+  /* masthead */
+  .mast{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;
+        border-bottom:2px solid var(--ink);padding-bottom:16px}
+  .mast h1{font-family:var(--serif);font-size:clamp(34px,5vw,50px);font-weight:400;letter-spacing:-.01em;line-height:1}
+  .mast h1 em{font-style:italic;color:var(--accent)}
+  .stamp{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);text-align:right;line-height:1.7;font-variant-numeric:tabular-nums}
+  .stamp b{color:var(--ink-2);font-weight:600}
+
+  .eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+
+  /* status strip */
+  .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;background:var(--line);
+         border:1px solid var(--line);border-radius:3px;overflow:hidden}
+  .cell{background:var(--surface);padding:15px 17px 16px;display:flex;flex-direction:column;gap:5px}
+  .cell .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+  .cell .v{font-family:var(--mono);font-size:30px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .cell .n{font-size:12.5px;color:var(--ink-2);line-height:1.35}
+  .cell.alarm{background:var(--crit-soft)}
+  .cell.alarm .v{color:var(--crit)}
+  .cell.alarm .k{color:var(--crit)}
+
+  /* section */
+  section{display:flex;flex-direction:column;gap:14px}
+  .shead{display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+         border-bottom:1px solid var(--line-2);padding-bottom:7px}
+  .shead h2{font-size:16px;font-weight:600;letter-spacing:-.005em}
+  .shead .note{font-size:12.5px;color:var(--ink-3);text-align:right}
+
+  /* timeline */
+  .rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;background:var(--line);
+        border:1px solid var(--line);border-radius:3px;overflow:hidden}
+  .stop{background:var(--surface);padding:13px 13px 15px;display:flex;flex-direction:column;gap:7px;position:relative}
+  .stop::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--line-2)}
+  .stop.now::before{background:var(--crit)}
+  .stop.gate::before{background:var(--accent)}
+  .stop .d{font-family:var(--mono);font-size:12.5px;font-weight:600;font-variant-numeric:tabular-nums}
+  .stop .c{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+  .stop .t{font-size:12.5px;line-height:1.35;color:var(--ink-2)}
+  .stop.now .d{color:var(--crit)}
+  .stop.gate .d{color:var(--accent-ink)}
+
+  /* three lists */
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px;align-items:start}
+  .col{background:var(--surface);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+  .col > header{padding:13px 16px;border-bottom:1px solid var(--line);background:var(--surface-2);
+                display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  .col > header h3{font-size:14px;font-weight:600}
+  .col > header .who{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase}
+  ol.items{list-style:none;margin:0;padding:0}
+  ol.items li{display:grid;grid-template-columns:4px 1fr;gap:0;border-bottom:1px solid var(--line)}
+  ol.items li:last-child{border-bottom:0}
+  .sev{background:var(--line-2)}
+  .sev.red{background:var(--crit)} .sev.amber{background:var(--warn)} .sev.green{background:var(--good)}
+  .body{padding:11px 15px 13px;display:flex;flex-direction:column;gap:5px}
+  .body .task{font-size:13.5px;line-height:1.4;font-weight:500}
+  .body .meta{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);display:flex;flex-wrap:wrap;gap:9px;font-variant-numeric:tabular-nums}
+  .body .meta .cp{color:var(--crit);font-weight:600}
+
+  /* gate grids */
+  .grids{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start}
+  table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface)}
+  .tw{border:1px solid var(--line);border-radius:3px;overflow:auto}
+  th{text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+     color:var(--ink-3);font-weight:500;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+  td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.4}
+  tr:last-child td{border-bottom:0}
+  .pill{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+        padding:3px 7px;border-radius:2px;font-weight:600;white-space:nowrap}
+  .pill.fail{background:var(--crit-soft);color:var(--crit)}
+  .pill.pass{background:var(--good-soft);color:var(--good)}
+  .pill.part{background:var(--warn-soft);color:var(--warn)}
+  .pill.none{background:var(--surface-2);color:var(--ink-3)}
+
+  /* provenance */
+  .prov{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+        border-radius:3px;padding:18px 20px;display:flex;flex-direction:column;gap:11px}
+  .prov p{margin:0;font-size:13.5px;color:var(--ink-2);max-width:70ch}
+  .prov strong{color:var(--ink)}
+  .layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:2px}
+  .layer{border:1px solid var(--line);border-radius:3px;padding:11px 13px;display:flex;flex-direction:column;gap:3px}
+  .layer .lk{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink)}
+  .layer .lv{font-size:12.5px;color:var(--ink-2);line-height:1.4}
+
+  footer{font-family:var(--mono);font-size:11px;color:var(--ink-3);line-height:1.7;border-top:1px solid var(--line);padding-top:14px}
+</style>
+
+<div class="wrap">
+
+  <div class="mast">
+    <h1>Kindred&nbsp;Care <em>Control Board</em></h1>
+    <div class="stamp">
+      <b>29 AUG 2026</b> · Monday read<br>
+      Bundle of Rays × ACU · 70/30<br>
+      Confidential — ACU &amp; BoR
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="cell"><span class="k">Product · TRL</span><span class="v">4</span><span class="n">Validated in lab. TRL 5 fails on four gates</span></div>
+    <div class="cell"><span class="k">Market · CRL</span><span class="v">3</span><span class="n">Named segment; no sponsor or budget line yet</span></div>
+    <div class="cell"><span class="k">Investment · IRL</span><span class="v">3</span><span class="n">Numbers exist; no entity to raise into</span></div>
+    <div class="cell alarm"><span class="k">Cash match open</span><span class="v">59 d</span><span class="n">BVUIP 1:1. ACU has no cash pool for $250k–$500k</span></div>
+    <div class="cell alarm"><span class="k">HoA + IP audit open</span><span class="v">59 d</span><span class="n">Required for UCAC and BVUIP. ACU Enterprise Office</span></div>
+  </div>
+
+  <section>
+    <div class="shead">
+      <h2>Gates ahead</h2>
+      <span class="note">Teal = hard gate · Red = nearest action</span>
+    </div>
+    <div class="rail">
+      <div class="stop now"><span class="d">31 AUG</span><span class="c">2 days</span><span class="t">Brad ↔ Marie one-to-one. Role, prior-app IP, affiliation</span></div>
+      <div class="stop"><span class="d">4 SEP</span><span class="c">6 days</span><span class="t">WS-PROP1 — Proposal Draft-1. Inputs unrun</span></div>
+      <div class="stop"><span class="d">11 SEP</span><span class="c">13 days</span><span class="t">SCHHS SPARK — CDO + ED Workforce. Different product</span></div>
+      <div class="stop gate"><span class="d">16 SEP</span><span class="c">18 days</span><span class="t">ACU Enterprise Steering Committee. No deck exists</span></div>
+      <div class="stop"><span class="d">18 SEP</span><span class="c">20 days</span><span class="t">Pitch pack · IP register v1 · POC snapshot · 3-way model</span></div>
+      <div class="stop"><span class="d">25 SEP</span><span class="c">27 days</span><span class="t">Business plan · TRL 4 dossier · content sign-off · HoA</span></div>
+      <div class="stop"><span class="d">2 OCT</span><span class="c">34 days</span><span class="t">Cap table · Deal Map · cash match · pack assembly begins</span></div>
+      <div class="stop gate"><span class="d">16 OCT</span><span class="c">48 days</span><span class="t">UCAC assessment sitting</span></div>
+      <div class="stop gate"><span class="d">30 OCT</span><span class="c">62 days</span><span class="t">Investment Committee submission</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <h2>The three lists</h2>
+      <span class="note">Ordered by the gate each feeds. Re-cut every Monday.</span>
+    </div>
+    <div class="cols">
+
+      <div class="col">
+        <header><h3>Brad</h3><span class="who">Capped at five</span></header>
+        <ol class="items">
+          <li><span class="sev red"></span><div class="body"><span class="task">Written ask to Russell — dated position on the cash match and the Heads of Agreement</span><span class="meta"><span>MON 31 AUG</span><span class="cp">CRITICAL PATH</span><span>→ 2 Oct</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Reply to Michelle Schmidt; book the SCHHS Maternity leadership session</span><span class="meta"><span>MON 31 AUG</span><span>→ CRL 3</span><span>offered 25 Aug</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Prep and hold the Marie one-to-one — settle role, prior-app IP, affiliation</span><span class="meta"><span>31 AUG / 1 SEP</span><span class="cp">CRITICAL PATH</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Circulate the competitor analysis, closing Russell's 26 Aug ask</span><span class="meta"><span>TUE 1 SEP</span><span>→ 16 Sep</span><span>draft ready</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Pin the 16 Sept deck — slide ownership, and whether Elena delivers the intro</span><span class="meta"><span>MON 31 AUG</span><span>→ 16 Sep</span></span></div></li>
+        </ol>
+      </div>
+
+      <div class="col">
+        <header><h3>The ACU ask</h3><span class="who">Russell · Bill · Lois</span></header>
+        <ol class="items">
+          <li><span class="sev red"></span><div class="body"><span class="task">BVUIP 1:1 cash match — a dated position</span><span class="meta"><span>RUSSELL + BILL</span><span class="cp">59 DAYS OPEN</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Heads of Agreement and the detailed IP audit</span><span class="meta"><span>RUSSELL</span><span class="cp">59 DAYS OPEN</span><span>→ 25 Sep</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Two named Victorian pilot sites — one metro, one regional</span><span class="meta"><span>LOIS</span><span>everything downstream assumes them</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Content Advisory Panel — charter and roster. Wallace, Simpson, Byatt nominated 12 Aug</span><span class="meta"><span>LOIS</span><span>SLIPPED — was 14 Aug</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Safer Care Victoria — reconnect via Elisa McDonald</span><span class="meta"><span>RUSSELL + BRAD</span><span>raised 20 Aug, unactioned</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">ACU 2033 alignment and Risk Appetite statement — draft offered</span><span class="meta"><span>RUSSELL</span><span>→ 9 Oct</span></span></div></li>
+          <li><span class="sev"></span><div class="body"><span class="task">IP verification workshop — background / foreground split, licence vs assign</span><span class="meta"><span>RUSSELL</span><span>MTG-03 · 11 SEP</span></span></div></li>
+        </ol>
+      </div>
+
+      <div class="col">
+        <header><h3>Hector</h3><span class="who">Pack-facing only</span></header>
+        <ol class="items">
+          <li><span class="sev red"></span><div class="body"><span class="task">FIX-DB-001 — identity-sequence defect, migration 0082. All 12 evals stories sit downstream</span><span class="meta"><span>IN LOOP</span><span>HIGH</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Close Q1 and Q2 cross-tenant exposures before any external environment exists</span><span class="meta"><span>READY</span><span>owner-ruled</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">TRL 4 evidence dossier — the technical spine of the deal</span><span class="meta"><span>25 SEP</span><span class="cp">CRITICAL PATH</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Three-way financial model and cap-table inputs</span><span class="meta"><span>18 SEP</span><span class="cp">CRITICAL PATH</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Platform background-IP register and assignment evidence</span><span class="meta"><span>18 SEP</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Analytics &amp; evals epic — the evidence engine. Director, HREC and platform views</span><span class="meta"><span>0 OF 12</span><span>blocks the GTM</span></span></div></li>
+          <li><span class="sev"></span><div class="body"><span class="task">Can the Elena persona deliver the 16 Sept intro?</span><span class="meta"><span>ANSWER BY 31 AUG</span></span></div></li>
+          <li><span class="sev"></span><div class="body"><span class="task">Does the entitlement engine express a birth-volume band licence, or only seat caps?</span><span class="meta"><span>PRICING DEPENDS ON IT</span></span></div></li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <h2>Gates and pack</h2>
+      <span class="note">A level is evidenced, not claimed</span>
+    </div>
+    <div class="grids">
+
+      <div class="tw">
+        <table>
+          <thead><tr><th>TRL 5 hard gate</th><th>State</th></tr></thead>
+          <tbody>
+            <tr><td>Safety — triggers, escalation, scope limits, incident log</td><td><span class="pill part">Residuals</span></td></tr>
+            <tr><td>Privacy architecture — transcripts only, retention, residency</td><td><span class="pill pass">Met</span></td></tr>
+            <tr><td>Legal sign-off — privacy notice, S11 ToS</td><td><span class="pill fail">Not started</span></td></tr>
+            <tr><td>Warmth-trap measurement design</td><td><span class="pill fail">Not started</span></td></tr>
+            <tr><td>Written TGA classification position</td><td><span class="pill fail">Not started</span></td></tr>
+            <tr><td>HREC approval — ADR-008 k-values, S9e copy</td><td><span class="pill fail">Blocked</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tw">
+        <table>
+          <thead><tr><th>UCAC pack artefact</th><th>State</th></tr></thead>
+          <tbody>
+            <tr><td>Go-to-market strategy</td><td><span class="pill pass">v2.1 + v3</span></td></tr>
+            <tr><td>Business model canvas · pricing model · 5-yr forecast</td><td><span class="pill part">Exists</span></td></tr>
+            <tr><td>Competitor analysis</td><td><span class="pill part">Drafted</span></td></tr>
+            <tr><td>Exit strategy</td><td><span class="pill fail">Nothing</span></td></tr>
+            <tr><td>Founder's pitch pack A/B/C</td><td><span class="pill fail">Nothing</span></td></tr>
+            <tr><td>Cap table · Deal Map · valuation</td><td><span class="pill fail">Nothing</span></td></tr>
+            <tr><td>IP register v1 · Heads of Agreement</td><td><span class="pill fail">Blocked</span></td></tr>
+            <tr><td>Forecast reconciliation — $1.22M gap, CFO sign-off</td><td><span class="pill fail">Open</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <h2>Unresolved across documents</h2>
+      <span class="note">Quote both until settled — never silently pick one</span>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:22%">Item</th><th>The conflict</th><th style="width:28%">Recommended resolution</th></tr></thead>
+        <tbody>
+          <tr><td><strong>TRL</strong></td><td>Register says TRL 4 is reached <em>via</em> the funded POC and "never claimed up front". GTM v2.1 states TRL 4 as current. The MVP Board evidences well past a POC.</td><td>TRL 4 now → TRL 5/6 through the funded pilot. Change the register note.</td></tr>
+          <tr><td><strong>Language</strong></td><td>Register locks "always <em>the Companion</em>, never tool/platform/app". GTM v2.1 predates the lock and says "platform" throughout.</td><td>Sweep v2.1 before it enters the pack. Half an hour.</td></tr>
+          <tr><td><strong>Funding quantum</strong></td><td>~$300k POC converting to shares; BVUIP $1.0M matched 1:1 phased $550k/$250k/$200k. No document states the cascade end to end.</td><td>Write the one paragraph that does.</td></tr>
+          <tr><td><strong>Story counts</strong></td><td>"97 of 148 shipped" against "94 remaining"; columns sum to 193; Ready reads 37 and 39.</td><td>Settle the counting basis before any percent-complete goes external.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="prov">
+    <span class="eyebrow">How this board works</span>
+    <p><strong>This page is a render, not a source of truth.</strong> If it disagrees with the Programme Register, the register is right and this is stale. It is regenerated at each Monday read and at the end of each Thursday working session — never edited by hand.</p>
+    <div class="layers">
+      <div class="layer"><span class="lk">Tasks</span><span class="lv">Programme Task Register — 87 tasks, 31 on the critical path, Gantt, live data-room status</span></div>
+      <div class="layer"><span class="lk">Judgement</span><span class="lv">Board, decision log, risk register, open questions, drafts</span></div>
+      <div class="layer"><span class="lk">View</span><span class="lv">This page. Read-only, regenerated, shareable with Russell and Hector</span></div>
+    </div>
+    <p><strong>Monday is the read</strong> — the agent refreshes, re-prioritises, regenerates this page and drafts what is next. <strong>Thursday is the working session</strong> — items are cleared together and everything is updated live, because the write-up afterwards is the thing that never happens.</p>
+  </div>
+
+  <footer>
+    Generated 29 Aug 2026 · ages in days measured from 01 Jul 2026, the first documented record of each blocker<br>
+    The agent drafts and notifies; Brad sends. No external mail, and nothing enters the data room before sign-off.
+  </footer>
+
+</div>

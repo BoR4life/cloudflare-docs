@@ -106,13 +106,17 @@ The venture already has a system of record and it must stay singular:
 |---|---|---|
 | **Tasks** | Programme Task Register (Drive xlsx) | 87 tasks, critical path, Gantt, data-room status |
 | **Judgement** | `kindred-care/` in the repo | Board, decisions, risks, open questions, drafts |
-| **View** | A published dashboard artifact | A render of the above. **Read-only. Regenerated, never edited** |
+| **View** | The Control Board — https://claude.ai/code/artifact/58d61604-a106-49f8-9866-514e858423c1 | A render of the above. **Read-only. Regenerated, never edited** |
 
 **Do not build a tracker application.** A second place to enter a status is a second place
 for it to be wrong, and the register already does the job. The dashboard is a *render* —
 if it and the register disagree, the register is right and the dashboard is stale.
 
-Regenerate the dashboard at each Monday review and at the end of each Thursday session.
+**To regenerate:** edit `kindred-care/dashboard/control-board.html` and republish it with the
+Artifact tool, passing `url: https://claude.ai/code/artifact/58d61604-a106-49f8-9866-514e858423c1`
+so it updates in place and the link Brad has shared stays valid. Never publish it without
+that URL — that creates a second board, which is the exact failure this section exists to
+prevent. Do it at each Monday review and at the end of each Thursday session.
 It shows: the readiness triple, the two blocker ages in days, the next three gates with
 dates, and the three lists. Nothing that cannot be traced to the register or the board.
 
