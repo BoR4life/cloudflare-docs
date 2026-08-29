@@ -40,3 +40,6 @@ Ordered by what unblocks the most downstream work.
 | 32 | Eve — compete, partner, or channel? Cabrini is Catholic, ACU is Catholic | Brad | 29 Aug 2026 | Competitive positioning in the pack |
 | 33 | Who is the "institutional investor" the probity lock says is never named — is it Breakthrough Victoria or a separate party? | Brad / Russell | 29 Aug 2026 | Naming discipline across every document |
 | 34 | Have the Stage 1 workshops been run outside the register, or genuinely not happened? | Brad | 29 Aug 2026 | Whether WS-PROP1 on 4 Sep is achievable |
+| 35 | What is the current AUD conversion of the £55,000 NHS G-Cloud maternity-app comparator, and does the Pricing Model reference any external anchor? | Brad | 29 Aug 2026 | Pricing defensibility at UCAC |
+| 36 | Does the mother survey (P1-05) feed B2B pricing, or only the B2C tier? | Brad | 29 Aug 2026 | Pricing Model v1 |
+| 37 | What plays the role of the tangible enrolment package that drove 167-day retention in SMART start? | Brad + Hector | 29 Aug 2026 | Pilot retention |
