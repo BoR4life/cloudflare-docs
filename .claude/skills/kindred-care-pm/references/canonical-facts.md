@@ -28,7 +28,14 @@ Principal source for the product facts below: the **Kindred MVP Board**, snapsho
 | Prof. Lois McKellar | **ACU Midwifery** — owns Pillar 3 Clinical & Content; sources the Victorian pilot sites and the co-CEO | Task Register + GTM §4.2 |
 | Bill Russell | **ACU grants** — owns Pillar 5, Funding | Task Register |
 | Angela | ACU legal / the Deed | Task Register |
-| Co-CEO | Being sourced by Lois, vetted by Russell, decided by Brad. On the cap table and in the investment narrative from the outset. **Not yet shortlisted** (P1-02, was due 28 Aug 2026) | Task Register |
+| Co-CEO candidate | **Maria ("Marie") Gentile-Andrit**, midwife (personal email, affiliation to confirm). Introduced by Lois; met the group 28 Aug 2026 for 90 minutes — Russell: "really productive". Brad ↔ Marie one-to-one being scheduled 31 Aug / 1 Sep. **Built her own maternal education app during COVID that did not progress past an initial pilot** (Lois, 18 Aug). Russell's 18 Aug triage placed her as "C — the Midwife from the Victorian Local Health Service". Three possible roles — co-CEO, pilot-site route, domain adviser — not yet disambiguated | ACU–BoR email trail, Aug 2026 |
+| Bill Russell | ACU — Pillar 5 Funding. Distinct person from Russell Carrington | Email trail |
+| Monash midwifery educator | Met Lois 20 Aug 2026, "very positive", **keen to join an advisory group**. Surfaced both Eve and Safer Care Victoria. Not yet named in any document | Email, 20 Aug 2026 |
+| Content Advisory Panel nominees | **Heather Wallace, Naomi Simpson, Heidi Byatt** (ACU midwifery), nominated by Lois 12 Aug 2026 | Email, 12 Aug 2026 |
+| Ged Williams | Director, Bundle of Rays — director liability, ASIC and compliance on the Aug 2026 board agenda | Email trail |
+| Michelle Schmidt | SCHHS — offered the **Maternity leadership meeting** as the route to present Kindred Care, 25 Aug 2026. No reply visible in the trail | Email, 25 Aug 2026 |
+| Jake Penrose / Hayley Farry | SCHHS **Chief Digital Officer** and **Executive Director Workforce** — SPARK meeting with Brad **11 Sep 2026, 10–11am**, about a *different* Bundle of Rays product (occupational violence), not Kindred Care | Email, 18 Aug 2026 |
+| Elisa McDonald | Existing contact; Russell's proposed route to **Safer Care Victoria**, 20 Aug 2026 | Email, 20 Aug 2026 |
 | PhD interface | Kindred Care **transcripts** are the data source for PhD Paper 5 (pedagogical discourse analysis, "warmth trap" markers), timed Y2.5 | `phd-define-writing` canonical facts |
 | Declared COI | Brad's Kindred Care commercial relationship is a declared conflict on the ACU HREC application | same |
 | Lead go-to-market motion | **Victorian public maternity services** are the beachhead; ACU midwifery network is the channel; **Sunshine Coast HHS is the lead non-Victorian reference** (Customer One, Wishlist-funded equity-grant pathway). VIC = Trial Partners, QLD/SCHHS = Evaluation Partners | GTM v2.1, 01 Jul 2026 |
@@ -149,9 +156,26 @@ twelve unstarted analytics/evals stories is downstream of that table.
 - Full probity locks in `acu-ucac-pathway.md`. The investor is never named; ACU is
   "active, multi-pathway partnership exploration" until an agreement is executed.
 
+### Key dates — confirmed from the email trail
+
+- **16 Sep 2026, 3:00–3:45pm** — **ACU Enterprise (Clinic) Steering Committee**, Teams. Russell, 12 Aug: *"socialising Kindred Care… a mix of information/informative and guidance-seeking."* **This is NOT UCAC** — it is advisory, seeking gaps and guidance on resources. Structure agreed 12 Aug: Intro (3–4 slides, Russell asked whether the scaffold VR persona can do it), KC outline (problem from the Chief Midwife's comments, solution, value proposition, TAM/SAM/SOM, competition), ACU Midwifery 3 slides (Lois), Bundle of Rays 4 slides (Brad). **No deck exists.**
+- **16 Oct 2026** — UCAC assessment sitting (register P2-15). Unchanged.
+- **11 Sep 2026, 10–11am** — SCHHS SPARK meeting, occupational violence product, not Kindred Care.
+- **31 Aug / 1 Sep 2026** — Brad ↔ Marie one-to-one.
+
+### Standing instruction from ACU
+
+Russell Carrington, 26 Aug 2026: *"Competitor analysis needs to be done…. we need to show
+we know industry space and can evidence why KC is superior to any aligned
+existing/pipeline products (incl. Vic midwifery pipeline thing…)."* Unassigned as at
+29 Aug 2026.
+
 ### The competitive incumbent — Eve
 
-**Eve** is a maternity app by **Medicity (Cabrini Technology Group)**, used by 50,000+
+**Eve Pregnancy Companion** was **developed by Cabrini Health (Vic) and launched in
+2020**; in 2021 it won the Victorian and national **Not for Profit Solution of the Year**
+prize (Bill Russell, 26 Aug 2026). Delivered through **Medicity (Cabrini Technology
+Group)**, used by 50,000+
 women, deployed across Victorian maternity services including Northern Health, Eastern
 Health, Western Health and St John of God Berwick. Commercial model: free to patients at
 a hospital holding an Eve subscription — the same buyer, state and B2B model as the
@@ -191,6 +215,7 @@ Do not fill any of these from inference. Ask Brad, or leave it UNKNOWN in the ou
 - [ ] What "ACU/HREC approvals (ADR-008 k-values, S9e copy)" specifically requires and who is waiting on whom
 
 ### Money and timeline
+- [ ] **NIPhD Round 8** — Industry Researcher, BoR × ACU, **$11,892 p.a. to ACU, $47,568 over four years**; PRoF approved pending conditions Aug 2026. Not currently in the non-dilutive funding map
 - [ ] Raise target, instrument, and use of funds
 - [ ] Kindred Care's own burn and runway, separate from Bundle of Rays
 - [ ] What ACU has actually committed — cash, in-kind, staff time, introductions

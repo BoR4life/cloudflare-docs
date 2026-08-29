@@ -1,6 +1,6 @@
 # Kindred Care — program board
 
-**Readiness: TRL 4 / CRL 2 / IRL 1** · Last updated: 29 Aug 2026
+**Readiness: TRL 4 / CRL 3 / IRL 3** · Last updated: 29 Aug 2026
 **Cadence:** full review Monday, midweek check Thursday.
 
 Baselined 29 Aug 2026 against the MVP Board snapshot of 28 Aug 2026 — see
@@ -15,7 +15,13 @@ Status vocabulary — use these and no others:
 ## Hard external dates
 | Date | What | Consequence if missed |
 |---|---|---|
-| **Feb–Apr 2027** | Proposal window for LHD/HHS funding in FY2027–28 (Australian FY starts 1 Jul) | A proposal not drafted by Jan 2027 misses a full year of district budget |
+| **31 Aug / 1 Sep 2026** | Brad ↔ Marie Gentile-Andrit one-to-one | Role clarity, prior-app IP and affiliation must be settled at or before this |
+| **4 Sep 2026** | WS-PROP1 — Enterprise Proposal Draft-1 | Stage 1→2 bridge; all three input workshops unrun. Proceed compressed or re-baseline — do not let it pass silently |
+| **11 Sep 2026, 10–11am** | SCHHS SPARK — Jake Penrose (CDO), Hayley Farry (ED Workforce) | **Different BoR product (occupational violence).** Executive door; do not turn it into a Kindred Care pitch |
+| **16 Sep 2026, 3:00–3:45pm** | **ACU Enterprise (Clinic) Steering Committee** | Socialising and advice-seeking, not a funding gate. **No deck exists** |
+| **16 Oct 2026** | UCAC assessment sitting | The gate. Pack assembly begins 2 Oct |
+| **23 Oct / 30 Oct 2026** | VC endorsement / IC submission | Programme end-point |
+| **Feb–Apr 2027** | Proposal window for interstate health-service funding in FY2027–28 | Secondary to the Victorian beachhead; relevant to SCHHS |
 | May–Jun 2027 | End-of-FY underspend window — occasionally funds a small pilot quickly | Opportunistic only; not a plan |
 | UNKNOWN | Grant rounds in play (TRGS, district innovation funds, CEQ, MRFF, Industry Growth Program) | — |
 | UNKNOWN | ACU JV / reporting deadlines | — |
@@ -45,63 +51,20 @@ Status vocabulary — use these and no others:
 | First consented real user — **do not cross before HREC coverage and consent wording are settled** | Brad | — | NOT STARTED | — | 29 Aug 2026 |
 
 ## Market track (CRL)
-Lead motion: **B2B into NSW Local Health Districts and QLD Hospital and Health Services** (working direction, 29 Aug 2026). B2C is a month-12 option conditional on dedicated resourcing.
+Lead motion: **Victorian public maternity services** (BVUIP is Victorian money), ACU midwifery network as channel, **SCHHS as Evaluation Partner / non-Victorian reference**. VIC = Trial Partners, QLD = Evaluation Partners. See `strategy/gtm-v3-2026-08-29.md`.
 
 | Milestone | Owner | Due | Status | Evidence | As at |
 |---|---|---|---|---|---|
-| One-sentence product statement | Brad | — | UNKNOWN | — | 29 Aug 2026 |
-| Get the ACU clinical placement partnership map — districts, services, named academic per relationship | Brad + ACU | — | NOT STARTED | — | 29 Aug 2026 |
-| Pick the beachhead: one district, one service line, one measurable problem | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| Name the executive sponsor role and the budget line at the beachhead | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| Build the assurance pack (privacy, security, AI assurance, clinical, regulatory, insurance) — gate between CRL 3 and 4 | Brad + Hector | — | NOT STARTED | — | 29 Aug 2026 |
-| Confirm the district's direct-engagement procurement threshold and size pilot one beneath it | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| Assess co-applying with a district for external pilot funding (TRGS / district innovation fund / CEQ) | Brad + ACU | — | NOT STARTED | — | 29 Aug 2026 |
-| Pilot protocol template with pre-declared success criteria and a named data collector | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| Pricing shape decided, anchored to district economics (before any number) | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| Competitor list | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| Named pipeline of three or more districts (concentration-risk answer) | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| Prequalification assessment — NSW ICT purchasing arrangements, QLD QITC | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| B2C gate: dated decision point ~month 12, with the resourcing precondition written into it | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-
-## Investment track (IRL)
-| Milestone | Owner | Due | Status | Evidence | As at |
-|---|---|---|---|---|---|
-| **Resolve entity question — incorporated Pty Ltd with 70/30 on a cap table, or contractual JV?** | Brad + ACU + lawyer | — | NOT STARTED | — | 29 Aug 2026 |
-| IP ownership schedule — code, prompts, brand, transcripts | Brad + lawyer | — | NOT STARTED | — | 29 Aug 2026 |
-| Confirm what ACU is contributing, in writing (cash / in-kind / staff / introductions) | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| Hector's agreement — role, IP assignment, equity or compensation | Brad | — | UNKNOWN | — | 29 Aug 2026 |
-| R&D Tax Incentive position and contemporaneous record-keeping started | Brad + accountant | — | NOT STARTED | — | 29 Aug 2026 |
-| Grant shortlist — applied / in progress / explicitly ruled out | Brad + ACU | — | NOT STARTED | — | 29 Aug 2026 |
-| Financial model, burn, runway on the Kindred Care line | Brad | — | UNKNOWN | — | 29 Aug 2026 |
-| Milestone-to-raise map and use of funds | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| Data room index with gaps visible | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-| First monthly investor update written (no investors required) | Brad | — | NOT STARTED | — | 29 Aug 2026 |
-
-## Governance / firewall
-| Milestone | Owner | Due | Status | Evidence | As at |
-|---|---|---|---|---|---|
-| **Confirm consent wording at point of collection covers Paper 5 research use — before the first consented user, not before the first pilot** | Brad + CI | — | BLOCKED (on: HREC approval, listed out-of-loop) | — | 29 Aug 2026 |
-| Resolve ACU / HREC approvals — ADR-008 k-values, S9e copy. Establish who is waiting on whom | Brad + ACU | — | BLOCKED (on: unclear ownership) | — | 29 Aug 2026 |
-| Name who staffs the ACU approval seat (content_sme_acu) in production, and the turnaround | Brad + ACU | — | NOT STARTED | ACU approval inbox VS-090 shipped; seat unstaffed as far as evidenced | 29 Aug 2026 |
-| Named ACU counterpart for commercial matters, distinct from supervisory panel | Brad | — | UNKNOWN | — | 29 Aug 2026 |
-| Agree publication rule — negative findings are never withheld | Brad + ACU | — | NOT STARTED | — | 29 Aug 2026 |
-| JV steering group / decision rights when Brad and ACU disagree | Brad + ACU | — | UNKNOWN | — | 29 Aug 2026 |
-
-## Milestone-to-raise map
-Raising to: **UNKNOWN** — cannot be built until the entity question is answered and the beachhead is picked.
-
-**Standing constraint from the B2B choice:** an LHD/HHS sales cycle runs 9–18 months
-plus security and privacy review, so the round must fund roughly **24 months, not 12**.
-Revenue arrives after the raise, not during it. State this in the raise narrative
-rather than letting an investor discover it.
-
-| Milestone | Cost (AUD) | Date |
-|---|---|---|
-| — | — | — |
-
-## Gate review history
-| Date | Level claimed | Result | Missing evidence |
-|---|---|---|---|
-| 29 Aug 2026 | TRL 5 | **FAIL** — assessed TRL 4 | Legal sign-off; warmth-trap measurement; written TGA position; two unfixed cross-tenant exposures; no consented users |
-| 29 Aug 2026 | CRL 3 | **FAIL** — assessed CRL 2 | No named district, sponsor, budget line, pricing hypothesis, competitor list or assurance pack |
-| 29 Aug 2026 | IRL 2 | **FAIL** — assessed IRL 1 | Entity status unresolved; IP ownership unverified |
+| **Reply to Michelle Schmidt and book the SCHHS Maternity leadership session** | Brad | Mon 31 Aug 2026 | BLOCKED (on: no reply sent since her 25 Aug offer) | — | 29 Aug 2026 |
+| **Competitor analysis — standing ask from Russell, 26 Aug** | Brad | Tue 1 Sep 2026 | IN PROGRESS | Draft in `strategy/gtm-v3-2026-08-29.md` §2 and `research/2026-08-29-...recon.md` | 29 Aug 2026 |
+| **16 Sept Steering Committee deck — Brad's sections** | Brad | 16 Sep 2026 | NOT STARTED | Structure agreed 12 Aug; no slides | 29 Aug 2026 |
+| Confirm whether the Elena persona can deliver the Steering Committee intro | Brad + Hector | 16 Sep 2026 | NOT STARTED | Russell asked 12 Aug | 29 Aug 2026 |
+| Two named Victorian pilot sites (metro + regional) | Lois | — | NOT STARTED | Everything downstream assumes them | 29 Aug 2026 |
+| **Safer Care Victoria — reconnect via Elisa McDonald** | Brad + Russell | This week | NOT STARTED | Raised 20 Aug, endorsed by Russell same day, not in any document | 29 Aug 2026 |
+| Content Advisory Panel seated — Wallace, Simpson, Byatt + the Monash educator | Lois | 14 Aug 2026 | SLIPPED (was 14 Aug 2026) | Nominees supplied 12 Aug | 29 Aug 2026 |
+| Decide Eve: compete / partner / acquire — test the Cabrini relationship via ACU's Catholic-sector network | Brad + Russell | Before 16 Oct 2026 | NOT STARTED | — | 29 Aug 2026 |
+| Mother survey closes (100 responses) + analysis | Brad | 4 Sep 2026 | NOT STARTED | Van Westendorp — B2C only, not B2B | 29 Aug 2026 |
+| Pricing shape — birth-volume bands, external anchor (£55k NHS G-Cloud comparator) | Brad + Hector | 11 Sep 2026 | NOT STARTED | — | 29 Aug 2026 |
+| Pilot protocol — pre-declared criteria, service enrolment, enrolment artefact, stratification | Brad + Lois | Before any site approach | NOT STARTED | Evidence base in `research/` | 29 Aug 2026 |
+| Comrade NDAs executed (early adopters) | Brad | 28 Aug 2026 | SLIPPED (was 28 Aug 2026) | — | 29 Aug 2026 |
+| B2C gate — **moved to FY29**, resourced separately | Brad | FY29 | NOT STARTED | Self-enrolment median retention 0 days | 29 Aug 2026 |

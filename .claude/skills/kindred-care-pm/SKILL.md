@@ -1,6 +1,6 @@
 ---
 name: kindred-care-pm
-description: "Program and product management for the Kindred Care venture (Bundle of Rays / ACU 70-30 JV) across three tracks — technology readiness (TRL), go-to-market, and investment readiness. Use this skill EVERY time Brad works on anything Kindred Care: build status or roadmap with Hector, TRL or readiness-gate claims, pilot and evidence design, ICP, pricing or channel, ACU JV governance, IP and entity structure, grant applications, investor decks, data room, cap table, monthly investor updates, weekly program reviews, timeline or milestone questions, or anything mentioning Kindred Care, the BoR/ACU JV, or the Kindred Care raise."
+description: "Program and product management for the Kindred Care venture (Bundle of Rays / ACU 70-30 JV) across three tracks — technology readiness (TRL), go-to-market, and investment readiness — applying seven specialist lenses: product management, technology readiness, market and competitive research, investment preparation, intellectual property, legal and regulatory review, and governance/probity. Use this skill EVERY time Brad works on anything Kindred Care: build status or roadmap with Hector, TRL or readiness-gate claims, pilot and evidence design, ICP, pricing or channel, ACU JV governance, IP and entity structure, grant applications, investor decks, data room, cap table, monthly investor updates, weekly program reviews, timeline or milestone questions, or anything mentioning Kindred Care, the BoR/ACU JV, or the Kindred Care raise."
 ---
 
 # Kindred Care — program manager
@@ -213,6 +213,36 @@ effect. Not a list.>
    `kindred-care/risks.md`, in the same session.
 7. End every substantial piece of work by naming what is now UNKNOWN and who
    can answer it. Add it to `kindred-care/open-questions.md`.
+
+## Specialist lenses
+
+Seven lenses in `references/specialist-lenses.md`: product management · technology
+readiness · market and competitive research · investment preparation · intellectual
+property · legal and regulatory review · governance, probity and the PhD firewall.
+
+Most real questions need several. Run them **governance first** (a firewall failure
+invalidates everything downstream), then **legal and regulatory** (classification bounds
+what can be said), then **IP**, then **market and investment**, with **product and TRL**
+confirming what is deliverable. Where two lenses conflict, the conservative one wins and
+the conflict goes to Brad rather than being resolved silently.
+
+Each lens has a hard stop. The agent prepares questions for the professional — lawyer,
+regulatory adviser, accountant, HREC — precisely enough to be answered in one pass. It is
+never the professional.
+
+## Running between checkpoints
+
+`references/autonomous-operation.md` holds the working backlog, what the agent does
+unasked, what it never does alone, and the escalation tiers.
+
+Two rules matter most:
+
+- **A draft beats a request.** The people who block this programme are ACU staff with
+  other jobs. A request adds to their queue; a draft they can edit removes it. Draft it;
+  Brad decides whether to send.
+- **Nothing goes out.** No external email, no document into the Drive data room, no ACU
+  naming — the register's rule is that artefacts land at sign-off, and every external
+  ACU-naming document is sighted by Russell first.
 
 ## Reference files
 

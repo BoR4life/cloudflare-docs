@@ -31,8 +31,6 @@ Ordered by what unblocks the most downstream work.
 | 23 | Which maternity or child-and-family service line does the beachhead address — antenatal, postnatal, perinatal mental health, or child and family health? | Brad / Hector | 29 Aug 2026 | Beachhead choice, regulatory position, evidence design |
 | 24 | Is Iridia the platform and Kindred Care the brand, or are they two things? | Brad | 29 Aug 2026 | Naming across deck, contracts, IP schedule |
 | 25 | Resolve the board's counting basis — 148 vs 191 vs 193 stories, Ready 37 vs 39 | Brad | 29 Aug 2026 | Any percent-complete figure quoted externally |
-| 26 | **Is the mid-September UCAC session the assessment sitting or a socialisation, and does the register's 16 Oct date still stand?** | Russell | 29 Aug 2026 | The entire programme sequence |
-| 27 | What artefacts must be in front of Russell for the mid-September session? | Russell | 29 Aug 2026 | The document backlog order |
 | 28 | Status of the BVUIP 1:1 cash match — has the HNWI syndicator path progressed since July? | Russell / Bill | 29 Aug 2026 | The deal |
 | 29 | Was CRC-P Round 19 submitted? Its close was 12 May 2026 and it still reads as an open dependency in GTM v2.1 | Brad | 29 Aug 2026 | The non-dilutive track |
 | 30 | Who is the CFO who signs off the $1.22M forecast reconciliation, and when | Brad | 29 Aug 2026 | BVUIP submission |
@@ -43,3 +41,10 @@ Ordered by what unblocks the most downstream work.
 | 35 | What is the current AUD conversion of the £55,000 NHS G-Cloud maternity-app comparator, and does the Pricing Model reference any external anchor? | Brad | 29 Aug 2026 | Pricing defensibility at UCAC |
 | 36 | Does the mother survey (P1-05) feed B2B pricing, or only the B2C tier? | Brad | 29 Aug 2026 | Pricing Model v1 |
 | 37 | What plays the role of the tangible enrolment package that drove 167-day retention in SMART start? | Brad + Hector | 29 Aug 2026 | Pilot retention |
+| 38 | Which role is Marie being considered for — co-CEO, pilot-site route, or domain adviser? | Brad + Russell | 29 Aug 2026 | Her agreement, the cap table, and procurement probity at the beachhead |
+| 39 | Who owns what Marie built during COVID, and are there obligations to whoever funded that pilot? | Marie | 29 Aug 2026 | Background IP, COI, competitor mapping |
+| 40 | Is Marie currently employed by a Victorian health service? | Marie / Lois | 29 Aug 2026 | Procurement probity |
+| 41 | Who is the Monash midwifery educator, and will she take a Content Advisory Panel seat? | Lois | 29 Aug 2026 | Advisory panel, second Victorian site |
+| 42 | Can the Elena persona deliver the 16 Sept Steering Committee intro? | Hector | 29 Aug 2026 | The deck |
+| 43 | Has Michelle Schmidt been replied to, and is a Maternity leadership slot booked? | Brad | 29 Aug 2026 | CRL 3 evidence |
+| 44 | What is the "Vic midwifery pipeline thing" Russell refers to — is it Marie's app? | Russell | 29 Aug 2026 | Competitor map |
