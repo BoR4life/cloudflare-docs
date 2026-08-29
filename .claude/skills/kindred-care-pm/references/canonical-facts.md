@@ -23,14 +23,25 @@ Principal source for the product facts below: the **Kindred MVP Board**, snapsho
 | Venture structure | Kindred Care is a **70/30 joint venture, Bundle of Rays / ACU** | `phd-define-writing` canonical facts, Jul 2026 |
 | Brad's role | CEO, Bundle of Rays Academy; carries the Kindred Care venture | same |
 | ACU | Australian Catholic University — 30% JV partner, partner on the raise and go-to-market, **and an approval role inside the product itself** (see below) | same + Brad, 29 Aug 2026 + MVP Board |
-| Hector | Leads product/technology build | Brad, 29 Aug 2026 |
+| Hector Gonzalez | **CTO, Bundle of Rays** — owns Pillar 4, Technical Build | Task Register + CRC-P folder |
+| Russell Carrington | **ACU Commercialisation Manager, ACU Enterprise** — owns Pillar 2, the ACU pathway, and chairs the ACU–BoR meetings | ACU–BoR meeting records |
+| Prof. Lois McKellar | **ACU Midwifery** — owns Pillar 3 Clinical & Content; sources the Victorian pilot sites and the co-CEO | Task Register + GTM §4.2 |
+| Bill Russell | **ACU grants** — owns Pillar 5, Funding | Task Register |
+| Angela | ACU legal / the Deed | Task Register |
+| Co-CEO | Being sourced by Lois, vetted by Russell, decided by Brad. On the cap table and in the investment narrative from the outset. **Not yet shortlisted** (P1-02, was due 28 Aug 2026) | Task Register |
 | PhD interface | Kindred Care **transcripts** are the data source for PhD Paper 5 (pedagogical discourse analysis, "warmth trap" markers), timed Y2.5 | `phd-define-writing` canonical facts |
 | Declared COI | Brad's Kindred Care commercial relationship is a declared conflict on the ACU HREC application | same |
-| Lead go-to-market motion | **Working direction, not locked:** B2B contracts into NSW Local Health Districts and QLD Hospital and Health Services. Multi-year public health contracts judged better collateral for a raise than early consumer revenue | Brad, 29 Aug 2026 |
+| Lead go-to-market motion | **Victorian public maternity services** are the beachhead; ACU midwifery network is the channel; **Sunshine Coast HHS is the lead non-Victorian reference** (Customer One, Wishlist-funded equity-grant pathway). VIC = Trial Partners, QLD/SCHHS = Evaluation Partners | GTM v2.1, 01 Jul 2026 |
+| Investment route | **ACU UCAC → Venture Committee → Investment Committee**, then Breakthrough Victoria. Cascade: ~$300k POC co-investment converting to shares, then **BVUIP $1.0M matched 1:1** ($550k FY26 / $250k FY27 / $200k FY28), CRC-P Round 19 non-dilutive, conditional Series A $1.5M–$2.5M at FY28 | GTM v2.1 §8.1 + Task Register + Brad, 29 Aug 2026 |
+| Breakthrough Victoria | Merging with LaunchVic into **Innovation Victoria**, expected live with full board and CEO in H2 2026; Rod Bristow appointed inaugural CEO. **Verify the current program shape before submitting** — a mid-merger funder is a live timing risk | Web search, 29 Aug 2026 |
+| Entity | **Bundle of Rays Pty Ltd** is the existing company. **Kindred Care Pty Ltd is the intended NewCo and is not yet incorporated** — entity formation is a Stage 1 use of BVUIP funds, and TRL 4 is named as the incorporation prerequisite | GTM v2.1 §8.3 + Task Register P2-12 |
 | B2C | A real option from roughly **month 12**, conditional on **dedicated resourcing** | Brad, 29 Aug 2026 |
 | Review cadence | Twice weekly — full review Monday, midweek check Thursday | Brad, 29 Aug 2026 |
 
 ### The product
+
+Positioned in GTM v2.1 as *"a nurse and midwifery-led, AI-enabled maternal education
+platform"* — note that "platform" violates the later language lock and must be swept.
 
 | Fact | Detail | Source |
 |---|---|---|
@@ -126,6 +137,31 @@ twelve unstarted analytics/evals stories is downstream of that table.
 
 ---
 
+### Product positioning and language — LOCKED
+
+- Always **"the Companion"** — never tool, platform or app.
+- Always **"midwifery- and nurse-led"**.
+- **Education-only.** Symptom interpretation, triage and diagnosis (Stage 5d) are never
+  reintroduced. Architecturally enforced (P4-03), evidenced (P4-06, P3-09). This is what
+  protects the SaMD position.
+- Frame on **workforce and equity**, never on "patient education" — that has no budget
+  line in a health service.
+- Full probity locks in `acu-ucac-pathway.md`. The investor is never named; ACU is
+  "active, multi-pathway partnership exploration" until an agreement is executed.
+
+### The competitive incumbent — Eve
+
+**Eve** is a maternity app by **Medicity (Cabrini Technology Group)**, used by 50,000+
+women, deployed across Victorian maternity services including Northern Health, Eastern
+Health, Western Health and St John of God Berwick. Commercial model: free to patients at
+a hospital holding an Eve subscription — the same buyer, state and B2B model as the
+Kindred Care beachhead. Features include antenatal visit notes and test results in-app,
+direct chat with a midwife, a moderated forum, and tracking tools.
+
+**GTM v2.1 §7.1 does not name it.** That gap must close before the pack goes to UCAC.
+Cabrini is a Catholic health service and ACU a Catholic university — Eve is as plausibly
+a partner or acquirer as a competitor, and that should be decided deliberately.
+
 ## Section B — UNKNOWN register
 
 Do not fill any of these from inference. Ask Brad, or leave it UNKNOWN in the output.
@@ -166,6 +202,23 @@ Do not fill any of these from inference. Ask Brad, or leave it UNKNOWN in the ou
 ### Governance
 - [ ] Does the JV have a steering group, and who decides when Brad and ACU disagree
 - [ ] Who staffs the ACU approval seat in production, and against what turnaround
+
+### Cross-document conflicts — quote both, never silently pick
+
+**TRL.** The Task Register says *"TRL 3→4 via the funded POC; TRL 4 never claimed up
+front"* with the TRL 4 dossier due 25 Sep and TRL 4 as the incorporation prerequisite.
+GTM v2.1 states the current state **is** TRL 4. The MVP Board evidences well past a POC.
+This agent's independent gate review on 29 Aug 2026 assessed **TRL 4**. Recommended
+resolution: the GTM is right, the register note is stale, and the funding narrative
+should read *TRL 4 now → TRL 5/6 through the funded pilot*. Not yet actioned.
+
+**The UCAC date.** Brad states Russell presents to UCAC **mid-September 2026**. The Task
+Register has the **UCAC assessment sitting at 16 Oct 2026** (P2-15) with pack assembly
+beginning 2 Oct (P6-14). Unresolved — see `reviews/2026-08-29b-approach.md`.
+
+**The forecast.** A **$1.22M** gap between Master Revenue Totals and the Detailed
+Breakdown, flagged in the Pricing Model's own reconciliation sheet, requires CFO sign-off
+before BVUIP submission.
 
 ### Board arithmetic to reconcile — do not silently pick a number
 The MVP Board carries three counts that do not reconcile, and the agent must quote them

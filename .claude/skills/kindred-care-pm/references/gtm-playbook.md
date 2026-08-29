@@ -1,28 +1,79 @@
 # Go-to-market playbook — Kindred Care
 
-**Working direction (Brad, 29 Aug 2026):** lead with **B2B contracts into public health
-services — NSW Local Health Districts (LHDs) and Queensland Hospital and Health
-Services (HHSs)**. Rationale: multi-year contracts are worth more in a raise than
-consumer revenue at this stage. **B2C is a real option from roughly month 12, with
-dedicated resourcing** — not run in parallel off the same team.
+**The documented strategy is GTM v2.1 (01 Jul 2026) in the Drive data room.** It is the
+strongest artefact in the pack and this file does not replace it — it holds the working
+notes, the corrections, and what the agent must check before anything enters the UCAC pack.
 
-Not fixed. If the product definition or Hector's build points elsewhere, revisit it at
-the quarterly reset — but until it is revisited, everything below is the plan and the
-board is built on it.
+**Beachhead: Victorian public maternity services.** Two pilot sites — one metropolitan,
+one regional — named through Prof. Lois McKellar's ACU Midwifery service relationships,
+positioned to convert from research participants to first paying licensees post-evaluation.
+Victoria is not an arbitrary choice: BVUIP is Victorian money and requires Victorian
+economic benefit.
+
+**Channel: the ACU midwifery network.** Not a marketing assumption — a concrete
+relationship asset with established trust at clinical and executive level.
+
+**Customer One: Sunshine Coast HHS**, non-Victorian reference via a Wishlist-funded
+equity-grant pathway. **VIC = Trial Partners. QLD/SCHHS = Evaluation Partners.** Never
+blur the two — it is a probity lock.
+
+**Footprint through 2026–FY27:** 5–8 Australian co-design partners and 2–4 international
+under LOI/MOU — non-revenue commitments, explicitly distinct from paying customers.
+Townsville HHS, a UK NHS Trust, and an India state-government channel via the founder's
+origin company are named in GTM §4.4.
+
+**The sales motion, once the pilot evaluation is published:** not "let me show you a
+demo" but "here is the evaluation report — would you like the same outcomes for your
+service?" That is the lowest-friction motion available, and it is why evidence comes
+before features.
 
 Verify every scheme, framework, threshold and Act named here against primary sources
-before it goes into a document. This sector's rules and program names change yearly.
+before it goes into a document.
+
+---
+
+## The competitor GTM v2.1 does not name — Eve
+
+**This gap must close before the pack goes to UCAC.** GTM §7.1 names static content
+sites, generic LLMs, generic patient-engagement portals, international consumer apps and
+insurer programs. It does not name the incumbent sitting in the beachhead.
+
+**Eve** — built by **Medicity, part of Cabrini Technology Group**. Used by **50,000+
+women**. Deployed across Victorian maternity services including **Northern Health,
+Eastern Health, Western Health and St John of God Berwick**. Commercial model: *free of
+charge to all maternity patients attending a hospital with an Eve subscription* — the
+same buyer, the same state, the same B2B hospital-subscription model as this beachhead.
+
+Its features: antenatal visit notes and test results visible in-app, direct chat with a
+midwife, a moderated peer forum, evidence-based content in text and video, and tracking
+tools (maternal health, mental health, birth planner, growth, contraction timer).
+
+**Where Eve is genuinely ahead:** integration with the antenatal record, a human midwife
+in the loop, a peer community, and incumbency inside the exact services being targeted.
+Kindred Care has none of those today.
+
+**Where Kindred Care is genuinely ahead:** a 24/7 governed conversational Companion
+rather than content plus asynchronous human chat; academic content provenance with ACU
+sign-off; a research evidence pipeline; and a safety architecture proven by planted
+mutation rather than asserted.
+
+**The strategic option nobody has decided:** Cabrini is a Catholic health service, ACU is
+a Catholic university. Eve is as plausibly a partner, channel or acquirer as a
+competitor. Decide it deliberately before someone at UCAC asks.
+
+Sources to keep current: the Medicity product page, and the Northern Health, Eastern
+Health, Western Health and St John of God deployment announcements.
 
 ---
 
 ## The domain — maternal and perinatal
 
-Confirmed from the MVP Board (28 Aug 2026): ten maternal-issue codes in the ontology,
-EDD and DOB capture with life stage derived on read, support tickets carrying free text
-mothers wrote about themselves. Elena is a supervised conversational agent for
-**mothers**, delivered B2B2C — the institution enrols, the mother uses it.
+Confirmed from the MVP Board (28 Aug 2026) and GTM v2.1: ten maternal-issue codes in the
+ontology, EDD and DOB capture with life stage derived on read, support tickets carrying
+free text mothers wrote about themselves. Elena is a supervised conversational Companion
+for **mothers**, delivered B2B2C — the service enrols, the mother uses it.
 
-That narrows the LHD/HHS target from "health services" to a reachable set:
+Within a maternity service the sponsor set is:
 
 | Service line | Who sponsors it | Why it fits |
 |---|---|---|

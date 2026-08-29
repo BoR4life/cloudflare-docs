@@ -31,3 +31,12 @@ Ordered by what unblocks the most downstream work.
 | 23 | Which maternity or child-and-family service line does the beachhead address — antenatal, postnatal, perinatal mental health, or child and family health? | Brad / Hector | 29 Aug 2026 | Beachhead choice, regulatory position, evidence design |
 | 24 | Is Iridia the platform and Kindred Care the brand, or are they two things? | Brad | 29 Aug 2026 | Naming across deck, contracts, IP schedule |
 | 25 | Resolve the board's counting basis — 148 vs 191 vs 193 stories, Ready 37 vs 39 | Brad | 29 Aug 2026 | Any percent-complete figure quoted externally |
+| 26 | **Is the mid-September UCAC session the assessment sitting or a socialisation, and does the register's 16 Oct date still stand?** | Russell | 29 Aug 2026 | The entire programme sequence |
+| 27 | What artefacts must be in front of Russell for the mid-September session? | Russell | 29 Aug 2026 | The document backlog order |
+| 28 | Status of the BVUIP 1:1 cash match — has the HNWI syndicator path progressed since July? | Russell / Bill | 29 Aug 2026 | The deal |
+| 29 | Was CRC-P Round 19 submitted? Its close was 12 May 2026 and it still reads as an open dependency in GTM v2.1 | Brad | 29 Aug 2026 | The non-dilutive track |
+| 30 | Who is the CFO who signs off the $1.22M forecast reconciliation, and when | Brad | 29 Aug 2026 | BVUIP submission |
+| 31 | Does ACU know Breakthrough Victoria is merging into Innovation Victoria, and does it change the BVUIP pathway or timing? | Russell | 29 Aug 2026 | Funding route viability |
+| 32 | Eve — compete, partner, or channel? Cabrini is Catholic, ACU is Catholic | Brad | 29 Aug 2026 | Competitive positioning in the pack |
+| 33 | Who is the "institutional investor" the probity lock says is never named — is it Breakthrough Victoria or a separate party? | Brad / Russell | 29 Aug 2026 | Naming discipline across every document |
+| 34 | Have the Stage 1 workshops been run outside the register, or genuinely not happened? | Brad | 29 Aug 2026 | Whether WS-PROP1 on 4 Sep is achievable |

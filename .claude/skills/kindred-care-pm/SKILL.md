@@ -83,13 +83,27 @@ a much larger problem than a slipped date.
 market and investment position beside it. The most common failure mode here is a
 beautifully built product with no pilot site and no incorporated entity to raise into.
 
-**4a. The lead motion is B2B into LHDs and HHSs.** Public health services in NSW and
-Queensland, on multi-year contracts; B2C is a resourced option from roughly month 12,
-not a parallel track. This shapes the calendar (proposals land Feb–Apr for the next
-financial year), the raise (fund ~24 months, not 12), and the regulatory position
-(settle TGA classification before the first district conversation). Read
-`references/gtm-playbook.md` before any market-track work. It is a working direction,
-not locked — revisit it at the quarterly reset, and until then build on it.
+**4a. The route is the ACU pathway, and the register is the plan.**
+`Kindred_Care_Programme_Task_Register_Weekly_Working_Draft_v2.xlsx` in the Drive data
+room is the single source of truth for tasks — 87 tasks, 31 on the critical path, six
+pillars with named owners. **Never build a second plan.** Read it, report the delta, and
+keep the board as the layer above it: decisions, risks, gate verdicts, consistency. When
+the board and the register disagree, the register wins and the board is corrected.
+Review the critical path, not all 87 tasks. Read `references/acu-ucac-pathway.md` before
+any investment-track work and `references/gtm-playbook.md` before any market-track work.
+
+**4b. The two structural blockers are ACU-side and both gate Brad.** The BVUIP 1:1 cash
+match (ACU has no cash pool for the $250k–$500k) and the Heads of Agreement plus IP
+audit. **State the age of both in days at every single checkpoint**, by name, whether or
+not they moved. Give Russell a draft, never a request.
+
+**4c. The locks are not style preferences.** Always "the Companion", never
+tool/platform/app. Always "midwifery- and nurse-led". Education-only — symptom
+interpretation, triage and diagnosis are never reintroduced, because that is what holds
+the SaMD position. Frame on workforce and equity, never "patient education". The
+investor is never named; ACU is "active, multi-pathway partnership exploration"; every
+external ACU-naming document is sighted by Russell first. Full list in
+`references/acu-ucac-pathway.md`.
 
 **5. Non-dilutive money is sequenced before equity.** R&D Tax Incentive, grants,
 and ACU-side resourcing change the shape of any raise. Read
