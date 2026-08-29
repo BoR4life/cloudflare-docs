@@ -9,7 +9,7 @@ Ordered by what unblocks the most downstream work.
 | # | Question | Who can answer | Asked on | Blocks |
 |---|---|---|---|---|
 | 1 | Is Kindred Care an incorporated Pty Ltd with the 70/30 on a cap table, or a contractual JV? | Brad / ACU | 29 Aug 2026 | Entire investment track (IRL capped at 1) |
-| 2 | Who signs a Kindred Care contract, and out of which budget line? | Brad / ACU | 29 Aug 2026 | Entire market track (CRL capped at 2), pricing, evidence design |
+| 2 | Which LHD or HHS is the beachhead, and who is the executive sponsor and budget owner there? | Brad / ACU | 29 Aug 2026 | Market track (CRL capped at 3 without a named sponsor and budget line) |
 | 3 | What is Kindred Care, in one sentence — the product, not the vision? | Brad | 29 Aug 2026 | Everything downstream of positioning |
 | 4 | Link to Hector's build — repo, deployed environment, current state | Brad | 29 Aug 2026 | TRL baseline |
 | 5 | Who owns the IP today — code, prompts, brand, transcript data? | Brad / ACU / lawyer | 29 Aug 2026 | IRL 2, diligence Q2 |
@@ -19,6 +19,9 @@ Ordered by what unblocks the most downstream work.
 | 9 | What safety design exists today — crisis detection, escalation, scope limits? | Hector | 29 Aug 2026 | TRL 5 safety gate |
 | 10 | Raise target, instrument, and use of funds | Brad | 29 Aug 2026 | Milestone-to-raise map |
 | 11 | Hard external dates — grant rounds, ACU deadlines, pilot windows | Brad / ACU | 29 Aug 2026 | Timeline credibility |
+| 16 | The ACU clinical placement partnership map — which districts and services, and which academic holds each relationship | ACU counterpart | 29 Aug 2026 | Beachhead choice; this is the JV's warmest route to a Director of Nursing |
+| 17 | What cohort and service line does the beachhead pilot actually address? | Brad / Hector | 29 Aug 2026 | Pilot protocol, evidence design, regulatory position |
+| 18 | Brad's timezone / city, to pin the twice-weekly review times through daylight saving | Brad | 29 Aug 2026 | Review scheduling |
 | 12 | Any revenue, LOI, paid pilot or named pilot site to date | Brad | 29 Aug 2026 | CRL baseline |
 | 13 | Kindred Care's own burn and runway, separate from Bundle of Rays | Brad | 29 Aug 2026 | Raise sizing; ties to the financial-checkpoint ledger |
 | 14 | Where is the entity based (state), for state grant eligibility? | Brad | 29 Aug 2026 | Non-dilutive stack |

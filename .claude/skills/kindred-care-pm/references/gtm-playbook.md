@@ -1,121 +1,240 @@
 # Go-to-market playbook — Kindred Care
 
-**Kindred Care's buyer is currently UNKNOWN** (see `canonical-facts.md`). This file
-is therefore a decision framework, not a plan. Its job is to force the buyer choice
-early, because almost every other decision — pricing, evidence, safety design,
-regulatory position, raise size — falls out of it.
+**Working direction (Brad, 29 Aug 2026):** lead with **B2B contracts into public health
+services — NSW Local Health Districts (LHDs) and Queensland Hospital and Health
+Services (HHSs)**. Rationale: multi-year contracts are worth more in a raise than
+consumer revenue at this stage. **B2C is a real option from roughly month 12, with
+dedicated resourcing** — not run in parallel off the same team.
 
-## The one question that unblocks the market track
+Not fixed. If the product definition or Hector's build points elsewhere, revisit it at
+the quarterly reset — but until it is revisited, everything below is the plan and the
+board is built on it.
 
-> **Who signs the contract, and out of which budget line?**
+Verify every scheme, framework, threshold and Act named here against primary sources
+before it goes into a document. This sector's rules and program names change yearly.
 
-Not who loves the product. Not who uses it. Who signs, and where the money comes
-from. Until that is answered with a named organisation and a named budget, CRL is
-capped at 2.
+---
 
-## Five candidate buyers — pick one to lead with
+## What you are actually selling into
 
-Leading with one does not abandon the others; it decides what gets built and
-evidenced first. Trying to serve all five simultaneously is the most common way a
-care-sector venture stalls at CRL 3.
+**There is no such buyer as "NSW Health" or "Queensland Health".** There are roughly
+thirty-odd separate statutory buyers:
 
-| Buyer | Pays for | What they require before signing | Sales reality |
-|---|---|---|---|
-| **Aged care provider** (residential or in-home) | Staff time saved, resident wellbeing, compliance and quality evidence | Safety and escalation design, privacy position, insurance, evidence from a comparable service, IT/security review | Long cycles, thin margins, committee decisions; the enthusiast is rarely the signer |
-| **Disability / NDIS provider or participant** | Funded supports under a plan | Clarity on whether it is a claimable support; participant consent; safeguarding | Funding-rule dependent — verify current NDIS support categories before promising claimability |
-| **Health service / PHN / hospital** | Discharge support, chronic condition support, workforce relief | Clinical governance sign-off, likely a regulatory position, integration with existing systems | Slowest cycle, highest credibility payoff, highest chance of tripping the medical-device line |
-| **Family / self-pay consumer** | Peace of mind for a parent or relative | Trust, price point, ease of setup for a non-technical older user | Fast to test, brutal on churn and CAC; a real business only at volume |
-| **Education / workforce** (via Bundle of Rays and ACU) | Training care workers and students | Curriculum fit, learning outcomes, institutional procurement | Closest to Brad's existing capability and network; smallest cheque; strongest evidence flywheel |
+- **NSW** — 15 Local Health Districts (metro and rural/regional) plus specialty
+  networks (children's, justice health, St Vincent's). Each has its own Board and
+  Chief Executive and its own budget. State-level: NSW Health and eHealth NSW set
+  policy, standards and some statewide systems.
+- **QLD** — 16 Hospital and Health Services, each a statutory body with its own Board
+  and Health Service Chief Executive, under Queensland Health. State-level: Clinical
+  Excellence Queensland and the department's digital function.
 
-For whichever is chosen, write into `kindred-care/program-board.md`: the named
-organisations, the named budget line, the decision-maker's title, and the cycle
-length you are assuming.
+Consequences that shape everything:
 
-## Kindred Care's actual unfair advantage — use it deliberately
+1. **You cannot make one sale.** You land one district, prove it, and then repeat —
+   either district by district, or by earning a statewide pathway. Plan and fund for
+   repetition, not for a single deal.
+2. **A statewide pathway is the prize, not the entry point.** It is won on the back of
+   a district result, never sold cold.
+3. **Every district is a full procurement, security, privacy and clinical governance
+   process of its own** until you are on a scheme or panel that shortcuts it.
 
-Care organisations do not buy features. They buy **reduced risk and defensible
-evidence**, because they answer to regulators, families, and boards.
+## Who signs, and out of which budget
 
-Brad is running a PhD that produces peer-reviewed evidence about exactly this class
-of product, including its failure modes. That is not a side project sitting next to
-the venture — it is the venture's most differentiated GTM asset. Almost no competitor
-in this space can put a published, ethics-approved, independently-reviewed evidence
-base on the table.
+The signature is the Chief Executive or a delegate under the delegations schedule; the
+size of the contract determines who. But the signature is the last step, and getting to
+it needs four different people:
 
-So the sequencing is: **evidence first, features second.** Design pilots to produce
-publishable results. Let the papers do the selling.
+| Role | Who they typically are | What they need from you |
+|---|---|---|
+| **Executive sponsor** | Director of Nursing and Midwifery, Executive Director Allied Health, Chief Digital/Information Officer, Director of Clinical Governance | A problem they already own, and a defensible way to explain it upward |
+| **Clinical champion** | A unit manager, NUM, or senior clinician | That it makes their week easier and does not create risk |
+| **Budget owner** | A program, service line, or improvement fund | A number that fits the line they control |
+| **Gatekeepers** | Procurement, ICT security, privacy, clinical governance | Documents (see the assurance pack below) |
 
-The constraint on this: the evidence must be genuinely independent to be worth
-anything, and the moment Kindred Care markets *on* the research, the COI declaration
-has to be visible and honest. Run `acu-jv-and-phd-firewall.md` before any marketing
-material references the PhD, ACU, or a published paper.
+**The single most common failure** is a delighted clinical champion with no executive
+sponsor and no budget line. Enthusiasm is free in health services. Until the board
+names a sponsor, a budget line, and a delegate who can sign, CRL stays at 3.
 
-## Pilots that prove something
+## The budget calendar — this dates your whole pipeline
 
-Free pilots are easy to get in Australian care and prove almost nothing — a free
-pilot tests curiosity, not budget. Design every pilot to clear CRL 5 or 6:
+The Australian financial year runs **1 July – 30 June**, and state health budgets are
+handed down around June.
 
-- **Signed agreement** naming scope, duration, and what each side provides.
-- **Success criteria written before the pilot starts**, with numbers, agreed by the
-  provider. Pre-declared or it is not evidence.
-- **Someone accountable for collecting the data** — name them; providers are busy and
-  data collection is the first thing dropped.
-- **A defined end date and a defined conversion conversation.** Pilots that drift
-  become permanent free deployments.
-- **Money at CRL 6.** Even a small fee changes the seriousness of the engagement on
-  both sides.
-- **Ethics coverage** if any of it will be published or feeds Paper 5.
+- **Feb–Apr** is when proposals must land to be funded in the next FY. Miss it and the
+  realistic answer is not "no", it is "next year".
+- **May–Jun** sometimes carries end-of-year underspend that can fund a small pilot
+  quickly — useful for a first wedge, useless to plan a business on.
+- **Jul–Sep** is the worst window for a cold approach; everyone is re-planning.
 
-## Pricing — decide the shape before the number
+Put the next Feb–Apr window on the board as a hard external date and work backwards
+from it. A proposal that is not drafted by January has already missed a year.
 
-Shape first: per-resident per-month · per-seat · per-service-site licence ·
-per-episode · platform fee plus usage · B2B2C where the provider resells to families.
+## Sales cycle, and what it means for the raise
 
-Then anchor the number to the buyer's own economics — a fraction of the staff time
-displaced, or of the incident cost avoided — not to your build cost or to what
-consumer apps charge. Care buyers will ask you to justify price in their units.
+Expect **9–18 months** from first conversation to signed contract, longer if it goes to
+open tender, plus a security and privacy review that can add months on its own.
 
-Never price before the buyer choice is made. The same product is a $12/month consumer
-subscription and a $60k/year provider licence depending only on who signs.
+The investment consequence is the thing to internalise, and it should be stated plainly
+in the raise narrative rather than discovered by an investor:
 
-## Channel
+> A B2B public-health motion means the round must fund roughly **24 months**, not 12.
+> Revenue arrives after the raise, not during it.
 
-- **ACU** is the highest-value channel *and* a 30% owner *and* the ethics gatekeeper.
-  That triple role is an advantage and a governance risk. Every ACU-sourced
-  introduction should be logged in the board with what was promised.
-- **Peak bodies and provider networks** carry disproportionate weight in Australian
-  care — one credible reference travels further than any campaign.
-- **This is a small, reputationally networked market.** One bad pilot is known by
-  everyone within a year. Prefer three well-run pilots to ten loose ones.
+This is not an argument against the strategy — multi-year public health contracts are
+genuinely good collateral, and investors know it. It is an argument for sizing the
+round correctly and for landing a funded pilot early so there is evidence mid-cycle.
 
-## Competitive position
+## The wedge — use ACU's placement relationships
 
-Maintain a live competitor list in the board, with: what they claim, what they can
-evidence, their regulatory posture, and their price where known. Distinguish
-companion-AI products, care-provider software incumbents adding AI features, and
-overseas products that would need to be localised. Update at every quarterly reset,
-and note honestly where a competitor is genuinely ahead — an investor will find them
-either way, and being the person who already knows is worth more than the gap costs.
+ACU's nursing and allied health schools hold clinical placement relationships with
+LHDs and HHSs. A placement partnership is a standing, warm relationship with a Director
+of Nursing — which is precisely the executive sponsor role above.
+
+**This is the JV's real go-to-market asset and it is currently unworked.** Concrete
+action: ask the ACU counterpart for the map of placement partner districts and services,
+by state, with the named academic who holds each relationship. Pick the beachhead where
+the relationship is strongest, not where the market looks biggest.
+
+Log every ACU-sourced introduction in the board with what was promised on both sides.
+ACU is simultaneously channel, 30% owner and ethics approver — see
+`acu-jv-and-phd-firewall.md`.
+
+## Prefer a funded pilot to a sale, for the first one
+
+Selling to a district requires their budget. **Co-applying with a district for external
+funding requires only their time**, and it converts a vendor relationship into a
+partnership with a clinician who is now invested in the result.
+
+Routes worth assessing: NSW Health Translational Research Grants Scheme, district-level
+innovation and improvement funds, Clinical Excellence Queensland improvement funding,
+MRFF where there is a genuine research question. ACU can be the research partner on the
+application, which is exactly the shape these schemes fund.
+
+Slower to revenue. Far higher conversion, and it produces publishable evidence — which
+is the flywheel below.
+
+## Keep pilot one under the threshold
+
+Public procurement has value thresholds below which a direct engagement or limited
+tender is permissible, above which open tender is mandatory. **Size the first pilot to
+sit under the district's direct-engagement threshold.** It is the difference between
+starting in eight weeks and starting in eight months. Confirm the current threshold and
+instrument with the district's procurement team — do not assume it from this file.
+
+Longer term, prequalification is the unlock: NSW's ICT purchasing arrangements and
+Queensland's QITC framework exist so that departments can buy without running a fresh
+tender each time. Getting listed has real lead time — put it on the board as an
+investment-track milestone, not a market-track afterthought.
+
+## The assurance pack — build it once, reuse it thirty times
+
+Every district will ask for the same things. The venture that has them ready wins
+months. This pack is a **CRL 4 milestone**, not something to assemble under deadline:
+
+- **Privacy** — health information handling under the HRIP Act (NSW) and the
+  Information Privacy Act 2009 plus Hospital and Health Boards Act confidentiality
+  provisions (QLD); Australian data residency; consent artefacts; retention and
+  deletion; a privacy impact assessment; the full sub-processor list including the model
+  provider.
+- **Security** — ISO 27001 or a documented equivalent, vendor security questionnaire
+  responses, penetration test results, incident response plan, and whatever the
+  district's cyber policy requires.
+- **AI assurance** — NSW's AI Assessment Framework applies to NSW government AI use and
+  will be asked for by name; the national assurance framework for AI in government and
+  the voluntary AI safety guardrails are the reference points nationally. Have a written
+  self-assessment ready. Confirm current versions before submitting anything.
+- **Clinical and quality** — where the use is clinical, alignment with the NSQHS
+  Standards. If any part of Kindred Care is framed around mental health or wellbeing,
+  assess it against the **National Safety and Quality Digital Mental Health Standards** —
+  accreditation there is a genuine differentiator in this buyer set, and worth deciding
+  on deliberately rather than stumbling into.
+- **Regulatory** — the written TGA classification position. See below.
+- **Insurance and contracting** — public liability, professional indemnity and cyber
+  cover at the levels health services require, and settled positions on indemnities and
+  IP ownership of improvements.
+
+## Regulatory — the risk goes up in this channel
+
+Deploying inside a health service sharply raises the chance that the intended purpose
+becomes clinical, which is what determines whether Kindred Care is a TGA-regulated
+medical device. Wellbeing, companionship and education framings are generally outside;
+anything that monitors a condition, triages, screens, or informs a clinical decision is
+generally inside — and Software as a Medical Device brings conformity assessment, a
+quality system, and a different timeline and cost entirely.
+
+**Settle this in writing, with advice, before the first LHD/HHS conversation.** Not
+before the pilot — before the conversation, because what you say in the first meeting
+becomes the intended purpose. This is now a higher-priority item than it was under a
+consumer-first strategy.
+
+## Contract shape — where the multi-year story gets tested
+
+Multi-year terms (commonly a base term plus option years) are normal in health and are
+real collateral in a raise. Two things to watch, because diligence will:
+
+- **Termination for convenience.** Standard in government contracts. A "three-year
+  contract" terminable on 30 days' notice is not three years of revenue, and an
+  investor will say so. Know the clause and describe the contract honestly.
+- **IP clauses.** Government templates sometimes claim ownership of improvements or
+  broad licences. Negotiate this before signature; it is very hard to unwind later and
+  it interacts directly with the ACU IP position.
+
+Also expect extended payment terms and detailed reporting obligations. Price them in.
+
+## The evidence flywheel — Kindred Care's unfair advantage
+
+Health services do not buy features. They buy **reduced risk and defensible evidence**,
+because they answer to boards, regulators, coroners and families.
+
+Brad runs a PhD producing peer-reviewed evidence about exactly this class of product,
+including its failure modes, with ACU as the research partner. Almost no competitor into
+LHD/HHS can put an ethics-approved, independently-reviewed evidence base on the table.
+
+So the sequence is **evidence first, features second**: design each pilot to produce a
+publishable result, publish it, and let a district's own governance committee read the
+paper. Two constraints:
+
+1. The evidence must be genuinely independent to be worth anything.
+2. The COI must be visible wherever the research is cited commercially — run the
+   firewall check before any material references the PhD, ACU, or a published paper.
+
+## Concentration risk — name it before an investor does
+
+Investors discount government revenue for three reasons: budget and election cycles,
+long cycles, and buyer concentration. Mitigate by showing a **named pipeline of three or
+more districts** and a repeatable motion, not one lighthouse. Prepare the honest answer
+rather than a deflection.
+
+## B2C — the month-12 option
+
+Keep it as a live, explicitly sequenced option, and protect it from becoming a
+distraction:
+
+- It needs **dedicated resourcing** — its own team, its own safety and consent posture,
+  its own unit economics. Do not run it off the B2B team.
+- It changes the regulatory and consent analysis; both must be redone, not inherited.
+- Told well, "evidence-led into consumer" is a strong investor narrative: clinical
+  validation first, consumer scale second. Told badly — B2B and B2C simultaneously from
+  one small team — it reads as a lack of focus and costs you the round.
+- Decision point belongs on the board as a dated gate with the resourcing precondition
+  written into it, not as a vague intention.
+
+## Beachhead rule
+
+**One district. One service line. One measurable problem.** Not "aged care", not
+"health services". The specific cohort, the specific handover, the specific gap. Which
+cohort is currently UNKNOWN and depends on the product definition — it is question 2
+on the open list.
 
 ## The artefacts this track must keep current
 
 1. One-sentence product statement any stranger can repeat.
-2. ICP definition — named organisations, named roles, named budget line.
-3. Pilot protocol template with pre-declared success criteria.
-4. Pricing sheet with the reasoning behind the shape.
-5. Evidence pack — what can be shown to a buyer today, and what is publishable.
-6. Competitor list.
-7. Reference list — who will take a call from a prospective buyer.
+2. Target list — named districts, named services, named sponsor role, relationship source.
+3. The assurance pack above.
+4. Pilot protocol template with pre-declared success criteria and an accountable data collector.
+5. Pricing sheet — shape before number, anchored to the district's economics.
+6. Competitor list, refreshed at every quarterly reset.
+7. Reference list — who will take a call from another district's Director of Nursing.
 
-Anything on that list that does not exist is a milestone on the board, with an owner
-and a date. Not a wish.
-
-## Regulatory note
-
-Any claim about clinical benefit, monitoring, triage, or diagnosis changes both the
-sale and the legal position — see the regulatory classification gate in
-`readiness-ladders.md`. Marketing copy is the most common place a company
-accidentally makes itself a medical device. Review every claim against the settled
-regulatory position before it is published, and verify current NDIS, Aged Care Act,
-and privacy requirements against primary sources at the time of writing rather than
-from memory — this sector's rules move.
+Anything on that list that does not exist is a milestone on the board with an owner and
+a date. Not a wish.

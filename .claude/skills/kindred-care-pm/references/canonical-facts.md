@@ -22,6 +22,9 @@ date he confirmed it**, and remove it from `kindred-care/open-questions.md`.
 | PhD interface | Kindred Care **transcripts** are the data source for PhD Paper 5 (pedagogical discourse analysis, "warmth trap" markers), timed Y2.5 | `phd-define-writing` canonical facts |
 | Declared COI | Brad's Kindred Care commercial relationship is a declared conflict on the ACU HREC application; Indian recruitment channels touching Jaypee/Kindred Care relationships require explicit mitigation | same |
 | Brad's other roles | Innovation Fellow, The Ohio State University; PhD candidate, ACU (supervisor Prof Robert Tai) | same |
+| Lead go-to-market motion | **Working direction, not locked:** B2B contracts into NSW Local Health Districts and Queensland Hospital and Health Services. Multi-year public health contracts judged better collateral for a raise than early consumer revenue | Brad, 29 Aug 2026 |
+| B2C | A real option from roughly **month 12**, conditional on **dedicated resourcing** — its own team, safety posture and consent basis. Not run in parallel off the B2B team | Brad, 29 Aug 2026 |
+| Review cadence | Twice weekly — full review Monday, midweek check Thursday | Brad, 29 Aug 2026 |
 
 **What "warmth trap" means here.** It is Brad's own research construct — the risk
 that a conversational agent's warmth produces dependence or parasocial attachment
@@ -63,6 +66,9 @@ like.** Ask Brad, or leave it UNKNOWN in the output.
 - [ ] Data ownership over transcripts, and consent basis for their use
 
 ### Market and traction
+- [ ] Which LHDs / HHSs are the beachhead candidates, and where the warmest relationship sits
+- [ ] The ACU clinical placement partnership map — which districts, which services, which academic holds each relationship
+- [ ] The specific cohort and service line the beachhead pilot addresses
 - [ ] Named target customers or pilot sites, and their status
 - [ ] Any revenue, LOI, or paid pilot to date
 - [ ] Pricing hypothesis

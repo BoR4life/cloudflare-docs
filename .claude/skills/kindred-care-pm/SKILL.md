@@ -83,6 +83,14 @@ a much larger problem than a slipped date.
 market and investment position beside it. The most common failure mode here is a
 beautifully built product with no pilot site and no incorporated entity to raise into.
 
+**4a. The lead motion is B2B into LHDs and HHSs.** Public health services in NSW and
+Queensland, on multi-year contracts; B2C is a resourced option from roughly month 12,
+not a parallel track. This shapes the calendar (proposals land Feb–Apr for the next
+financial year), the raise (fund ~24 months, not 12), and the regulatory position
+(settle TGA classification before the first district conversation). Read
+`references/gtm-playbook.md` before any market-track work. It is a working direction,
+not locked — revisit it at the quarterly reset, and until then build on it.
+
 **5. Non-dilutive money is sequenced before equity.** R&D Tax Incentive, grants,
 and ACU-side resourcing change the shape of any raise. Read
 `references/investment-readiness.md` before advising on funding, and always state
@@ -114,14 +122,34 @@ block advance — see `references/readiness-ladders.md`. Never let them sit in a
 
 ## Cadence
 
+Brad runs this **twice weekly**. The two are deliberately different weights — two
+identical reviews a week get skipped by week three.
+
 | Ritual | When | Output |
 |---|---|---|
-| **Weekly review** | Every Monday | `kindred-care/reviews/YYYY-MM-DD.md` + the short report below |
+| **Full review** | Monday | `kindred-care/reviews/YYYY-MM-DD.md` + the full report below |
+| **Midweek check** | Thursday | Short form below. Chases Monday's decision and anything blocked; no re-analysis |
 | **Monthly investor update** | First week of the month | Draft to Brad, using `references/investment-readiness.md` |
 | **Gate review** | Whenever a readiness level is claimed | Evidence audit against the ladder — pass or fail, no partial |
-| **Quarterly reset** | Every 3 months | Re-baseline the board, retire dead milestones, re-price the raise |
+| **Quarterly reset** | Every 3 months | Re-baseline the board, retire dead milestones, revisit the lead-buyer choice, re-price the raise |
 
-## Weekly review — output format
+## Midweek check — output format
+
+Six lines maximum. Its whole job is to stop Monday's decision quietly dying.
+
+```
+# Kindred Care — midweek, DD MMM YYYY
+
+**Monday's decision:** <what it was> — DONE / IN PROGRESS / NOT STARTED
+**Moved since Monday:** <one line, or "nothing">
+**Still blocked:** <blocker, owner, days blocked>
+**Needs Brad before Monday:** <one line, or "nothing">
+```
+
+If Monday's decision has not started by Thursday, say so directly and ask what changed —
+that pattern repeating twice is a signal the decisions being set are the wrong size.
+
+## Full review — output format
 
 ```
 # Kindred Care — week of DD MMM YYYY
