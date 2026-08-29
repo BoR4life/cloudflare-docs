@@ -11,7 +11,7 @@ Ordered by what unblocks the most downstream work.
 | 1 | Is Kindred Care an incorporated Pty Ltd with the 70/30 on a cap table, or a contractual JV? | Brad / ACU | 29 Aug 2026 | Entire investment track (IRL capped at 1) |
 | 2 | Which LHD or HHS is the beachhead, and who is the executive sponsor and budget owner there? | Brad / ACU | 29 Aug 2026 | Market track (CRL capped at 3 without a named sponsor and budget line) |
 | 3 | What is Kindred Care, in one sentence — the product, not the vision? | Brad | 29 Aug 2026 | Everything downstream of positioning |
-| 4 | Link to Hector's build — repo, deployed environment, current state | Brad | 29 Aug 2026 | TRL baseline |
+| 4 | Hector's build — repo, deployed environment, current state. Brad supplied an artifact link (`.../artifact/dd3557b6…`) on 29 Aug 2026; this session cannot read it — artifact reads are refused as "public (non-member) reader", and the same applies to the shared "Kindred · Governance Console". No Kindred repo is visible to the session either. Needs the source repo attached, the HTML exported into the session, or the content pasted | Brad / Hector | 29 Aug 2026 | TRL baseline — nothing on the product track can be evidenced without it |
 | 5 | Who owns the IP today — code, prompts, brand, transcript data? | Brad / ACU / lawyer | 29 Aug 2026 | IRL 2, diligence Q2 |
 | 6 | Does the transcript consent, as given at point of collection, cover Paper 5 research use? | Brad / CI | 29 Aug 2026 | Paper 5 data validity, TRL 5 privacy gate |
 | 7 | What has ACU actually committed — cash, in-kind, staff time, introductions? | Brad / ACU | 29 Aug 2026 | Raise sizing, non-dilutive stack |
