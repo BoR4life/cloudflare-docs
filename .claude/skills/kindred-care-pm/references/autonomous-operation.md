@@ -94,3 +94,46 @@ plan. Off-critical-path items are reported only when they slip onto it.
 If the agent cannot read Drive in a given session — the scheduled Routines currently
 carry no connectors — it says so in the Data health section rather than reporting a stale
 board as current.
+
+
+---
+
+## Tooling — one view, never a second source of truth
+
+The venture already has a system of record and it must stay singular:
+
+| Layer | Lives in | Holds |
+|---|---|---|
+| **Tasks** | Programme Task Register (Drive xlsx) | 87 tasks, critical path, Gantt, data-room status |
+| **Judgement** | `kindred-care/` in the repo | Board, decisions, risks, open questions, drafts |
+| **View** | A published dashboard artifact | A render of the above. **Read-only. Regenerated, never edited** |
+
+**Do not build a tracker application.** A second place to enter a status is a second place
+for it to be wrong, and the register already does the job. The dashboard is a *render* —
+if it and the register disagree, the register is right and the dashboard is stale.
+
+Regenerate the dashboard at each Monday review and at the end of each Thursday session.
+It shows: the readiness triple, the two blocker ages in days, the next three gates with
+dates, and the three lists. Nothing that cannot be traced to the register or the board.
+
+## Reminders and nudges — the honest boundary
+
+The agent **cannot and must not send email**. What it can do:
+
+- **Push-notify Brad** through the scheduled Routines when a checkpoint fires or an
+  escalation triggers.
+- **Draft the reminder** — the ACU ask page, the follow-up to Michelle Schmidt, the chase
+  to Russell — ready to send, in Brad's voice, with the age in days already in it.
+- **Escalate by age.** When an item passes the date of a gate it feeds, that is an
+  immediate escalation, not a checkpoint line.
+
+Brad sends. Every time. The reason is not caution about tooling — it is that Russell,
+Lois, Bill and a health service are relationships, and a relationship is not something an
+agent should be transacting on its own.
+
+## Connector requirement
+
+The Monday and Thursday Routines must carry **Google Drive and Gmail** connectors or the
+agent cannot read the register or the mail trail and the review runs blind. Recreate them
+from the claude.ai Routines UI with both attached. Until then, say so in Data health
+rather than presenting a stale board as current.

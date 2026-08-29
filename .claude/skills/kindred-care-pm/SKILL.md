@@ -136,32 +136,57 @@ block advance — see `references/readiness-ladders.md`. Never let them sit in a
 
 ## Cadence
 
-Brad runs this **twice weekly**. The two are deliberately different weights — two
-identical reviews a week get skipped by week three.
+Brad runs this **twice weekly**, and the two sittings do different jobs. Monday the
+agent works and Brad reads; Thursday they work through it together.
 
-| Ritual | When | Output |
+| Ritual | When | What happens |
 |---|---|---|
-| **Full review** | Monday | `kindred-care/reviews/YYYY-MM-DD.md` + the full report below |
-| **Midweek check** | Thursday | Short form below. Chases Monday's decision and anything blocked; no re-analysis |
+| **Monday — the read** | Monday | Agent refreshes from the register, Drive and mail, re-prioritises the three lists below, regenerates the dashboard, and drafts whatever is next on the backlog. Brad reads a short report |
+| **Thursday — the working session** | Thursday | Brad and the agent clear items together. Statuses, decisions, risks and drafts are updated live in the session, not afterwards |
 | **Monthly investor update** | First week of the month | Draft to Brad, using `references/investment-readiness.md` |
-| **Gate review** | Whenever a readiness level is claimed | Evidence audit against the ladder — pass or fail, no partial |
-| **Quarterly reset** | Every 3 months | Re-baseline the board, retire dead milestones, revisit the lead-buyer choice, re-price the raise |
+| **Gate review** | Whenever a readiness level is claimed | Evidence audit — pass or fail, no partial |
+| **Quarterly reset** | Every 3 months | Re-baseline, retire dead milestones, revisit the lead-buyer choice, re-price the raise |
 
-## Midweek check — output format
+## The three lists — this is the prioritisation
 
-Six lines maximum. Its whole job is to stop Monday's decision quietly dying.
+Everything gets sorted into exactly one of three lists, every Monday, ordered by the gate
+it feeds. A task with no gate is not a priority, it is a wish.
+
+**1. Brad** — what only he can do. Kept to five items. If it is longer than five, it is
+not prioritised, it is transcribed.
+
+**2. The ACU ask** — one page for Russell and Bill. Every item carries its **age in
+days**, what specifically is needed, and **a draft wherever a draft is possible**. This
+page goes out weekly whether or not anything moved, because the two blockers that can end
+this venture live on it.
+
+**3. Hector** — but only what the *pack* needs from the build, not the product backlog.
+Hector has his own register and his own tracks; this list is the subset the UCAC pack and
+the readiness gates depend on. Never duplicate the MVP Board here.
+
+Each list item shows: the item, the gate it feeds, the date that gate falls, and whether
+it is on the critical path. Nothing else.
+
+## Midweek check — output format## Thursday working session — how to run it
+
+Not a status report. A working session, and the agent arrives having already done the
+prep. Open with the four lines below, then work the lists.
 
 ```
-# Kindred Care — midweek, DD MMM YYYY
+# Kindred Care — Thursday, DD MMM YYYY
 
 **Monday's decision:** <what it was> — DONE / IN PROGRESS / NOT STARTED
 **Moved since Monday:** <one line, or "nothing">
-**Still blocked:** <blocker, owner, days blocked>
-**Needs Brad before Monday:** <one line, or "nothing">
+**Cash match:** <n> days · **Heads of Agreement:** <n> days
+**On the table today:** <the two or three items we are going to clear right now>
 ```
 
-If Monday's decision has not started by Thursday, say so directly and ask what changed —
-that pattern repeating twice is a signal the decisions being set are the wrong size.
+Then work them. Update `program-board.md`, `decisions.md`, `risks.md` and any draft **in
+the session**, so nothing is left to be written up later — the write-up is the thing that
+never happens.
+
+If Monday's decision has not started by Thursday, say so directly and ask what changed.
+That pattern twice in a row means the decisions being set are the wrong size.
 
 ## Full review — output format
 
