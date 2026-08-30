@@ -48,10 +48,11 @@ Ordered by what unblocks the most downstream work.
 | 42 | Can the Elena persona deliver the 16 Sept Steering Committee intro? | Hector | 29 Aug 2026 | The deck |
 | 43 | Has Michelle Schmidt been replied to, and is a Maternity leadership slot booked? | Brad | 29 Aug 2026 | CRL 3 evidence |
 | 44 | What is the "Vic midwifery pipeline thing" Russell refers to — is it Marie's app? | Russell | 29 Aug 2026 | Competitor map |
-| 45 | **Is the BVUIP combined ceiling $1.0M total, or $300k POC plus $1.0M start-up?** Asked in ACU's Overview deck 23 Jun, never answered | Russell | 29 Aug 2026 | The entire funding stack; $300k of modelled income |
 | 46 | Is BVUIP accounted for as grant income or as equity (SAFE converting)? | CFO + Russell | 29 Aug 2026 | P&L, EBITDA, R&D tax incentive eligibility |
 | 47 | Does KC-Co sit under Bundle of Rays as a subsidiary, or is it the KC-U → KC-Co JV path in the Overview deck? | Russell | 29 Aug 2026 | Cap table, IP assignment, ownership language everywhere |
 | 48 | Is KC-SC (Kindred Care & ACU Short Courses) a live stream? One of ACU's three streams, modelled nowhere | Russell + Brad | 29 Aug 2026 | Revenue model, ACU contribution case |
 | 49 | Where are the six Business Plan appendices, and the existing BoR investor terms? | Brad | 29 Aug 2026 | Diligence readiness |
 | 50 | Idaho or Iowa — the Overview deck says Idaho (USA); GTM v2.1's CRC-P consortium says Iowa Department of Public Health | Brad | 29 Aug 2026 | Accuracy in the consortium description |
 | 51 | Is data at rest in Melbourne (australia-southeast2)? The Business Plan states only southeast1 | Hector | 29 Aug 2026 | A Victorian-sovereignty fact currently under-sold to BVUIP |
+| 52 | Confirm the pricing recommendation — list price in both documents, pilot discount explicit and time-limited, step to list from year four (item 4 of the 29 Aug review was left unanswered) | Brad | 30 Aug 2026 | Pricing Model v1, Business Plan, forecast |
+| 53 | Who holds ACU's $650,000 cash obligation, and has the HNWI syndicator path moved since July? | Russell + Bill | 30 Aug 2026 | The deal |

@@ -1,6 +1,15 @@
 # Data room — investment review
 
-**29 Aug 2026 · Confidential — ACU & Bundle of Rays**
+**29 Aug 2026, updated 30 Aug 2026 · Confidential — ACU & Bundle of Rays**
+
+> **Resolved 30 Aug 2026 by Brad.** BVUIP is **$300k POC then $1.0M commercialisation —
+> $1.3M in total — with each round split 50/50 between ACU and Innovation Victoria.** So
+> finding 1 is a labelling-and-amount error in the model, not a scope error: the labels were
+> right, the amounts were not. Finding 2 changes shape entirely — the match is 1:1 by
+> construction, and the real issue is that **ACU's cash obligation is $650,000** ($150k at
+> POC, $500k at commercialisation) against no identified cash pool. The Business Plan's
+> "$1,000,000 ceiling" sentence is the thing that is wrong and must be corrected.
+> Corrections are worked through in `finance/Kindred_Care_Forecast_Restatement_v1_20260830.xlsx`.
 
 Reviewed from an investor's side of the table, against three tests: **is it accurate**,
 **does it marry with the narrative**, and **is it modest**.
