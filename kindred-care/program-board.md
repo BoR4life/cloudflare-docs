@@ -55,9 +55,9 @@ Lead motion: **Victorian public maternity services** (BVUIP is Victorian money),
 
 | Milestone | Owner | Due | Status | Evidence | As at |
 |---|---|---|---|---|---|
-| **Reply to Michelle Schmidt and book the SCHHS Maternity leadership session** | Brad | Mon 31 Aug 2026 | BLOCKED (on: no reply sent since her 25 Aug offer) | — | 29 Aug 2026 |
-| **Competitor analysis — standing ask from Russell, 26 Aug** | Brad | Tue 1 Sep 2026 | IN PROGRESS | Draft in `strategy/gtm-v3-2026-08-29.md` §2 and `research/2026-08-29-...recon.md` | 29 Aug 2026 |
-| **16 Sept Steering Committee deck — Brad's sections** | Brad | 16 Sep 2026 | NOT STARTED | Structure agreed 12 Aug; no slides | 29 Aug 2026 |
+| **Reply to Michelle Schmidt and book the SCHHS Maternity leadership session** | Brad | Mon 31 Aug 2026 | BLOCKED (on: Brad to send — draft ready in `drafts/2026-08-30-emails-to-send.md`) | — | 30 Aug 2026 |
+| **Competitor analysis — standing ask from Russell, 26 Aug** | Brad | Tue 1 Sep 2026 | IN PROGRESS | Draft ready to circulate: GTM v3 §2 + research recon | 30 Aug 2026 |
+| **16 Sept Steering Committee deck — Brad's sections** | Brad | 16 Sep 2026 | IN PROGRESS | Full slide-by-slide content drafted: `drafts/steering-committee-deck-16sep-outline.md`. Lock content 9 Sep; Elena clip 12 Sep; Russell sights 14 Sep | 30 Aug 2026 |
 | Confirm whether the Elena persona can deliver the Steering Committee intro | Brad + Hector | 16 Sep 2026 | NOT STARTED | Russell asked 12 Aug | 29 Aug 2026 |
 | Two named Victorian pilot sites (metro + regional) | Lois | — | NOT STARTED | Everything downstream assumes them | 29 Aug 2026 |
 | **Safer Care Victoria — reconnect via Elisa McDonald** | Brad + Russell | This week | NOT STARTED | Raised 20 Aug, endorsed by Russell same day, not in any document | 29 Aug 2026 |

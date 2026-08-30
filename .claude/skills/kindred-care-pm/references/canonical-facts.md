@@ -39,7 +39,7 @@ Principal source for the product facts below: the **Kindred MVP Board**, snapsho
 | PhD interface | Kindred Care **transcripts** are the data source for PhD Paper 5 (pedagogical discourse analysis, "warmth trap" markers), timed Y2.5 | `phd-define-writing` canonical facts |
 | Declared COI | Brad's Kindred Care commercial relationship is a declared conflict on the ACU HREC application | same |
 | Lead go-to-market motion | **Victorian public maternity services** are the beachhead; ACU midwifery network is the channel; **Sunshine Coast HHS is the lead non-Victorian reference** (Customer One, Wishlist-funded equity-grant pathway). VIC = Trial Partners, QLD/SCHHS = Evaluation Partners | GTM v2.1, 01 Jul 2026 |
-| Investment route | **ACU UCAC → Venture Committee → Investment Committee**, then Breakthrough Victoria. Cascade: ~$300k POC co-investment converting to shares, then **BVUIP $1.0M matched 1:1** ($550k FY26 / $250k FY27 / $200k FY28), CRC-P Round 19 non-dilutive, conditional Series A $1.5M–$2.5M at FY28 | GTM v2.1 §8.1 + Task Register + Brad, 29 Aug 2026 |
+| Investment route | **ACU UCAC (16 Oct) → Venture Committee → Investment Committee → BVIC for-notice → BVIC investment presentation**. Funding: **$300k POC + $1.0M commercialisation = $1.3M total, each round 50/50 ACU : Innovation Victoria**; ACU's cash obligation is **$650k** with no identified pool yet. CRC-P Round 19 non-dilutive alongside; conditional Series A at FY28 | Brad, 30 Aug 2026 + Overview deck v13 |
 | Breakthrough Victoria | Merging with LaunchVic into **Innovation Victoria**, expected live with full board and CEO in H2 2026; Rod Bristow appointed inaugural CEO. **Verify the current program shape before submitting** — a mid-merger funder is a live timing risk | Web search, 29 Aug 2026 |
 | Entity | **Bundle of Rays Pty Ltd** is the existing company. **Kindred Care Pty Ltd is the intended NewCo and is not yet incorporated** — entity formation is a Stage 1 use of BVUIP funds, and TRL 4 is named as the incorporation prerequisite | GTM v2.1 §8.3 + Task Register P2-12 |
 | B2C | A real option from roughly **month 12**, conditional on **dedicated resourcing** | Brad, 29 Aug 2026 |
@@ -186,6 +186,12 @@ direct chat with a midwife, a moderated forum, and tracking tools.
 Cabrini is a Catholic health service and ACU a Catholic university — Eve is as plausibly
 a partner or acquirer as a competitor, and that should be decided deliberately.
 
+### One set of numbers
+
+`kindred-care/canonical-numbers.md` is the single page every pack document must agree
+with — prices, unit cost, TRL, ownership, TAM, funding structure. Check it before
+quoting any figure; a document that disagrees with it is stale, not alternative.
+
 ## Section B — UNKNOWN register
 
 Do not fill any of these from inference. Ask Brad, or leave it UNKNOWN in the output.
@@ -230,12 +236,11 @@ Do not fill any of these from inference. Ask Brad, or leave it UNKNOWN in the ou
 
 ### Cross-document conflicts — quote both, never silently pick
 
-**TRL.** The Task Register says *"TRL 3→4 via the funded POC; TRL 4 never claimed up
-front"* with the TRL 4 dossier due 25 Sep and TRL 4 as the incorporation prerequisite.
-GTM v2.1 states the current state **is** TRL 4. The MVP Board evidences well past a POC.
-This agent's independent gate review on 29 Aug 2026 assessed **TRL 4**. Recommended
-resolution: the GTM is right, the register note is stale, and the funding narrative
-should read *TRL 4 now → TRL 5/6 through the funded pilot*. Not yet actioned.
+**TRL — RESOLVED 30 Aug 2026: the canonical position is TRL 3, climbing.** The Business
+Plan holds it deliberately, and the venture's instrumented TRL 4 definition (recall@5
+≥ 0.85, safety-tag ≥ 0.95 against the gold-standard eval set) is not yet evidenced.
+GTM v2.1 and the forecast Cover still say TRL 4 and must be corrected — do not quote
+them. The agent's 29 Aug TRL 4 assessment was wrong and is superseded.
 
 **The UCAC date.** Brad states Russell presents to UCAC **mid-September 2026**. The Task
 Register has the **UCAC assessment sitting at 16 Oct 2026** (P2-15) with pack assembly
