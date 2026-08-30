@@ -1,164 +1,147 @@
-# Unit cost is not unknown — and every tier is underwater
+# Tier economics, read from the model's own cells
 
-**30 Aug 2026.** Rebuilt from Hector's own cost engine, not from the summary figures
-carried in the pack. Reproducible: `kindred-care/finance/unit_cost_model.py`.
-
-**Sources.** `BoR AI Avatar Pricing` (owner hector@clinops.cloud, last modified 2 Mar
-2026) — the original cost engine. `Kindred Care - Pricing Model_v1_DRAFT_Brad_May1_26`
-sheets 1–4, which state on their own cover that they are *"a generalised version of the
-BLS / Cultural / Oncology cost blocks Hector developed in BoR_AI_Avatar_Pricing.xlsx."*
+**30 Aug 2026, rewritten same day after Brad challenged the first version.** The first
+version of this file claimed every tier was loss-making. **That was wrong.** What follows
+is rebuilt from the actual cell values in sheets 1, 2 and 4, and reproduces the model's
+published margins exactly. Reproducible: `kindred-care/finance/unit_cost_model.py`.
 
 ---
 
-## 1. The blocker was mis-stated. Unit cost is knowable today.
+## What I got wrong, and why it matters beyond this file
 
-I have been reporting *"unit cost stated three ways across 4.8×, blocks every margin
-claim, open since May."* That framing was wrong and it cost time.
+Four errors, all pushing the same way:
 
-The model publishes **AUD $5.87 per active mother per month** on sheet 3 (Margin Tiers).
-Rebuilding it from Hector's inputs reproduces that figure exactly:
+1. **I costed the Business Plan's price list against the Pricing Model's cohort.** The
+   Pricing Model's tiers are **$28,000 / $48,000 / $72,000 / $95,000**, not the
+   $25k/$45k/$65k/$95k I used. Roughly 12–15% low on price at every tier.
+2. **I treated birth volume as enrolled volume.** Sheet 4 has an **"Included mothers
+   (enrolled)"** column that caps the cohort well below births — Foundation covers 300
+   enrolled mothers at a service doing up to 500 births. I costed every mother in the
+   catchment.
+3. **I used one unit cost at every scale point.** Cost Engine row 26 shows it falling with
+   volume: AUD **$70.49 → $52.04 → $47.88 → $44.60** per active mother per year. I applied
+   the Foundation figure ($70.49) everywhere, overstating cost by up to 58% at the top.
+4. **I added platform support to the model's margins and then reported them as the
+   model's.** The Cost Engine sets it to zero on purpose (row 21) — the cover flags
+   apportionment as open review item (2). Showing it as a sensitivity is fair; presenting
+   the result as the model's own number was not.
 
-```
-40 avatar min/mo × 40% uptake × USD $0.19/min  +  USD $0.75 GCP
-  = USD $3.79/mo  × 1.55  =  AUD $5.87/mo  =  AUD $70.44/yr
-```
-
-**$70.44 is not one of three competing numbers. It is the variable cost per *active*
-mother per year, and it is derived, sourced and correct.** The other figures in
-circulation are almost certainly the same engine expressed per *enrolled* mother, or with
-Year-1 GCP credits applied, or before platform support — different denominators, not
-different answers. The blocker is a **units problem, not a knowledge problem**, and it can
-be closed this week without waiting on Hector.
-
-### One live defect in the reconciliation
-
-The figure reconciles at **40% uptake**. But Assumptions 1.2 states the video uptake rate
-as **35%**, and the note beside that cell still reads *"75% of active mothers actually use
-the avatar feature"* — a note left behind when the value was changed. 40% is the
-**engagement rate** from Assumptions 1.3 (active mothers as a share of enrolled), which is
-a different variable entirely.
-
-**The cost formula appears to reference the engagement cell where it should reference the
-video uptake cell.** Three values (35 / 40 / 75) for one input, in the model everything
-else derives from. Hector to confirm — but note the error is *conservative*: the true cost
-at 35% is slightly lower, and nothing below changes materially.
+**The lesson is bigger than the arithmetic.** The five-price-list problem I have been
+flagging since 29 Aug is exactly what caught me: I pulled a price from one document and a
+cost from another and did not check they described the same thing. That is precisely the
+failure an investor would hit. It is now the strongest argument for the consistency sweep.
 
 ---
 
-## 2. Avatar video is 80% of variable cost
+## The model's actual tier economics — verified
 
-Per active mother per year:
+| Tier | Births/yr | Licence | Included (enrolled) | Active | Variable cost | GM | GM incl. support |
+|---|---|---|---|---|---|---|---|
+| Foundation | up to 500 | $28,000 | 300 | 120 | $8,459 | **69.8%** | 36.6% |
+| Standard | 501–1,500 | $48,000 | 900 | 360 | $18,735 | **61.0%** | 41.6% |
+| Network | 1,501–3,500 | $72,000 | 2,000 | 800 | $38,301 | **46.8%** | 33.9% |
+| Enterprise | 3,500+ | $95,000 | 5,000 | 2,000 | $89,206 | **6.1%** | **−3.7%** |
 
-| Component | AUD | Share |
-|---|---|---|
-| **Avatar video (HeyGen/LiveAvatar)** | **$56.54** | **80%** |
-| GCP — Gemini, Vertex, Search, Cloud Run, storage, the entire rest of the platform | $13.95 | 20% |
+Sheet 4 publishes 70 / 61 / 47 / 6. Reproduced exactly. **The model is internally sound and
+three of its four tiers are healthy** — 34–42% gross margin even after loading the fixed
+platform support the model excludes.
 
-The Companion's whole cloud and model stack costs less than a quarter of what the talking
-head costs. **This is the finding.** Everything about the venture's unit economics is a
-consequence of one product decision.
+**So the pack does not describe a business that loses money on every sale.** My earlier
+claim to that effect was false and should not reach anyone.
 
 ---
 
-## 3. Every tier in the schedule is loss-making as modelled
+## What does survive, and still matters
 
-A 1,000-birth service — 400 active mothers on the model's own 40% engagement — with
-platform support at USD $500/month per tenant (**fixed per tenant**, Hector F10), and
-before the USD $12,000 one-off setup:
+### 1. Enterprise is broken, and the model says so itself
 
-| Scenario | Annual cost | Licence | Gross margin |
+6.1% before overhead, **−3.7% after**. The cover's warning is correct and its own remedy is
+only half right: raising list to $135k gives 6.0% after support — still thin. **Capping
+inclusions at ~3,000 enrolled with a per-active-mother fee above the ceiling is the fix**,
+and it is the option written as a maybe. Do both if Enterprise is to survive contact with a
+real 4,000-birth service.
+
+### 2. Avatar video is 69–80% of variable cost
+
+| Tier | Variable/active/yr | Avatar | Everything else |
 |---|---|---|---|
-| As modelled | AUD $37,498 | $25,000 | **−50.0%** |
-| At a sub-$20k entry tier | AUD $37,498 | $18,000 | **−108.3%** |
-| Hector's larger-bundle rate ($0.128/min) | AUD $30,117 | $25,000 | **−20.5%** |
-| Avatar capped at 20 min/mother/month | AUD $26,189 | $25,000 | **−4.8%** |
-| **Avatar capped at 10 min/mother/month** | AUD $20,534 | $25,000 | **+17.9%** |
-| **Voice and text only, no avatar video** | AUD $14,880 | $25,000 | **+40.5%** |
+| Foundation | $70.49 | $56.54 (80%) | $13.95 |
+| Standard | $52.04 | $38.09 (73%) | $13.95 |
+| Network | $47.88 | $33.93 (71%) | $13.95 |
+| Enterprise | $44.60 | $30.65 (69%) | $13.95 |
 
-Two things follow immediately.
+Gemini, Vertex, Search, Cloud Run and storage together cost $13.95 per active mother per
+year. The talking head costs two to four times the entire rest of the platform. **This
+holds, and it means D-23 (the LiveAvatar vendor decision, still open on the MVP Board) sets
+the venture's gross margin.** It is not a crisis — the margins work — but it is the single
+biggest lever on them, and it is currently carried out-of-loop rather than on the critical
+path.
 
-**Hector's bundle discount does not rescue it.** His open comment of 26 May — *"we can
-upgrade to a larger bundle to have better per minute cost"* — is worth 33% off the avatar
-rate and still leaves the tier 20% underwater. The rate is not the problem.
+**Correction within the correction:** I said Hector's larger-bundle rate was "never
+actioned." Wrong — Cost Engine row 13 already models the rate falling with volume
+($0.19 → $0.128 → $0.114 → $0.103 USD/min). His comment annotates a bundle rate that is
+in the model.
 
-**Neither does raising the price.** Break-even at the modelled 40 minutes is AUD $37,498
-for a service we are offering at $25,000. No Victorian regional maternity service is
-paying $37,500, let alone the ~$62,000 a 40% margin would require.
+### 3. Platform support is the binding constraint at small scale
 
-### The top of the schedule is worse, and the model already said so
+AUD $9,300/year, **fixed per tenant**. At Foundation it is *larger than the entire variable
+cost* ($9,300 vs $8,459) and takes the tier from 70% to 37%.
 
-The cover flags it: *"⚠ KEY: At 40% engagement, the Enterprise tier shows a NEGATIVE gross
-margin because the $95K licence doesn't scale with the 5,000 active-mother pool …
-recommend Enterprise either caps inclusions at ~3,000 active with above-ceiling per-mother
-fees, or raises list to ~$135K."*
+This is the real, well-founded version of the regional-network argument: it is not that
+small services are unprofitable — Foundation makes 37% all-in. It is that **the fixed
+per-tenant line dominates their cost base**, so ten regional services under one tenant pay
+$9,300 once instead of $93,000. The conclusion survives; the reasoning is now sound.
 
-Correct diagnosis. **The proposed remedy is inadequate by a factor of 2.7.** At 5,000
-active mothers the cost is AUD $361,770. At the suggested $135,000 the tier is still
-**168% underwater**. Capping inclusions at 3,000 active is the half of that recommendation
-that actually works, and it is the half expressed as a maybe.
+### 4. Three input problems, all real
 
----
-
-## 4. What this actually means
-
-**The pricing problem is a cost-architecture problem wearing a pricing costume.** No tier
-design, no procurement threshold, no per-mother rate schedule fixes a product that costs
-$37,500 to deliver and sells for $25,000. Every hour spent on the tier table before this is
-settled is an hour spent decorating the wrong number.
-
-**And it is settleable, because the decision is still open.** The MVP Board of 28 Aug lists
-**D-23, the LiveAvatar vendor decision**, as an out-of-loop item — not yet made. The
-Companion runs voice and text today; the avatar is a vendor commitment not yet entered.
-
-Three viable shapes, in order of preference:
-
-1. **Voice and text as the standard product; avatar video as a metered premium.** 40.5%
-   gross margin at the existing $25,000 tier — precisely the Foundation-tier target in
-   Assumptions 1.4. Mothers who want the avatar buy minutes, or the service buys a block.
-   The cost then scales with the revenue that causes it, which is the only structure that
-   survives at every tier.
-2. **Avatar included but hard-capped at ~10 minutes per mother per month**, with overage
-   billed. 17.9% margin at $25,000 — thin, but positive and defensible, and it preserves
-   the demo.
-3. **Avatar at 40 minutes as modelled.** Requires roughly $62,000 from a 1,000-birth
-   service to hit target margin. Not a Victorian regional product at any price.
-
-**The evidence for option 1 is not only financial.** Hector's own note against the
-40-minute assumption reads *"Conservative — could be 30 if voice-only is dominant."* He has
-already flagged that voice may dominate. Nobody has measured it, because no pilot has run.
-
-### The one number that decides it
-
-**Avatar minutes per active mother per month is now the single most valuable measurement in
-the pilot** — ahead of recall@5 and ahead of safety-tag triggering, because those two
-determine whether the product works and this one determines whether the business does. It
-must be instrumented from day one of the first pilot, per-mother, and reported weekly.
+- **Cost Engine row 11 hardcodes video uptake at 40%; Assumptions 1.2 says 35%**, and the
+  note beside that cell still reads "75%". Three values for one input. The error is
+  conservative (overstates cost), but it sits in the cell everything derives from.
+- **Engagement at 40% is unvalidated** and the model says so in bold — *"must be tracked
+  from Day 1 of pilot."* Every margin above moves with it.
+- **Enrolled period is 12 months**, but the cohort is 20 weeks gestation to 12 months
+  postnatal, ≈16.6 months. Understates enrolled mothers by ~38%.
+- Sheet 4's own flag reads *"if engagement tracks at <60% it may be loss-making"* — that is
+  backwards. Lower engagement means fewer active mothers against a fixed licence, so higher
+  margin. Minor, but it is a note Hector is being asked to act on.
 
 ---
 
-## 5. Hector's two open comments, both unanswered since May
+## Brad's actual question: can an entry tier sit under $20,000?
 
-| Date | Anchor | Comment | Status |
-|---|---|---|---|
-| 20 May | Assumptions!C16 | *"@brad current Essential or Business pricing includes 30 seconds per credit."* | **OPEN** — the correction that doubled cost/minute from $0.0909 to $0.19. Applied to the value; the note beside it was never updated |
-| 26 May | Cost Engine!D13 | *"we can upgrade to a larger bundle to have better per minute cost."* | **OPEN** — worth ~33%, does not change the conclusion |
+**Yes — by cutting included mothers, not by cutting price.** Foundation's problem is not
+the licence, it is that $9,300 of fixed support sits under a small cohort.
 
-Hector was right on both, three months ago, and the second one has never been actioned.
-Whatever vendor D-23 lands on, negotiate the bundle.
+| Included (enrolled) | Active | Cost | GM at $18,000 | GM at $19,500 | Support as % of cost |
+|---|---|---|---|---|---|
+| 100 | 40 | $12,120 | **32.7%** | 37.8% | 77% |
+| 150 | 60 | $13,530 | **24.8%** | 30.6% | 69% |
+| 200 | 80 | $14,940 | 17.0% | 23.4% | 62% |
+| 250 | 100 | $16,349 | 9.2% | 16.2% | 57% |
+| 300 | 120 | $17,759 | 1.3% | 8.9% | 52% |
+
+**Recommendation: an entry tier at $18,000 covering 150 enrolled mothers — 24.8% gross
+margin.** That is a genuine first pilot cohort, so the price is honestly small rather than
+structured to look small, which keeps it clear of the contract-splitting line. It clears a
+$20k threshold, and it slots below Foundation without disturbing the four tiers above it.
+
+At 100 enrolled it reaches 33% and is even safer, but 100 mothers may be too thin to
+generate the evaluation evidence the pilot exists to produce. **150 is the balance between
+margin and statistical usefulness — and that trade-off, not the price, is the decision.**
 
 ---
 
-## 6. What changes in the pack
+## What actually changes in the pack
 
-- **Retire the "unit cost unknown" blocker.** Replace with: *variable cost AUD $70.44 per
-  active mother per year, of which 80% is avatar video; the open question is the product
-  decision, not the number.*
-- **No tier price is defensible until D-23 is decided.** Everything in
-  `canonical-numbers.md` stays RECOMMENDED, and the gate is now named correctly.
-- **The forecast's gross margins are wrong** wherever they assume the modelled avatar
-  volume. The restatement workbook needs a COGS rebuild once D-23 lands.
-- **Platform support is fixed per tenant** at AUD $9,300/year. At a 300-birth service that
-  is 73% of the entire cost base. This is the arithmetic behind the regional-network
-  conclusion: one tenant covering ten small services pays it once, not ten times.
-- **Related-party note for diligence:** platform support and setup are ClinOps costs, and
-  ClinOps is Hector's company. Normal, disclosable, and an investor will ask.
+- **The tier prices are not the problem.** Stop redesigning them. The Pricing Model's
+  $28k/$48k/$72k/$95k schedule is defensible at three of four tiers.
+- **Fix Enterprise** — inclusion cap plus per-mother overage above the ceiling.
+- **Add the sub-$20k entry tier** at 150 included mothers, as the pilot on-ramp.
+- **Adopt the Pricing Model's schedule as canonical** and retire the Business Plan's
+  $25k/$45k/$65k list. Two schedules 12–15% apart is what caused this error; it will cause
+  someone else's.
+- **D-23 goes on the critical path.** It sets 69–80% of variable cost.
+- **Instrument avatar minutes and engagement per mother from pilot day one.** The model's
+  own two most load-bearing assumptions, neither measured.
+- **Related-party note:** platform support and setup are ClinOps costs, and ClinOps is
+  Hector's company. Normal and disclosable; an investor will ask.

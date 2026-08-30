@@ -1,66 +1,52 @@
-"""Kindred Care unit cost - rebuilt from Hector's own cost engine.
-Sources: 'BoR AI Avatar Pricing' (hector@clinops.cloud) and
-'Kindred Care - Pricing Model_v1_DRAFT_Brad_May1_26' sheets 1-4.
+"""Kindred Care tier economics - read from the model's own cells, not inferred.
+Source: 'Kindred Care - Pricing Model_v1_DRAFT_Brad_May1_26' sheets 1, 2, 4.
 Run: python3 kindred-care/finance/unit_cost_model.py
 """
-FX          = 1.55      # AUD per USD (Assumptions 1.1, RBA Apr 2026)
-HEYGEN_MIN  = 0.19      # USD/min  (USD475 plan / 5000 credits x 0.5 min)
-HEYGEN_BUND = 0.128     # USD/min  Hector's larger-bundle rate, comment 26 May (OPEN)
-GCP_MO      = 0.75      # USD per active mother per month, post-credit (Hector F67)
-SUPPORT_MO  = 500       # USD per service per month, FIXED PER TENANT (Hector F10)
-SETUP       = 12000     # USD one-off per customer
-AVATAR_MIN  = 40        # min per active mother per month (Hector F86)
-ENGAGEMENT  = 0.40      # active mothers as % of enrolled (Assumptions 1.3)
+FX = 1.55
+SUPPORT_YR = 500 * 12 * FX     # AUD 9,300 - Assumptions 1.2, FIXED PER TENANT.
+                               # Cost Engine row 21 sets it to 0: excluded from tier GM
+                               # by design, pending cover review item (2).
+GCP_YR = 0.75 * 12 * FX        # AUD 13.95 per active mother per year, post-credit
 
-def var_per_active_yr(minutes=AVATAR_MIN, rate=HEYGEN_MIN, uptake=0.40, gcp=True):
-    """AUD variable cost per ACTIVE mother per year."""
-    usd_mo = minutes * uptake * rate + (GCP_MO if gcp else 0)
-    return usd_mo * 12 * FX
+# Sheet 4 'B2B Health Pricing' rows 7-10, verbatim.
+# Sheet 2 'Cost Engine' row 26 supplies var cost/active mother/month at each scale point.
+TIERS = [
+    # name         births      licence  incl_enrolled  active  var_mo
+    ("Foundation", "up to 500",  28000,   300,           120,   5.8745),
+    ("Standard",   "501-1,500",  48000,   900,           360,   4.3369),
+    ("Network",    "1,501-3,500",72000,  2000,           800,   3.9897),
+    ("Enterprise", "3,500+",     95000,  5000,          2000,   3.7169),
+]
 
-print("=== Reconciling the model's own published figure ===")
-v = var_per_active_yr()
-print(f"  at 40% uptake: AUD {v/12:5.2f}/mo  -> AUD {v:6.2f}/yr")
-print(f"  Sheet 3 'Margin Tiers' publishes AUD $5.87/mo. Match: {abs(v/12-5.87)<0.01}")
-print(f"  NOTE: reconciles at 40% (the ENGAGEMENT rate), not the 35% video uptake")
-print(f"        stated in Assumptions 1.2. Likely a mis-referenced cell.")
-print(f"  -> AUD {v:.2f}/yr is the '$70.44' figure. Not a contradiction: it is")
-print(f"     variable cost per ACTIVE mother per year.\n")
+print("=== The model's own tier economics (sheet 4, verified) ===")
+print(f"{'Tier':<12}{'Births':<14}{'Licence':>9}{'Incl':>7}{'Active':>8}"
+      f"{'Var cost':>11}{'GM':>8}{'GM +support':>13}")
+for n, b, lic, incl, act, vm in TIERS:
+    var = act * vm * 12
+    gm  = (lic - var) / lic
+    gm2 = (lic - var - SUPPORT_YR) / lic
+    print(f"{n:<12}{b:<14}{lic:>9,}{incl:>7,}{act:>8,}{var:>11,.0f}"
+          f"{gm:>7.1%}{gm2:>13.1%}")
+print(f"\n  Sheet 4 publishes 70% / 61% / 47% / 6% -- reproduced exactly above.")
+print(f"  '+support' adds AUD {SUPPORT_YR:,.0f}/yr, which the model deliberately excludes.\n")
 
-print("=== Cost driver split, per active mother per year ===")
-av  = AVATAR_MIN * 0.40 * HEYGEN_MIN * 12 * FX
-gcp = GCP_MO * 12 * FX
-print(f"  Avatar video : AUD {av:6.2f}  ({av/(av+gcp)*100:.0f}%)")
-print(f"  GCP everything else: AUD {gcp:6.2f}  ({gcp/(av+gcp)*100:.0f}%)\n")
+print("=== Avatar share of variable cost, per active mother per year ===")
+for n, _, _, _, _, vm in TIERS:
+    yr = vm * 12
+    av = yr - GCP_YR
+    print(f"  {n:<12} total AUD {yr:6.2f}   avatar {av:6.2f} ({av/yr:4.0%})"
+          f"   everything else {GCP_YR:5.2f}")
+print("  Cost Engine row 13: HeyGen rate ALREADY falls with volume")
+print("  ($0.19 -> $0.128 -> $0.114 -> $0.103 USD/min). Hector's bundle comment is modelled.\n")
 
-def service(births, licence, minutes=AVATAR_MIN, rate=HEYGEN_MIN, label=""):
-    enrolled = births            # model uses a 12-month enrolled period
-    active   = enrolled * ENGAGEMENT
-    variable = active * var_per_active_yr(minutes, rate)
-    support  = SUPPORT_MO * 12 * FX
-    total    = variable + support
-    gm       = (licence - total) / licence * 100
-    print(f"  {label:38s} cost AUD {total:9,.0f}  licence {licence:7,}  "
-          f"margin {gm:7.1f}%  {'LOSS' if gm<0 else ''}")
-    return total
-
-print("=== A 1,000-birth service (400 active mothers) ===")
-print("   [+ one-off setup AUD {:,.0f} on top of every line below]".format(SETUP*FX))
-service(1000, 25000, label="as modelled, $25k tier")
-service(1000, 18000, label="as modelled, at a sub-$20k tier")
-service(1000, 25000, rate=HEYGEN_BUND, label="Hector's bundle rate $0.128/min")
-service(1000, 25000, minutes=20, label="avatar capped at 20 min/mother/mo")
-service(1000, 25000, minutes=10, label="avatar capped at 10 min/mother/mo")
-service(1000, 25000, minutes=0,  label="voice + text only, no avatar video")
-print()
-
-print("=== The top of the schedule (the cover note's own warning) ===")
-service(12500, 95000, label="5,000 active @ $95k Enterprise")
-service(12500, 135000, label="...at the cover's proposed $135k fix")
-print()
-
-print("=== Break-even licence at 10 avatar min/mo, by service size ===")
-for b in (300, 500, 1000, 2000, 3500):
-    active = b * ENGAGEMENT
-    cost = active * var_per_active_yr(minutes=10) + SUPPORT_MO*12*FX
-    print(f"  {b:5,} births ({active:5,.0f} active): break-even AUD {cost:8,.0f}"
-          f"   at 40% GM needs AUD {cost/0.6:8,.0f}")
+print("=== Brad's question: can an entry tier sit under $20,000? ===")
+print("  Reduce INCLUDED mothers, not price. Foundation unit cost AUD 5.8745/active/mo.")
+for incl in (100, 150, 200, 250, 300):
+    act = incl * 0.40
+    var = act * 5.8745 * 12
+    cost = var + SUPPORT_YR
+    for price in (18000, 19500):
+        gm = (price - cost) / price
+        print(f"  {incl:>3} enrolled ({act:>3.0f} active): cost AUD {cost:7,.0f}"
+              f"  at ${price:,} -> GM {gm:6.1%}"
+              f"{'   <-- support is ' + format(SUPPORT_YR/cost, '.0%') + ' of cost' if price==18000 else ''}")

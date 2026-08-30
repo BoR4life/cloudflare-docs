@@ -22,121 +22,93 @@ So: **the framing lock is a pricing control, not a messaging preference.** If a 
 drifts into patient-education language, the price schedule in that document is already
 undefended. Fix the framing before arguing the number.
 
-## The schedule
+## The schedule — the Pricing Model's, read from its own cells
 
-Three tiers, anchored to **births per year** — a figure health services know exactly and
-publish, unlike active-mother counts which they cannot verify.
+| Tier | Births/yr | Licence | Included (enrolled) | Active | GM | GM incl. support |
+|---|---|---|---|---|---|---|
+| Foundation | up to 500 | $28,000 | 300 | 120 | 69.8% | 36.6% |
+| Standard | 501–1,500 | $48,000 | 900 | 360 | 61.0% | 41.6% |
+| Network | 1,501–3,500 | $72,000 | 2,000 | 800 | 46.8% | 33.9% |
+| Enterprise | 3,500+ | $95,000 | 5,000 | 2,000 | 6.1% | **−3.7%** |
+| *proposed entry* | *pilot cohort* | *$18,000* | *150* | *60* | *—* | *24.8%* |
 
-| Tier | Births per year | Annual licence |
-|---|---|---|
-| 1 | under 1,000 | $25,000 |
-| 2 | 1,000 – 2,500 | $45,000 |
-| 3 | over 2,500 | $65,000 |
+**This retires the Business Plan's $25k/$45k/$65k schedule**, which sits 12–15% below and
+caused a real costing error on 30 Aug. When a price and a cost come from different
+documents in this venture, check they describe the same thing before doing arithmetic.
 
-Three, not four. With no reference customer, a fourth tier only gives a buyer a rung to
-negotiate down to.
+Three things about this table the agent must not lose:
 
-**The unit-conversion trap.** The cohort runs 20 weeks gestation to 12 months postnatal —
-about 16.6 months. At steady state, **active mothers ≈ births per year × 1.38**. Every
-legacy schedule bands by active mothers, so reading births against those tables puts a
-service one tier too low. Check any quote already issued.
+1. **Every tier caps included enrolled mothers well below the birth volume.** Foundation
+   covers 300 enrolled at a service doing up to 500 births. The licence buys a **cohort, not
+   a catchment.** Costing a tier against its full birth volume overstates cost badly.
+2. **Unit cost falls with scale** — AUD $70.49 / $52.04 / $47.88 / $44.60 per active mother
+   per year, because the modelled avatar rate drops from $0.19 to $0.103 USD/min with
+   volume. Never apply one figure across all tiers.
+3. **Platform support is AUD $9,300/yr, fixed per tenant**, and the model excludes it from
+   tier margins by design (Cost Engine row 21; cover review item 2). Quote model margins and
+   all-in margins as two separate numbers, and say which is which.
 
-## Why the entry point moves to a per-mother rate, not a cheaper tier
+## The entry tier: cut included mothers, not price
 
-Brad's instinct on 30 Aug: the lowest tier should sit under $20,000, to clear a
-procurement threshold. The instinct is right. Cutting the tier is the wrong way to act on
-it, for three reasons.
+Brad's direction on 30 Aug was that the lowest tier sit under $20,000 to clear a procurement
+threshold. Foundation's constraint is not its price — it is that $9,300 of fixed support
+sits under a small cohort. So reduce inclusions:
 
-**1. Banded pricing has a cliff at every boundary.** Read the implied per-mother rate
-across the schedule (active mothers = births × 1.383):
+| Included (enrolled) | Active | Cost | GM at $18,000 | Support as % of cost |
+|---|---|---|---|---|
+| 100 | 40 | $12,120 | 32.7% | 77% |
+| **150** | **60** | **$13,530** | **24.8%** | **69%** |
+| 200 | 80 | $14,940 | 17.0% | 62% |
+| 300 | 120 | $17,759 | 1.3% | 52% |
 
-| | Active mothers | Implied rate |
-|---|---|---|
-| 700 births @ $25k | 968 | $25.82 |
-| **999 births @ $25k** | **1,382** | **$18.09** |
-| **1,001 births @ $45k** | **1,384** | **$32.52** |
-| 1,750 births @ $45k | 2,420 | $18.59 |
-| 3,500 births @ $65k | 4,840 | $13.43 |
-| 5,000 births @ $65k | 6,915 | $9.40 |
+**$18,000 for 150 included mothers.** A genuine first-pilot cohort, so the price is honestly
+small rather than structured to look small — which keeps it clear of the contract-splitting
+line. It slots below Foundation without disturbing the tiers above, and it means the model's
+discount caps (Assumptions 1.4: 25% routine, 35% foundation, 50% pilot for six months) stay
+unspent, so the list price survives the first sale. The real trade-off is not margin — it is
+whether 150 mothers generate enough evaluation evidence. 100 pays better and may be too thin.
 
-Two extra births take a service from $25,000 to $45,000 — an 80% jump. Buyers manage the
-number they report to stay under, and the cliff becomes the negotiation. Marginal pricing
-(bracketed, like income tax) removes it entirely.
+## Avatar video is 69–80% of variable cost
 
-**2. A cheaper tier sets a discount precedent; a rate does not.** The strongest possible
-answer to *"what did the other site pay?"* is **"the same rate you're paying."** Cutting
-Tier 1 to $18k means every subsequent buyer anchors there and the step to $45k becomes a
-fight. Holding one published rate and letting volume do the work removes the argument.
+| Tier | Variable/active/yr | Avatar | Everything else |
+|---|---|---|---|
+| Foundation | $70.49 | $56.54 (80%) | $13.95 |
+| Enterprise | $44.60 | $30.65 (69%) | $13.95 |
 
-**3. A rate gets far further under a threshold than a cheap tier ever could.** At $30 per
-enrolled mother, a genuine 100-mother pilot cohort is **$3,000** — not $18,000. Approvable
-on a purchase order by a unit manager. The entry point stops being a pricing concession and
-becomes a scope decision, which is what it actually is.
+Gemini, Vertex, Search, Cloud Run and storage together cost $13.95 per active mother per
+year. The talking head costs two to four times the entire rest of the platform.
 
-### The structure
+The margins work, so this is a lever rather than a crisis — but it is the **biggest single
+lever on gross margin the venture has**, and it is controlled by one open decision. Hector's
+larger-bundle rate is already modelled (Cost Engine row 13, falling $0.19 → $0.103), so the
+remaining question is product shape: is avatar video standard, capped, or a metered premium?
 
-Publish **one marginal per-mother rate schedule**, from which the annual figures derive:
+## The bottom tier and the regional network
 
-| Enrolled mothers | Rate per mother per year |
-|---|---|
-| first 500 | $30 |
-| 501 – 2,500 | $20 |
-| 2,501+ | $13 |
+**33 of Victoria's 52 maternity providers are regional** — small, and mostly Foundation or
+the entry tier. That is not unprofitable: Foundation makes 37% all-in.
 
-The $25k / $45k / $65k figures then stop being negotiable rungs and become **arithmetic** —
-a service can compute its own price and cannot argue with it. Contract a volume band with a
-cap so the buyer has a certain maximum, which public buyers require.
-
-*Rates are indicative and follow the unit-cost gate below. Do not quote them externally.*
-
-## The bottom tier is the Victorian market, not the edge case
-
-**33 of Victoria's 52 maternity providers are regional** — which means small, which means
-Tier 1. The entry price is therefore the most consequential number in the schedule, not the
-least, and the equity case the Taskforce cares about lives entirely inside it.
-
-That creates a problem no price fixes. A 1,000-birth service (400 active mothers on the
-model's own 40% engagement rate), costed from Hector's engine:
-
-| Scenario | Annual cost | vs $25k tier |
-|---|---|---|
-| As modelled — 40 avatar min/mother/mo | AUD $37,498 | **−50%** |
-| At a sub-$20k entry tier | AUD $37,498 | **−108%** |
-| Hector's larger-bundle avatar rate | AUD $30,117 | **−21%** |
-| Avatar capped at 10 min/mother/mo | AUD $20,534 | +18% |
-| **Voice and text only** | AUD $14,880 | **+40.5%** |
-
-Of that cost, **AUD $9,300 is platform support — fixed per tenant.** At a 300-birth service
-that single line is 73% of the entire cost base.
-
-Two conclusions. The small site is **loss-making at any price it would accept** while avatar
-video runs at the modelled volume, so selling harder into regional Victoria would scale the
-loss. And the fixed-per-tenant support cost is the arithmetic reason the individual small
-service fails: one tenant covering ten regional services pays it once, not ten times.
-
-**The likely answer is that the individual small service is the wrong unit of sale.** Do not
-sell 33 regional services a licence none of them can justify and none of which covers the
-cost of serving it. Sell **one regional network licence** — an alliance, a health network, or
-the state — with the small services as covered sites. That is the same answer as the
-central/state licence below, arrived at from the cost side instead of the demand side, which
-is a reason to believe it.
+The problem is shape, not viability. **Platform support is fixed per tenant, and at
+Foundation it exceeds the entire variable cost** ($9,300 against $8,459). So ten regional
+services under one tenant pay $9,300 once instead of $93,000. Sell **one regional network
+licence** with small services as covered sites — the same answer as the central/state
+licence below, reached from the cost side, which is a reason to believe it.
 
 ## The probity line on thresholds
 
-Pricing an entry engagement so that it genuinely sits under a threshold is legitimate when
-**the engagement is genuinely that small**. Structuring a known larger deal to sit under one
-— or splitting it into several small contracts — is contract splitting, and procurement
-officers are trained to find it. With ACU's name attached and a probity-sensitive investor
-pathway, the venture cannot be anywhere near that line.
+Pricing an entry engagement so it genuinely sits under a threshold is legitimate when **the
+engagement is genuinely that small** — which is why the entry tier is defined by a real
+150-mother cohort rather than by a discount. Structuring a known larger deal to sit under a
+threshold, or splitting it into several small contracts, is contract splitting; procurement
+officers are trained to find it, and this venture carries ACU's name.
 
-Two consequences the agent states whenever thresholds come up:
+Two things the agent states whenever thresholds come up:
 
-- **Thresholds usually apply to total contract value over the term, not annual value.** A
-  three-year agreement at $18,000 a year is a $54,000 procurement. Verify this before any
-  strategy rests on it — it may dissolve the whole idea.
+- **Thresholds usually attach to total contract value over the term, not annual value.** A
+  three-year agreement at $18,000 a year is a $54,000 procurement. Verify before any
+  strategy rests on it.
 - A small pilot buys **speed to first evidence**, not permanent avoidance of procurement.
-  The full deployment goes through proper procurement, and should. Say this to the buyer
-  first, rather than have them realise it.
+  Say so to the buyer rather than let them discover it.
 
 ## Above the tiers: the central/state licence
 
@@ -162,30 +134,34 @@ weeks or six months. Thresholds vary by each service's own policy and are unveri
 confirm per target site. Landing under the threshold is worth more than the revenue
 difference between tiers.
 
-## The gate — it is D-23, not unit cost
+## The gate
 
-**Unit cost is known.** AUD $70.44 per active mother per year, variable, reconciled exactly
-against the Pricing Model's own $5.87/month. Plus AUD $9,300/year platform support, **fixed
-per tenant** — 73% of the whole cost base at a 300-birth service, and the arithmetic behind
-the regional-network conclusion above.
+**Not unit cost — that is known** (AUD $70.49 → $44.60 per active mother per year by scale
+point, Cost Engine row 26). Three of four tiers are healthy. What actually gates:
 
-**Avatar video is 80% of that cost** (AUD $56.54 against $13.95 for Gemini, Vertex, Search,
-Cloud Run and storage combined). At the modelled 40 minutes per mother per month **every
-tier is loss-making** — $25k by 50%, $95k Enterprise by 281%. Hector's larger-bundle rate
-takes 33% off and still leaves it 20% under. Raising price does not work either: break-even
-on a 1,000-birth service is AUD $37,498.
+1. **Enterprise at 6.1%, −3.7% after platform support.** The model flags it itself. The fix
+   is the inclusion cap with per-mother overage above the ceiling — not the list-price rise
+   written beside it, which only reaches 6.0% after support. Do both if Enterprise is to
+   survive contact with a real 4,000-birth service.
+2. **D-23, the LiveAvatar vendor decision** — 69–80% of variable cost, carried out-of-loop
+   on the MVP Board rather than on the critical path. Report its age at every checkpoint
+   alongside the two ACU-side blockers.
+3. **Two unmeasured assumptions everything rests on.** Engagement at 40% (the model says in
+   bold: *"must be tracked from Day 1 of pilot"*) and 40 avatar minutes per active mother
+   per month, which Hector himself hedged. Neither has ever been measured.
 
-Voice and text as standard, avatar metered as a premium, gives **40.5% gross margin at the
-existing $25,000 tier** — the Foundation target in the model's own Assumptions 1.4.
+Also live, all real and all in the model's own cells: Cost Engine row 11 hardcodes video
+uptake at 40% where Assumptions says 35% and the note beside it says 75%; the enrolled
+period is 12 months where the cohort is ~16.6; and sheet 4's flag reads *"if engagement
+tracks at <60% it may be loss-making"*, which is backwards.
 
-So the gate on every price is **D-23, the LiveAvatar vendor decision** — open, and carried
-out-of-loop on the MVP Board rather than on the critical path. Report its age at every
-checkpoint alongside the two ACU-side blockers, and never quote a price before it lands.
-
-**The pricing problem is a cost-architecture problem.** Do not redesign tiers to solve it.
+**Prices may be quoted internally against the Pricing Model schedule. Nothing goes to a
+buyer before D-23.**
 
 Working: `kindred-care/finance/2026-08-30-unit-cost-resolved.md`, reproducible via
-`kindred-care/finance/unit_cost_model.py`.
+`kindred-care/finance/unit_cost_model.py` — which also records the four errors in the first
+version of that analysis, because the failure mode is instructive: a price from one document
+costed against a cohort from another.
 
 ## Forecast rule
 
