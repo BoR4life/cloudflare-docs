@@ -40,8 +40,14 @@ questions at the end — resourcing, sector connections, and what you've seen fa
 
 ## The proposition (Brad, 5 slides)
 
-**Slide 4 — Problem.** Lead with the Victorian Chief Midwife's own words *(Brad to
-insert — gathered in the P1-09 conversations)*. Then the system gap in one breath:
+**Slide 4 — Problem, argued from Victorian policy.** This slide got much stronger this
+week. Open with the state's own agenda: the Victorian Maternity Taskforce's **nine
+government-committed recommendations**, the appointment of Victoria's **first Chief
+Midwife** to implement them, and Safer Care Victoria's **Respectful Maternity and Newborn
+Care Framework** (Jan 2026). Their named themes — workforce recruitment, regional service
+delivery, culturally safe care, access and choice — are the four things the Companion
+addresses. Then the Chief Midwife's own words *(Brad to insert — gathered in the P1-09
+conversations)*. Then the system gap in one breath:
 strong clinical care, but the gaps between appointments are where confidence collapses —
 reassurance-seeking GP visits, avoidable presentations, and the burden landing hardest
 on rural, CALD, First Nations and young mothers. Close on workforce: maternal and child
@@ -60,10 +66,19 @@ midnight as in Fitzroy at noon. For ACU: living deployment of its midwifery scho
 research outputs, and a commercialisation with mission fit.
 
 **Slide 7 — Market.** Keep to three numbers, and honest about which is which:
-Victorian beachhead — 75+ maternity services, ~80,000 births a year; national — ~285
+Victorian beachhead — **52 maternity providers, 33 of them regional** (the state's own
+count; we previously used 75+), ~80,000 births a year; national — ~285
 institutions (~250 maternity services + ~35 universities), ~310,000 births; entry — 3–4
 Victorian pilot sites, one metro one regional at minimum, converting post-evaluation.
 International exists and is deliberately labelled upside, not thesis.
+
+**Slide 7a — My Maternity Journey, addressed head-on.** This room will know about it, so
+raise it first. Safer Care Victoria is building a state consumer platform for completion
+this year. The honest position: *a guide tells a woman what to expect; a governed
+Companion answers what she actually asked, at 3am, at her stage.* Structured content and
+conversational education are different products — and the more interesting question is
+whether Kindred Care should be the conversational layer over Victoria's own content. Ask
+the committee what they think. It is exactly the kind of question this forum is for.
 
 **Slide 8 — Competition, named.** Eve on the left, honestly: Cabrini Health, launched
 2020, national NFP Solution of the Year 2021, 50,000+ women, deployed across Victorian

@@ -64,10 +64,27 @@ Asks are dated and specific; the tone stays collegial.*
 > it's BoR background IP (the business plan has it correctly). We'll issue 0.3 corrected
 > before the workshop so the register builds from a clean base.
 >
+> **5. One thing I think changes our story for the better.** I've been through the
+> Victorian maternity policy landscape properly. The Government has committed to the nine
+> Maternity Taskforce recommendations, is appointing the state's first Chief Midwife to
+> implement them, and Safer Care Victoria released the Respectful Maternity and Newborn
+> Care Framework in January. The Taskforce's themes — workforce, regional service
+> delivery, culturally safe care, access — are precisely what Kindred Care addresses, so
+> we can argue the problem from government-committed policy rather than from first
+> principles. I'd like that on the problem slide for the 16th.
+>
+> The one to think about: SCV is building **My Maternity Journey**, a state consumer
+> platform for completion this year. My read is it's a different product — a guide
+> answers the questions you know to ask, the Companion answers the one actually being
+> asked at 3am — but it's also the most interesting channel conversation available to us,
+> and another reason to reconnect with Elisa McDonald sooner rather than later. Happy to
+> be talked out of that read.
+>
 > On our side: we're restating the financial model before anything enters the pack —
 > BVUIP lines corrected to the amounts above, India/UK moved to a labelled upside
-> scenario so the base case is cleanly Victorian, and churn added. Detail with Hector
-> and the CFO now.
+> scenario so the base case is cleanly Victorian, and churn added. I'm also correcting
+> our Victorian market count to the state's own figure (52 providers, 33 regional —
+> we'd been using 75+). Detail with Hector and the CFO now.
 >
 > Cheers,
 > Brad
