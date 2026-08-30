@@ -178,6 +178,14 @@ and whether a clearance search has been done. This is cheap now and expensive la
 
 ## 8. The IP Plan gives the cleanest ownership structure — and it is a fifth version
 
+> **SUPERSEDED 30 Aug 2026.** The closing recommendation of this section — *"adopt the IP
+> Plan's version everywhere"* — is withdrawn on Brad's direction. ACU is preparing a draft
+> approach; we do not pre-empt it with a fifth version of our own. The five-position table
+> below remains an accurate diagnosis, and the contradictions still have to go — but they
+> are resolved to a **neutral holding line**, not to a chosen structure. See
+> `kindred-care/drafts/acu-draft-review-checklist.md`. The paragraph on the improvements
+> clause is unaffected and becomes check 2 of that checklist.
+
 > *"BUNDLE OF RAYS Pty Ltd — Founding shareholder. ACU — Founding shareholder.
 > KINDRED CARE PTY LTD — Operating company · Owns all foreground IP · Holds licences from
 > both parents. BREAKTHROUGH VICTORIA — post-investment shareholder under BVUIP,

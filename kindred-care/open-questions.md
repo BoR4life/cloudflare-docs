@@ -76,3 +76,7 @@ Ordered by what unblocks the most downstream work.
 | 71 | Keppel Schafer or Schaeffer? | Brad | 30 Aug 2026 | Anything going on letterhead |
 | 72 | What conflict of interest did the Cloudnine contact raise, and is it resolved? | Brad | 30 Aug 2026 | Whether Cloudnine can be named as a partner |
 | 73 | Is Brendan Hogan the Wishlist CEO or the SCHUH CEO? He signed the Wishlist letter from a health.qld.gov.au address | Brad | 30 Aug 2026 | Accurate attribution of the letter of support |
+| 74 | What is the direct-engagement procurement threshold at each target health service, and can the entry band be set deliberately below it? | Lois / Marie | 30 Aug 2026 | Decides whether a first sale takes six weeks or six months — worth more than the revenue difference between tiers |
+| 75 | What is the unit cost per active mother, and how much of it is fixed per site rather than per mother? | Hector | 30 Aug 2026 | **The gate on the whole price schedule.** Fixed clinical-governance cost decides whether Tier 1 at $25k is viable |
+| 76 | What would a central Victorian state licence be worth, and who at Safer Care Victoria or the Taskforce holds that budget? | Brad + Russell | 30 Aug 2026 | The likely largest first deal, currently priced and modelled nowhere |
+| 77 | When does ACU's draft Heads of Agreement arrive, and who is drafting it? | Brad → Russell | 30 Aug 2026 | Gates the ownership question, the cap table and IP Plan 0.3 |

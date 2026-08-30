@@ -1,3 +1,11 @@
+> **SUPERSEDED IN PART — 30 Aug 2026.** Brad's direction: ACU is preparing a draft
+> approach and we wait for it. The recommendation to adopt this note's ownership structure
+> across the pack is **withdrawn**. The structure below is retained as *BoR's proposed
+> position for discussion with ACU*, not as a statement of fact, and must not be published
+> as one. All documents use the holding line in `kindred-care/canonical-numbers.md` instead.
+> **The background-IP corrections in this note are unaffected and still stand** — BoR owns
+> the platform, licensed in, not assigned. See `acu-draft-review-checklist.md`.
+
 # IP Plan — corrections for Draft 0.3
 
 **30 Aug 2026 · for Brad's approval, then issue to Russell and Bill before MTG-03

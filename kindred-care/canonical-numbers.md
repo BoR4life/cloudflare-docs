@@ -12,7 +12,7 @@ resolution awaiting Brad's yes.
 | ACU cash obligation | **$650,000** ($150k POC + $500k commercialisation) | Arithmetic of the above | CONFIRMED (as obligation; source of funds open) |
 | BVUIP accounting | Financing (SAFE converting to equity), **not** grant income | Business Plan §6 vehicle description | RECOMMENDED — needs CFO |
 | TRL | **3, climbing** — 4 is claimed only when recall@5 ≥ 0.85 and safety-tag ≥ 0.95 against the gold-standard eval set | Business Plan §3, held deliberately | **CONFIRMED** — GTM v2.1 and forecast Cover must be corrected to match |
-| B2B price list | Business Plan schedule: **$25k / $45k / $65k / $95k+overage**, bands <500 / 500–2,000 / 2,000–4,000 / 4,000+; tier names Foundation / Standard / **Network** / Enterprise; pilot discount explicit and 3-year limited, step to list from year 4 | BP prices + GTM/Unit-Econ naming | RECOMMENDED — **five schedules currently in the room, see below** |
+| B2B price list | **Three tiers anchored to births per year: <1,000 = $25,000 · 1,000–2,500 = $45,000 · 2,500+ = $65,000.** Plus a separate central/state licence line (not a fourth tier). **Pilots at list price, funded externally; concession taken in-kind, never as a discounted dollar figure.** | Brad, 30 Aug 2026 — direction on pricing | RECOMMENDED — **stays RECOMMENDED until unit cost closes.** Five schedules currently in the room, see below |
 | Cohort definition | **20 weeks gestation to 12 months postnatal** | BMC + Product Overview, both 30 Jun 2026 | CONFIRMED |
 | Gold-standard eval set | **200–300 queries** (Business Plan) — Quality & Safety Strategy says 100–200 | Business Plan §7 is the later document | RECOMMENDED |
 | Pedagogical framework name | **UNKNOWN** — BMC says *AIAP-F*, the PhD's construct is the *AAF (Andragogical Agent Framework)* | — | OPEN |
@@ -22,7 +22,7 @@ resolution awaiting Brad's yes.
 | Base case geography | Victorian + Australian only; India, UK/USA and their XR share in a **labelled upside scenario** | Brad, 30 Aug ("fix as you think best" on scalability) | CONFIRMED |
 | Peak cumulative burn | **≈$770k per current model** (restated base likely higher); the "$0.15M" claim is retired | Forecast Funding tab | CONFIRMED as the honest figure |
 | FY27 funding need | **≈$1.0M incl. 3-month buffer; ≈$720k beyond the POC** | Restatement workbook | RECOMMENDED — CFO to verify |
-| Ownership structure | **BoR + ACU founding shareholders of Kindred Care Pty Ltd; background IP licensed in, not assigned; KC-Co owns all foreground IP; Innovation Victoria post-investment shareholder** — split via contribution-based valuation, stated as *to be agreed* until it is | IP Plan structure + Business Plan §6 | RECOMMENDED — retire "70/30" and "held by BoR" wording everywhere |
+| Ownership structure | **HOLDING LINE — do not state a structure.** Every document uses one sentence and no more: *"The ownership and shareholding structure of Kindred Care Pty Ltd is to be set out in the Heads of Agreement, currently in preparation with ACU."* Background IP position is separable and stays stated (below). | Brad, 30 Aug 2026 — awaiting ACU's draft approach | **CONFIRMED as the holding line.** Retire "70/30", "held by BoR", and every other specific split from all documents now |
 | TAM — Victoria | **52 maternity health service providers, 33 of them regional** | Victorian Premier's office / Maternity Taskforce | **RECOMMENDED — supersedes the Business Plan's "75+ facilities". Use the state's own number** |
 | TAM — national | **~285 AU institutions** (~250 maternity services + ~35 universities); ~310,000 births | Forecast Cover (tighter of the two counts) | RECOMMENDED |
 | Victorian policy anchors | **Victorian Maternity Taskforce — nine recommendations, government committed; first Chief Midwife appointed to implement; Respectful Maternity and Newborn Care Framework (SCV, 6 Jan 2026); My Maternity Journey consumer platform, completing 2026; MCoC scale-up** | Public reporting — verify against primary sources | RECOMMENDED — **not currently in any pack document** |
@@ -42,6 +42,80 @@ resolution awaiting Brad's yes.
 Five schedules, three sets of band boundaries, two tier-name sets. **The Product Overview
 is the document headed "INVESTOR DATA ROOM"** and carries the second-lowest prices.
 Consolidate to the canonical row above.
+
+## Why the bands change unit — and a band error nobody has caught
+
+Every existing schedule bands by **active mothers**. Health services do not know that
+number and cannot verify it; they know **births per year** exactly, and publish it.
+Banding by births makes the price a rate a buyer can self-select against instead of a
+quote they have to argue about.
+
+The two units are not interchangeable, and the conversion has been missed. The cohort
+runs 20 weeks gestation to 12 months postnatal — about **16.6 months, or 1.38 years**.
+So at steady state:
+
+> **active mothers ≈ births per year × 1.38**
+
+Which means the current bands sit roughly here in birth terms:
+
+| Existing band (active mothers) | Actually corresponds to |
+|---|---|
+| <500 | <360 births/year |
+| 500–2,000 | 360–1,450 births/year |
+| 2,000–4,000 | 1,450–2,900 births/year |
+| 4,000+ | 2,900+ births/year |
+
+**A 2,000-birth service is a ~2,760-active-mother service.** Under the existing schedule
+it lands in the *Large* band at $65k, not the *Medium* band a reader would assume. Any
+quote built by eyeballing births against the current table is wrong by one tier. This
+is a live pricing error, not a presentational one — flag it to Hector alongside unit cost.
+
+## The three-tier schedule, and what sits above it
+
+| Tier | Births per year | Annual licence |
+|---|---|---|
+| 1 | under 1,000 | **$25,000** |
+| 2 | 1,000 – 2,500 | **$45,000** |
+| 3 | over 2,500 | **$65,000** |
+
+Four tiers is one too many for a product with no reference customer — it invites a buyer
+to negotiate down the ladder. Three, with the top band open-ended, removes that move.
+The retired $95k Enterprise tier is not lost: it becomes the floor of the central licence.
+
+**The central/state licence — missing from every model.** The most likely large first
+deal is not twenty health services at $65k. It is a state programme — Safer Care Victoria,
+or Taskforce implementation funding — buying once, centrally, for all Victorian public
+maternity. Different contract shape, different number, and **it does not appear anywhere
+in the pricing model or the forecast.** With Elisa McDonald sitting at the junction of the
+Taskforce, Safer Care Victoria and My Maternity Journey, it may also be the nearest one.
+Model it as a per-service-equivalent rate falling with scale, with a floor.
+
+## Two pricing rules that are not about the number
+
+**1. Pilots at list price, funded externally.** Price transparency in Victorian public
+health is high — FOI, procurement disclosure, and a small peer network of maternity
+directors who talk. Whatever site one pays becomes the reference price permanently, and
+site two's procurement team will find it. So the pilot is **paid at list from grant or
+programme money**, and the concession is taken in-kind: BoR contributes the evaluation
+design, the co-design workshops and the academic output. Identical economics for the
+customer, list price protected, and a more accurate description of the actual exchange.
+*This supersedes the "3-year pilot discount stepping to list" mechanic.*
+
+**2. Set the entry band against the procurement threshold, deliberately.** Where $25,000
+sits relative to a health service's direct-engagement threshold decides whether a first
+sale takes six weeks or six months. Thresholds vary by each service's own procurement
+policy and are **not verified** — Lois or Marie to confirm for the target sites. If the
+entry band can be set below the threshold on purpose, that is worth more than the revenue
+difference between tiers.
+
+## The gate
+
+None of the above converts from RECOMMENDED to CONFIRMED while **unit cost is stated
+three ways across 4.8×** ($14.70 / $44.60 / $70.44 per active mother per year, open since
+May). Clinical governance cost — Agent B supervision, clinical review, RAG corpus
+maintenance — is largely fixed and does not shrink for a small site, so **Tier 1 at $25k
+may be below cost.** Unit cost is the gate. Everything else in pricing is estimation until
+Hector closes it.
 
 ## Documents that already meet the standard
 

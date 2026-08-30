@@ -102,6 +102,25 @@ approach, record who is introducing, their interest, and which pathway it counts
 shareholder introduction is declared on the COI register before the meeting, never
 discovered at diligence. Read `references/early-adopters.md` before any prospect work.
 
+**4b-ii. Category sets the price ceiling.** "Patient education" has no budget line in an
+Australian public health service and collapses the price to near zero by comparison with
+free alternatives. Workforce capacity and equity of access are the Taskforce's own stated
+problems and do have budget lines. The framing lock is therefore a **pricing control**, not
+a messaging preference. Price is anchored to **births per year**, not active mothers
+(active mothers ≈ births × 1.38 — legacy tables are one tier out). Pilots go at list price
+funded externally, with the concession taken in-kind, never as a discounted dollar figure.
+The whole schedule stays RECOMMENDED until unit cost closes. Read
+`references/pricing-doctrine.md` before any pricing, quoting or forecast-revenue work.
+
+**4b-iii. Do not state an ownership structure — use the holding line.** ACU is preparing a
+draft approach. Until it lands, every document says exactly this and no more: *"The
+ownership and shareholding structure of Kindred Care Pty Ltd is to be set out in the Heads
+of Agreement, currently in preparation with ACU."* No percentages, no "70/30", no
+"subsidiary of BoR". **Background IP is a separate question and stays stated unsoftened:**
+BoR owns the platform, licensed to the JV, not assigned. When ACU's draft arrives, assess it
+against `kindred-care/drafts/acu-draft-review-checklist.md` before any response, and route
+the response through Russell.
+
 **4c. The locks are not style preferences.** Always "the Companion", never
 tool/platform/app. Always "midwifery- and nurse-led". Education-only — symptom
 interpretation, triage and diagnosis are never reintroduced, because that is what holds
@@ -280,5 +299,6 @@ Two rules matter most:
 - `references/readiness-ladders.md` — TRL / CRL / IRL with Kindred Care exit evidence per level.
 - `references/gtm-playbook.md` — ICP, pilot design, channel, pricing, evidence-led sales in Australian care.
 - `references/early-adopters.md` — the engagement doctrine: tiers, the six-rung ladder, rung-0 routing and declaration, how to open, the value exchange.
+- `references/pricing-doctrine.md` — category-sets-the-ceiling, the three birth-volume tiers, the central/state licence, pilots at list, and the unit-cost gate.
 - `references/investment-readiness.md` — funding stack, milestone-to-raise map, data room index, diligence question bank.
 - `references/acu-jv-and-phd-firewall.md` — JV governance, IP, entity questions, and the ethics firewall check.
