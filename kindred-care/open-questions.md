@@ -62,3 +62,7 @@ Ordered by what unblocks the most downstream work.
 | 57 | Are Nurse Workforce Readiness and the B2B Education Licence live streams? Both are priced and neither is modelled | Brad | 30 Aug 2026 | Revenue model completeness |
 | 58 | Can the ten-avatar multicultural library and the welcome-pack box/journal/magnet move into the pilot design and the cost model? | Brad + Hector | 30 Aug 2026 | Enrolment retention; competitive differentiation against Eve |
 | 59 | What are the nine patentable concepts from the 2022 ipCapital inventory, and are any Kindred Care-relevant? | Brad | 30 Aug 2026 | IP register v1, due 18 Sep |
+| 60 | Is maternal education a mandated responsibility of Victorian maternity services? Product Overview asserts it; if verified it answers the budget-line objection | Brad / Lois | 30 Aug 2026 | The whole procurement argument |
+| 61 | AIAP-F or AAF — one framework name, or an explicit statement of the relationship between the venture's framework and the PhD's construct | Brad | 30 Aug 2026 | Consistency between venture and thesis |
+| 62 | Which independent reviews flagged unsafe content in the most-installed pregnancy apps? A citation is needed for the Product Overview claim | Brad | 30 Aug 2026 | An investor-facing claim without a source |
+| 63 | Is the midwifery-education audience a live commercial stream? Articulated in the Product Overview, priced in the Pricing Model, modelled nowhere | Brad | 30 Aug 2026 | Revenue model completeness |
