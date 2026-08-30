@@ -41,6 +41,97 @@ about 16.6 months. At steady state, **active mothers ≈ births per year × 1.38
 legacy schedule bands by active mothers, so reading births against those tables puts a
 service one tier too low. Check any quote already issued.
 
+## Why the entry point moves to a per-mother rate, not a cheaper tier
+
+Brad's instinct on 30 Aug: the lowest tier should sit under $20,000, to clear a
+procurement threshold. The instinct is right. Cutting the tier is the wrong way to act on
+it, for three reasons.
+
+**1. Banded pricing has a cliff at every boundary.** Read the implied per-mother rate
+across the schedule (active mothers = births × 1.383):
+
+| | Active mothers | Implied rate |
+|---|---|---|
+| 700 births @ $25k | 968 | $25.82 |
+| **999 births @ $25k** | **1,382** | **$18.09** |
+| **1,001 births @ $45k** | **1,384** | **$32.52** |
+| 1,750 births @ $45k | 2,420 | $18.59 |
+| 3,500 births @ $65k | 4,840 | $13.43 |
+| 5,000 births @ $65k | 6,915 | $9.40 |
+
+Two extra births take a service from $25,000 to $45,000 — an 80% jump. Buyers manage the
+number they report to stay under, and the cliff becomes the negotiation. Marginal pricing
+(bracketed, like income tax) removes it entirely.
+
+**2. A cheaper tier sets a discount precedent; a rate does not.** The strongest possible
+answer to *"what did the other site pay?"* is **"the same rate you're paying."** Cutting
+Tier 1 to $18k means every subsequent buyer anchors there and the step to $45k becomes a
+fight. Holding one published rate and letting volume do the work removes the argument.
+
+**3. A rate gets far further under a threshold than a cheap tier ever could.** At $30 per
+enrolled mother, a genuine 100-mother pilot cohort is **$3,000** — not $18,000. Approvable
+on a purchase order by a unit manager. The entry point stops being a pricing concession and
+becomes a scope decision, which is what it actually is.
+
+### The structure
+
+Publish **one marginal per-mother rate schedule**, from which the annual figures derive:
+
+| Enrolled mothers | Rate per mother per year |
+|---|---|
+| first 500 | $30 |
+| 501 – 2,500 | $20 |
+| 2,501+ | $13 |
+
+The $25k / $45k / $65k figures then stop being negotiable rungs and become **arithmetic** —
+a service can compute its own price and cannot argue with it. Contract a volume band with a
+cap so the buyer has a certain maximum, which public buyers require.
+
+*Rates are indicative and follow the unit-cost gate below. Do not quote them externally.*
+
+## The bottom tier is the Victorian market, not the edge case
+
+**33 of Victoria's 52 maternity providers are regional** — which means small, which means
+Tier 1. The entry price is therefore the most consequential number in the schedule, not the
+least, and the equity case the Taskforce cares about lives entirely inside it.
+
+That creates a problem no price fixes. Run the cost scenarios for a 1,000-birth service
+(1,383 active mothers) against the three unit costs in the room:
+
+| Unit cost | Variable cost | Against a $25k tier | Against $18k |
+|---|---|---|---|
+| $14.70 | $20,330 | 19% gross margin, before fixed cost | **loss** |
+| $44.60 | $61,682 | **heavy loss** | **heavy loss** |
+| $70.44 | $97,419 | **heavy loss** | **heavy loss** |
+
+At two of the three current estimates, the small site is **already loss-making at $25,000**
+and no threshold-clearing price can rescue it. Selling harder into regional Victoria at a
+lower price would scale the loss.
+
+**The likely answer is that the individual small service is the wrong unit of sale.** Do not
+sell 33 regional services a licence none of them can justify and none of which covers the
+cost of serving it. Sell **one regional network licence** — an alliance, a health network, or
+the state — with the small services as covered sites. That is the same answer as the
+central/state licence below, arrived at from the cost side instead of the demand side, which
+is a reason to believe it.
+
+## The probity line on thresholds
+
+Pricing an entry engagement so that it genuinely sits under a threshold is legitimate when
+**the engagement is genuinely that small**. Structuring a known larger deal to sit under one
+— or splitting it into several small contracts — is contract splitting, and procurement
+officers are trained to find it. With ACU's name attached and a probity-sensitive investor
+pathway, the venture cannot be anywhere near that line.
+
+Two consequences the agent states whenever thresholds come up:
+
+- **Thresholds usually apply to total contract value over the term, not annual value.** A
+  three-year agreement at $18,000 a year is a $54,000 procurement. Verify this before any
+  strategy rests on it — it may dissolve the whole idea.
+- A small pilot buys **speed to first evidence**, not permanent avoidance of procurement.
+  The full deployment goes through proper procurement, and should. Say this to the buyer
+  first, rather than have them realise it.
+
 ## Above the tiers: the central/state licence
 
 The largest plausible first deal is not twenty services at $65k. It is a state programme —
