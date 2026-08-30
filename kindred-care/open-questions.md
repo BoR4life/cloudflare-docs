@@ -100,3 +100,8 @@ Ordered by what unblocks the most downstream work.
 | 95 | What is ClinOps support's access scope — can support staff read conversation content or mothers' free text? | Hector | 30 Aug 2026 | Processor map row 8. A VPDSS personnel-security question and a related-party diligence question at once |
 | 96 | Who is the Privacy Officer? | Brad | 30 Aug 2026 | Unappointed. Should be named before a pilot holding maternal health conversation |
 | 97 | What is the vetting position for anyone with production access — Police Check, Working with Children Check? | Brad | 30 Aug 2026 | A health service will ask. Decide before being asked, given the cohort is mothers and infants |
+| 98 | Does the schema already carry turn-level addressability? | Hector | 30 Aug 2026 | **The cheap win.** If yes, most erasure scenarios stay tractable and the design note largely closes today. If no, they all become migrations |
+| 99 | Safety records vs right to erasure — which prevails, and under what stated exception? | Brad + legal | 30 Aug 2026 | A legal question, not an engineering one, and it must be settled **before** the transparency statement, because she must know before she consents |
+| 100 | On tenant exit, what happens to mothers' threads? She is enrolled by the service but the conversation is hers | Brad + legal | 30 Aug 2026 | Will appear in the first pilot agreement |
+| 101 | What is the HREC/ethics pathway for the evidence sprint, and how long does it take? | Brad + Lois | 30 Aug 2026 | **The long pole.** Everything else in the sprint can compress; this cannot. Start this week |
+| 102 | Does Companion use correlate with more or fewer midwife contacts? | Evidence sprint | 30 Aug 2026 | The warmth-trap indicator. Fewer looks like success and is the harm |
