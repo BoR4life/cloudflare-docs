@@ -56,3 +56,9 @@ Ordered by what unblocks the most downstream work.
 | 51 | Is data at rest in Melbourne (australia-southeast2)? The Business Plan states only southeast1 | Hector | 29 Aug 2026 | A Victorian-sovereignty fact currently under-sold to BVUIP |
 | 52 | Confirm the pricing recommendation — list price in both documents, pilot discount explicit and time-limited, step to list from year four (item 4 of the 29 Aug review was left unanswered) | Brad | 30 Aug 2026 | Pricing Model v1, Business Plan, forecast |
 | 53 | Who holds ACU's $650,000 cash obligation, and has the HNWI syndicator path moved since July? | Russell + Bill | 30 Aug 2026 | The deal |
+| 54 | **What is the true variable cost per active mother?** Three documents say $14.70, $44.60 and $70.44 per year | Hector | 30 Aug 2026 | Every margin, every LTV:CAC ratio, the capital-efficiency thesis |
+| 55 | Which HeyGen plan basis are we on — step/plans or per-minute — and does a larger bundle change it? Hector's own comments, open since 20 May | Hector | 30 Aug 2026 | Unit cost |
+| 56 | Have the Kindred Care word and device marks been filed, and has a clearance search been run? | Brad | 30 Aug 2026 | Brand risk in a market where Cabrini holds "Eve" |
+| 57 | Are Nurse Workforce Readiness and the B2B Education Licence live streams? Both are priced and neither is modelled | Brad | 30 Aug 2026 | Revenue model completeness |
+| 58 | Can the ten-avatar multicultural library and the welcome-pack box/journal/magnet move into the pilot design and the cost model? | Brad + Hector | 30 Aug 2026 | Enrolment retention; competitive differentiation against Eve |
+| 59 | What are the nine patentable concepts from the 2022 ipCapital inventory, and are any Kindred Care-relevant? | Brad | 30 Aug 2026 | IP register v1, due 18 Sep |
