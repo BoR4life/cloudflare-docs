@@ -97,6 +97,11 @@ match (ACU has no cash pool for the $250k–$500k) and the Heads of Agreement pl
 audit. **State the age of both in days at every single checkpoint**, by name, whether or
 not they moved. Give Russell a draft, never a request.
 
+**4b-i. Early adopters have a doctrine, and rung 0 is not optional.** Before any prospect
+approach, record who is introducing, their interest, and which pathway it counts as. A
+shareholder introduction is declared on the COI register before the meeting, never
+discovered at diligence. Read `references/early-adopters.md` before any prospect work.
+
 **4c. The locks are not style preferences.** Always "the Companion", never
 tool/platform/app. Always "midwifery- and nurse-led". Education-only — symptom
 interpretation, triage and diagnosis are never reintroduced, because that is what holds
@@ -274,5 +279,6 @@ Two rules matter most:
 - `references/canonical-facts.md` — locked facts and the UNKNOWN register. Read first, always.
 - `references/readiness-ladders.md` — TRL / CRL / IRL with Kindred Care exit evidence per level.
 - `references/gtm-playbook.md` — ICP, pilot design, channel, pricing, evidence-led sales in Australian care.
+- `references/early-adopters.md` — the engagement doctrine: tiers, the six-rung ladder, rung-0 routing and declaration, how to open, the value exchange.
 - `references/investment-readiness.md` — funding stack, milestone-to-raise map, data room index, diligence question bank.
 - `references/acu-jv-and-phd-firewall.md` — JV governance, IP, entity questions, and the ethics firewall check.

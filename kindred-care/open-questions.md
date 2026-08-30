@@ -70,3 +70,9 @@ Ordered by what unblocks the most downstream work.
 | 65 | Who has been appointed Victorian Chief Midwife, and can Brad's existing contact be re-engaged in September? | Lois | 30 Aug 2026 | The highest-value relationship in the state |
 | 66 | Is My Maternity Journey a competitor, a channel, or both — and who at Safer Care Victoria owns it? | Brad + Russell | 30 Aug 2026 | Competitive position before 16 Sept; possible channel |
 | 67 | Does the Respectful Maternity and Newborn Care Framework (SCV, 6 Jan 2026) create obligations Kindred Care should align to explicitly? | Lois | 30 Aug 2026 | Assurance pack, procurement |
+| 68 | Has the Chief Midwife (Elisa McDonald) follow-up happened? Russell requested it 7 Aug | Brad | 30 Aug 2026 | Victorian sites, Safer Care Victoria, My Maternity Journey — all three |
+| 69 | Peninsula Health — declare the Ged Williams introduction and decide the routing, or re-route through ACU? | Brad + Russell | 30 Aug 2026 | Probity, and whether Peninsula can appear in the UCAC pack |
+| 70 | Who is the maternity or nursing executive at Gippsland Health / Latrobe Regional? | Brad / Lois | 30 Aug 2026 | The regional pilot site — the equity case |
+| 71 | Keppel Schafer or Schaeffer? | Brad | 30 Aug 2026 | Anything going on letterhead |
+| 72 | What conflict of interest did the Cloudnine contact raise, and is it resolved? | Brad | 30 Aug 2026 | Whether Cloudnine can be named as a partner |
+| 73 | Is Brendan Hogan the Wishlist CEO or the SCHUH CEO? He signed the Wishlist letter from a health.qld.gov.au address | Brad | 30 Aug 2026 | Accurate attribution of the letter of support |
