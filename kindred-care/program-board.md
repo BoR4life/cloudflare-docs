@@ -1,6 +1,6 @@
 # Kindred Care — program board
 
-**Readiness: TRL 3 / CRL 3 / IRL 3** · Last updated: 29 Aug 2026
+**Readiness: TRL 3 / CRL 3 / IRL 3** · Last updated: **30 Aug 2026 (evening)**
 **Cadence:** full review Monday, midweek check Thursday.
 
 Baselined 29 Aug 2026 against the MVP Board snapshot of 28 Aug 2026 — see
@@ -8,6 +8,14 @@ Baselined 29 Aug 2026 against the MVP Board snapshot of 28 Aug 2026 — see
 longer the constraint.** 97 of 148 MVP stories shipped and ~193 hours of loop time
 remaining, against no named buyer, no written regulatory position, no HREC approval and
 no verified entity. Six of the eight live blockers are Brad's, not Hector's.
+
+**30 Aug additions.** Unit cost resolved from Hector's engine (tiers make 70/61/47/6%, not
+loss-making — an earlier finding to the contrary is retracted). D-23 elevated: avatar video is
+69–80% of variable cost *and* a cross-border disclosure question *and* the interface decision.
+Compliance artefact set built from nothing — processor map, IR plan, VPDSS self-assessment,
+ISO 42001 alignment, AI impact assessment, transparency statement. Evidence sprint protocol
+v1.0 supersedes the pilot protocol and moves the site to Sunshine Coast. **Standing position
+sharpened: the build is not the bottleneck, evidence is.**
 
 Status vocabulary — use these and no others:
 `NOT STARTED` · `IN PROGRESS` · `BLOCKED (on: …)` · `DONE (evidence: …)` · `SLIPPED (was DD MMM YYYY)` · `UNKNOWN (as at DD MMM YYYY)`
@@ -49,6 +57,12 @@ Status vocabulary — use these and no others:
 | LiveAvatar vendor decision (D-23) | Brad | — | NOT STARTED | Named out-of-loop on the board | 28 Aug 2026 |
 | STT/TTS vendor credentialing | Brad + Hector | — | NOT STARTED | Named out-of-loop on the board | 28 Aug 2026 |
 | First consented real user — **do not cross before HREC coverage and consent wording are settled** | Brad | — | NOT STARTED | — | 29 Aug 2026 |
+
+| **Vertex regional endpoint confirmed on a live turn** | Hector | Wk of 31 Aug | BLOCKED (on: Hector — email drafted) | Free and binary; `compliance/endpoint-check-for-hector.md` | 30 Aug 2026 |
+| **Turn-level addressability in the schema** | Hector | Wk of 31 Aug | BLOCKED (on: Hector — email drafted) | The cheap win on erasure; `drafts/retention-and-erasure-design-note.md` | 30 Aug 2026 |
+| **Pre-rendered demonstration clips — feasibility** | Hector | Wk of 31 Aug | BLOCKED (on: Hector — email drafted) | Would resolve D-23 on cost *and* sovereignty at once | 30 Aug 2026 |
+| **Retention and disposal schedule** | Brad + legal | — | NOT STARTED | Gates the transparency statement | 30 Aug 2026 |
+| **Corpus bias and data quality assessment** | Lois + Hector | Before UCAC | NOT STARTED | Largest gap under the equity case | 30 Aug 2026 |
 
 ## Market track (CRL)
 Lead motion: **Victorian public maternity services** (BVUIP is Victorian money), ACU midwifery network as channel, **SCHHS as Evaluation Partner / non-Victorian reference**. VIC = Trial Partners, QLD = Evaluation Partners. See `strategy/gtm-v3-2026-08-29.md`.
