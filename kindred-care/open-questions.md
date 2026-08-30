@@ -66,3 +66,7 @@ Ordered by what unblocks the most downstream work.
 | 61 | AIAP-F or AAF — one framework name, or an explicit statement of the relationship between the venture's framework and the PhD's construct | Brad | 30 Aug 2026 | Consistency between venture and thesis |
 | 62 | Which independent reviews flagged unsafe content in the most-installed pregnancy apps? A citation is needed for the Product Overview claim | Brad | 30 Aug 2026 | An investor-facing claim without a source |
 | 63 | Is the midwifery-education audience a live commercial stream? Articulated in the Product Overview, priced in the Pricing Model, modelled nowhere | Brad | 30 Aug 2026 | Revenue model completeness |
+| 64 | What are the nine Victorian Maternity Taskforce recommendations, verbatim, and which were accepted immediately? | Brad / Lois | 30 Aug 2026 | Policy-alignment section of the GTM and the Steering Committee deck |
+| 65 | Who has been appointed Victorian Chief Midwife, and can Brad's existing contact be re-engaged in September? | Lois | 30 Aug 2026 | The highest-value relationship in the state |
+| 66 | Is My Maternity Journey a competitor, a channel, or both — and who at Safer Care Victoria owns it? | Brad + Russell | 30 Aug 2026 | Competitive position before 16 Sept; possible channel |
+| 67 | Does the Respectful Maternity and Newborn Care Framework (SCV, 6 Jan 2026) create obligations Kindred Care should align to explicitly? | Lois | 30 Aug 2026 | Assurance pack, procurement |
