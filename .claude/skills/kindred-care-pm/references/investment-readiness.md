@@ -5,7 +5,7 @@ does not speed the raise up, it just moves the delay later and makes it more exp
 
 ## Step 0 — the blocker that outranks everything
 
-**Is Kindred Care an incorporated company with the 70/30 on a cap table and the IP
+**Is Kindred Care an incorporated company with a shareholding on a cap table and the IP
 assigned in?**
 
 If it is a contractual arrangement between Bundle of Rays and ACU rather than shares
@@ -15,7 +15,7 @@ at 1 until it is answered.
 
 Related questions that must be answered in the same piece of work:
 
-- Where is the 70/30 documented, and is it equity, revenue share, or an MOU?
+- What does ACU's draft Heads of Agreement propose, and is it equity, revenue share, or an MOU?
 - Who owns the code, prompts, brand, and transcript data today — legally, in writing?
 - Do any ACU staff or student contributions create a university IP claim? Universities
   ordinarily assert rights over staff-created IP; that has to be checked and cleared,

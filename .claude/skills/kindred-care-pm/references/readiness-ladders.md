@@ -116,7 +116,7 @@ clinical champion with neither is still CRL 3, however good the meeting felt.
 | 8 | Term sheet | Signed term sheet |
 | 9 | Closed | Funds received and deployed against the stated milestones |
 
-**IRL 2 is the one that traps joint ventures.** A 70/30 JV documented as an agreement
+**IRL 2 is the one that traps joint ventures.** A JV documented as an agreement
 rather than as shares in a company is not something external capital can enter. If
 Kindred Care is not incorporated with the JV reflected on a cap table and IP assigned
 in, IRL is capped at 1 no matter how good the deck is. This currently sits in the

@@ -20,7 +20,7 @@ Principal source for the product facts below: the **Kindred MVP Board**, snapsho
 
 | Fact | Detail | Source |
 |---|---|---|
-| Venture structure | Kindred Care is a **70/30 joint venture, Bundle of Rays / ACU** | `phd-define-writing` canonical facts, Jul 2026 |
+| Venture structure | Kindred Care is a **Bundle of Rays / ACU joint venture. The shareholding split is NOT settled** — it is to be set out in the Heads of Agreement, currently in preparation with ACU. The "70/30" carried in earlier internal documents is retired and must not be stated anywhere | Brad, 30 Aug 2026 |
 | Brad's role | CEO, Bundle of Rays Academy; carries the Kindred Care venture | same |
 | ACU | Australian Catholic University — 30% JV partner, partner on the raise and go-to-market, **and an approval role inside the product itself** (see below) | same + Brad, 29 Aug 2026 + MVP Board |
 | Hector Gonzalez | **CTO, Bundle of Rays** — owns Pillar 4, Technical Build | Task Register + CRC-P folder |
@@ -198,7 +198,7 @@ Do not fill any of these from inference. Ask Brad, or leave it UNKNOWN in the ou
 
 ### Entity, legal and IP — unchanged and still the binding constraint
 - [ ] **Is Kindred Care an incorporated entity (Pty Ltd), or a contractual JV inside Bundle of Rays?** Highest-leverage open question for the raise
-- [ ] Where the 70/30 is documented, and whether it is equity, revenue share, or an MOU
+- [ ] What ACU's draft Heads of Agreement proposes, and whether the split is equity, revenue share or an MOU — assess against `kindred-care/drafts/acu-draft-review-checklist.md`
 - [ ] Who owns the IP — code, prompts, brand, transcript data. The `bor-iridia` repo sits under the BundleOfRays org, which is evidence of custody, not of ownership
 - [ ] Whether ACU staff or student contributions create an ACU IP claim — sharpened by ACU holding an approval role inside the product
 - [ ] Does ACU's 30% dilute on an external round
