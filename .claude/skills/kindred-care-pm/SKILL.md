@@ -121,6 +121,30 @@ BoR owns the platform, licensed to the JV, not assigned. When ACU's draft arrive
 against `kindred-care/drafts/acu-draft-review-checklist.md` before any response, and route
 the response through Russell.
 
+**4b-iv. Interface: text first, video for demonstration only.** The working metaphor has
+been FaceTime; it is wrong as a default because the moments of highest need — 2am, feeding,
+one hand, dark room — are the moments video is least usable. One persistent thread across
+the full 16 months, text as the default surface, voice one tap away, **video reserved for
+genuinely visual content** (latch, bathing, CPR positioning), never for conversation. BoR
+has already built an agent deployment platform (Workbench, deploy gate, templates, tenant
+management) — that is BoR background IP with Kindred Care as its first vertical; do not
+reposition the raise around it, but say so plainly in diligence. Read
+`references/interface-doctrine.md` before any modality, channel, retention or D-23 work.
+
+**4b-v. D-23 is three decisions at once, and privacy law is one of them.** The avatar vendor
+call is a cost decision (69–80% of variable cost), a product decision (demonstration vs
+conversation) **and a data sovereignty decision** — HeyGen/LiveAvatar is a US processor, so
+conversation content reaching it is a cross-border disclosure of health information under
+APP 8, potentially a hard blocker for a Victorian public health service. Health information
+is *sensitive information*; state law (Health Records Act 2001 (Vic), Information Privacy
+Act 2009 (Qld)) layers on top of the Privacy Act and **differs by state**, so Victoria and
+Queensland are two compliance postures. Google offers ML processing in australia-southeast1
+but its formal AI/ML data-residency commitment covers only US and EU. Read
+`kindred-care/compliance/2026-08-30-data-sovereignty-and-standards.md` before any privacy,
+procurement, security-questionnaire, certification or vendor-selection work. **Always state
+that this is a commercial read and that a privacy lawyer is required before anything is
+warranted to a health service.**
+
 **4c. The locks are not style preferences.** Always "the Companion", never
 tool/platform/app. Always "midwifery- and nurse-led". Education-only — symptom
 interpretation, triage and diagnosis are never reintroduced, because that is what holds
@@ -300,5 +324,6 @@ Two rules matter most:
 - `references/gtm-playbook.md` — ICP, pilot design, channel, pricing, evidence-led sales in Australian care.
 - `references/early-adopters.md` — the engagement doctrine: tiers, the six-rung ladder, rung-0 routing and declaration, how to open, the value exchange.
 - `references/pricing-doctrine.md` — category-sets-the-ceiling, the three birth-volume tiers, the central/state licence, pilots at list, and the unit-cost gate.
+- `references/interface-doctrine.md` — modality, the persistent thread, video for demonstration only, the platform-vs-product question, the open channel question.
 - `references/investment-readiness.md` — funding stack, milestone-to-raise map, data room index, diligence question bank.
 - `references/acu-jv-and-phd-firewall.md` — JV governance, IP, entity questions, and the ethics firewall check.
