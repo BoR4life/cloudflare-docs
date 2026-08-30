@@ -238,31 +238,39 @@ Asks are dated and specific; the tone stays collegial.*
 
 # Re-engagement after the missed meeting — Fri 28 Aug
 
-**Context.** Friday 2–3pm AEST, "Kindred Care discussion", organised by Lois, with Marie,
-Bill, Russell. Brad had accepted. Lois emailed at 2:06pm: *"HI Brad – hoping you can join us
-now."* The meeting proceeded — **it was Marie's introduction to the ACU team**, and both
-Russell and Marie described it as productive.
+**FINAL. Three emails, in this order. No alternates — these are the picks.**
 
-**What is sitting unanswered.**
-1. The follow-up scheduling thread — Russell offered Mon 31 Aug / Tue 1 Sep; Lois replied
-   Sat with *"Monday between 11–1pm and Tues is better any time but 12–1pm"*; Marie is
-   waiting. Brad is cc'd and silent.
-2. **Wed 2 Sep 10:00–10:30 — Workshop 1.2.B (Biz)**, appended to the weekly. Invite
-   unanswered.
-3. **Thu 3 Sep 11:00–11:45 — Workshop 1.2.R&D.** Invite unanswered, and Russell asked
-   *"please recommend any agenda items to add."*
-4. The recurring weekly Project Oversight Team meeting is also `needsAction`.
+## What happened
 
-**Calendar is clear** Sun–Tue, and neither workshop conflicts with anything.
+Friday 2–3pm AEST, "Kindred Care discussion", organised by Lois, with Marie, Bill and
+Russell. Brad had accepted. Lois emailed at 2:06pm: *"HI Brad – hoping you can join us
+now."* The meeting went ahead — **it was Marie's introduction to the ACU team** — and both
+Russell and Marie described it afterwards as productive.
 
-**Two clicks Brad has to do himself:** accept the weekly, 1.2.B and 1.2.R&D. I have not
-accepted them — they are outward-facing and tell ACU he is coming.
+## Already done for you
+
+**Three calendar invites accepted** (30 Aug): Workshop 1.2.B (Wed 2 Sep, 10:00–10:30),
+Workshop 1.2.R&D (Thu 3 Sep, 11:00–11:45), and the weekly Project Oversight Team meeting —
+accepted for the full recurring series through 15 December, which had been sitting
+unanswered since 2 August.
+
+So when email C says "both accepted", it is already true.
+
+## Still open, and yours
+
+The follow-up scheduling. Russell offered Mon 31 Aug / Tue 1 Sep. Lois replied Saturday:
+*"Monday between 11–1pm and Tues is better any time but 12–1pm."* Marie is waiting. Brad is
+cc'd and silent. **Monday 11am–1pm is clear in the calendar and matches Lois exactly** —
+that is the answer, and email A gives it.
+
+*Judgement call taken: the Sunday offer is dropped. Four people have already proposed Monday
+and Tuesday; offering today reads as performance rather than availability.*
 
 ---
 
 ## A. Apology and availability — reply on "Kindred Care discussion"
 
-*To Lois, Russell, Bill, Marie. Send first, before anything else.*
+*To Lois, Russell, Bill, Marie. Send first.*
 
 > **Subject:** RE: Kindred Care discussion
 >
@@ -273,18 +281,16 @@ accepted them — they are outward-facing and tell ACU he is coming.
 > without me, and Lois, thank you for chasing me at the time.
 >
 > On the follow-up: **Monday 11am–1pm works for me**, which matches your window Lois.
-> Tuesday I'm open all day if that suits Marie and Russell better. I'm also around today if
-> anyone wants to talk sooner.
+> Tuesday I'm open all day if that suits Marie and Russell better.
 >
-> Russell — I've accepted both workshops and have come back separately with agenda
-> suggestions for the R&D one.
+> Russell — I've accepted both workshops and the weekly, and I've come back separately with
+> agenda suggestions for the R&D session.
 >
 > Brad
 
 ## B. To Marie — separate, short
 
-*She is the newest relationship and the one the absence actually costs. Send it as its own
-email, not buried in a reply-all.*
+*Its own email, not folded into the reply-all. Send immediately after A.*
 
 > **Subject:** Sorry I missed you on Friday
 >
@@ -293,16 +299,16 @@ email, not buried in a reply-all.*
 > I'm sorry I wasn't there on Friday — of all the meetings to miss, your first with the team
 > was the wrong one.
 >
-> I'd genuinely like to sit down with you properly, and I'll fit entirely around you. I'm
-> free today, Monday and Tuesday. Very much looking forward to it, and glad the conversation
-> went well without me.
+> I'd genuinely like to sit down with you properly, and I'll fit entirely around you. Monday
+> or Tuesday both work. Glad to hear the conversation went well without me, and looking
+> forward to picking it up.
 >
 > Brad
 
 ## C. To Russell — the workshops, with agenda items
 
-*This is the actual re-engagement. He asked a direct question — answering it well does more
-than the apology does. Keep it to what earns its place; do not empty the week's work into it.*
+*The actual re-engagement. He asked a direct question; answering it well does more than the
+apology does. Send after A and B — same day is fine.*
 
 > **Subject:** RE: KC :: Workshop 1.2.R&D and 1.2.B
 >
@@ -331,7 +337,7 @@ than the apology does. Keep it to what earns its place; do not empty the week's 
 > erasure and we're building a conversation that runs sixteen months. Designing for it now is
 > cheap; retrofitting it later is a rebuild.
 >
-> For **1.2.B**, given we only have thirty minutes, I'd suggest two:
+> For **1.2.B**, given we only have thirty minutes, two:
 >
 > **1. Pricing.** I've been through the model properly and have a resolved position on the
 > schedule, plus a proposal for a smaller entry tier aimed at getting a first site moving
@@ -343,3 +349,12 @@ than the apology does. Keep it to what earns its place; do not empty the week's 
 > Happy to circulate anything ahead of either session if that's useful.
 >
 > Brad
+
+---
+
+## Why these are not sent
+
+The standing rule holds, and here it is more than procedure: **an apology sent by an agent
+is not an apology.** If Marie ever learned the note about missing her first meeting had been
+auto-sent, that would cost more than the original miss. A and B in particular have to come
+from Brad.
