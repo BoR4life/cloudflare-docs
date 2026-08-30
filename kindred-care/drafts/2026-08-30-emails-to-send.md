@@ -233,3 +233,113 @@ Asks are dated and specific; the tone stays collegial.*
 >
 > Thanks,
 > Brad
+
+---
+
+# Re-engagement after the missed meeting — Fri 28 Aug
+
+**Context.** Friday 2–3pm AEST, "Kindred Care discussion", organised by Lois, with Marie,
+Bill, Russell. Brad had accepted. Lois emailed at 2:06pm: *"HI Brad – hoping you can join us
+now."* The meeting proceeded — **it was Marie's introduction to the ACU team**, and both
+Russell and Marie described it as productive.
+
+**What is sitting unanswered.**
+1. The follow-up scheduling thread — Russell offered Mon 31 Aug / Tue 1 Sep; Lois replied
+   Sat with *"Monday between 11–1pm and Tues is better any time but 12–1pm"*; Marie is
+   waiting. Brad is cc'd and silent.
+2. **Wed 2 Sep 10:00–10:30 — Workshop 1.2.B (Biz)**, appended to the weekly. Invite
+   unanswered.
+3. **Thu 3 Sep 11:00–11:45 — Workshop 1.2.R&D.** Invite unanswered, and Russell asked
+   *"please recommend any agenda items to add."*
+4. The recurring weekly Project Oversight Team meeting is also `needsAction`.
+
+**Calendar is clear** Sun–Tue, and neither workshop conflicts with anything.
+
+**Two clicks Brad has to do himself:** accept the weekly, 1.2.B and 1.2.R&D. I have not
+accepted them — they are outward-facing and tell ACU he is coming.
+
+---
+
+## A. Apology and availability — reply on "Kindred Care discussion"
+
+*To Lois, Russell, Bill, Marie. Send first, before anything else.*
+
+> **Subject:** RE: Kindred Care discussion
+>
+> Hi all,
+>
+> First — I'm sorry I missed Friday. No good excuse, and I'm sorry particularly to you
+> Marie, given it was your first meeting with the team. Thank you all for going ahead
+> without me, and Lois, thank you for chasing me at the time.
+>
+> On the follow-up: **Monday 11am–1pm works for me**, which matches your window Lois.
+> Tuesday I'm open all day if that suits Marie and Russell better. I'm also around today if
+> anyone wants to talk sooner.
+>
+> Russell — I've accepted both workshops and have come back separately with agenda
+> suggestions for the R&D one.
+>
+> Brad
+
+## B. To Marie — separate, short
+
+*She is the newest relationship and the one the absence actually costs. Send it as its own
+email, not buried in a reply-all.*
+
+> **Subject:** Sorry I missed you on Friday
+>
+> Hi Marie,
+>
+> I'm sorry I wasn't there on Friday — of all the meetings to miss, your first with the team
+> was the wrong one.
+>
+> I'd genuinely like to sit down with you properly, and I'll fit entirely around you. I'm
+> free today, Monday and Tuesday. Very much looking forward to it, and glad the conversation
+> went well without me.
+>
+> Brad
+
+## C. To Russell — the workshops, with agenda items
+
+*This is the actual re-engagement. He asked a direct question — answering it well does more
+than the apology does. Keep it to what earns its place; do not empty the week's work into it.*
+
+> **Subject:** RE: KC :: Workshop 1.2.R&D and 1.2.B
+>
+> Hi Russell,
+>
+> Both accepted, and the extension to the weekly suits.
+>
+> You asked for agenda items. Four for **1.2.R&D**, in the order I'd rank them:
+>
+> **1. The avatar vendor decision (D-23).** This has turned out to be bigger than a vendor
+> choice. It drives roughly three-quarters of our variable cost, it decides the interface,
+> and because the vendor is US-based it raises a cross-border disclosure question under APP 8
+> that a Victorian health service may treat as a blocker regardless of price. Three separate
+> reasons to settle it, and it's currently sitting outside our tracked critical path.
+>
+> **2. The evaluation set — this is the TRL 4 gate.** TRL 4 in our own definition is
+> recall@5 ≥ 0.85 and safety-tag triggering ≥ 0.95 against a gold-standard set that doesn't
+> exist yet. The epic that builds it is at zero of twelve stories. It's the R&D the POC
+> exists to fund, and I'd like it visible as a stream in its own right.
+>
+> **3. Data residency and our third-party processors.** Worth a stream. I've started a
+> processor map — which vendor sees what, in which jurisdiction — and it's the input to
+> anything a health service will ask us during procurement.
+>
+> **4. Retention and erasure.** The Privacy Act reforms are heading toward a right to
+> erasure and we're building a conversation that runs sixteen months. Designing for it now is
+> cheap; retrofitting it later is a rebuild.
+>
+> For **1.2.B**, given we only have thirty minutes, I'd suggest two:
+>
+> **1. Pricing.** I've been through the model properly and have a resolved position on the
+> schedule, plus a proposal for a smaller entry tier aimed at getting a first site moving
+> quickly.
+>
+> **2. Which budget a health service actually buys this from.** I don't think we've answered
+> it, and almost everything commercial sits downstream of the answer.
+>
+> Happy to circulate anything ahead of either session if that's useful.
+>
+> Brad
