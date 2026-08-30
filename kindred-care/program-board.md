@@ -1,6 +1,6 @@
 # Kindred Care — program board
 
-**Readiness: TRL 4 / CRL 3 / IRL 3** · Last updated: 29 Aug 2026
+**Readiness: TRL 3 / CRL 3 / IRL 3** · Last updated: 29 Aug 2026
 **Cadence:** full review Monday, midweek check Thursday.
 
 Baselined 29 Aug 2026 against the MVP Board snapshot of 28 Aug 2026 — see
@@ -29,7 +29,7 @@ Status vocabulary — use these and no others:
 | **Late Sep – Oct 2026 (est.)** | MVP build complete, from ~193h of loop time at 2 tracks | Product finished ~5 months before the next district funding window — that gap is where entity, HREC, regulatory position, assurance pack and beachhead must be closed |
 
 ## Product track (TRL)
-**TRL 4.** Build is ahead of both other tracks. TRL 5 fails on four gates, three of which are not build work.
+**TRL 3, climbing** — corrected 29 Aug 2026 from the Business Plan's deliberate position. TRL 4 requires recall@5 ≥ 0.85 and safety-tag triggering ≥ 0.95 against a gold-standard evaluation set that does not yet exist (P4-04, P3-06, due 2 Oct). Shipped build volume is not the test, and claiming TRL 4 removes the R&D the POC exists to fund.
 
 | Milestone | Owner | Due | Status | Evidence | As at |
 |---|---|---|---|---|---|
