@@ -95,18 +95,24 @@ cap so the buyer has a certain maximum, which public buyers require.
 Tier 1. The entry price is therefore the most consequential number in the schedule, not the
 least, and the equity case the Taskforce cares about lives entirely inside it.
 
-That creates a problem no price fixes. Run the cost scenarios for a 1,000-birth service
-(1,383 active mothers) against the three unit costs in the room:
+That creates a problem no price fixes. A 1,000-birth service (400 active mothers on the
+model's own 40% engagement rate), costed from Hector's engine:
 
-| Unit cost | Variable cost | Against a $25k tier | Against $18k |
-|---|---|---|---|
-| $14.70 | $20,330 | 19% gross margin, before fixed cost | **loss** |
-| $44.60 | $61,682 | **heavy loss** | **heavy loss** |
-| $70.44 | $97,419 | **heavy loss** | **heavy loss** |
+| Scenario | Annual cost | vs $25k tier |
+|---|---|---|
+| As modelled — 40 avatar min/mother/mo | AUD $37,498 | **−50%** |
+| At a sub-$20k entry tier | AUD $37,498 | **−108%** |
+| Hector's larger-bundle avatar rate | AUD $30,117 | **−21%** |
+| Avatar capped at 10 min/mother/mo | AUD $20,534 | +18% |
+| **Voice and text only** | AUD $14,880 | **+40.5%** |
 
-At two of the three current estimates, the small site is **already loss-making at $25,000**
-and no threshold-clearing price can rescue it. Selling harder into regional Victoria at a
-lower price would scale the loss.
+Of that cost, **AUD $9,300 is platform support — fixed per tenant.** At a 300-birth service
+that single line is 73% of the entire cost base.
+
+Two conclusions. The small site is **loss-making at any price it would accept** while avatar
+video runs at the modelled volume, so selling harder into regional Victoria would scale the
+loss. And the fixed-per-tenant support cost is the arithmetic reason the individual small
+service fails: one tenant covering ten regional services pays it once, not ten times.
 
 **The likely answer is that the individual small service is the wrong unit of sale.** Do not
 sell 33 regional services a licence none of them can justify and none of which covers the
@@ -156,14 +162,30 @@ weeks or six months. Thresholds vary by each service's own policy and are unveri
 confirm per target site. Landing under the threshold is worth more than the revenue
 difference between tiers.
 
-## The gate
+## The gate — it is D-23, not unit cost
 
-The schedule stays **RECOMMENDED, never CONFIRMED, while unit cost is unknown.** It is
-currently stated three ways across 4.8× ($14.70 / $44.60 / $70.44 per active mother per
-year), open since May. Clinical governance cost — supervisor-agent review, clinical review,
-RAG corpus maintenance — is largely fixed per site and does not shrink for a small one, so
-**Tier 1 may be below cost.** Report the age of this blocker at every checkpoint alongside
-the two ACU-side blockers.
+**Unit cost is known.** AUD $70.44 per active mother per year, variable, reconciled exactly
+against the Pricing Model's own $5.87/month. Plus AUD $9,300/year platform support, **fixed
+per tenant** — 73% of the whole cost base at a 300-birth service, and the arithmetic behind
+the regional-network conclusion above.
+
+**Avatar video is 80% of that cost** (AUD $56.54 against $13.95 for Gemini, Vertex, Search,
+Cloud Run and storage combined). At the modelled 40 minutes per mother per month **every
+tier is loss-making** — $25k by 50%, $95k Enterprise by 281%. Hector's larger-bundle rate
+takes 33% off and still leaves it 20% under. Raising price does not work either: break-even
+on a 1,000-birth service is AUD $37,498.
+
+Voice and text as standard, avatar metered as a premium, gives **40.5% gross margin at the
+existing $25,000 tier** — the Foundation target in the model's own Assumptions 1.4.
+
+So the gate on every price is **D-23, the LiveAvatar vendor decision** — open, and carried
+out-of-loop on the MVP Board rather than on the critical path. Report its age at every
+checkpoint alongside the two ACU-side blockers, and never quote a price before it lands.
+
+**The pricing problem is a cost-architecture problem.** Do not redesign tiers to solve it.
+
+Working: `kindred-care/finance/2026-08-30-unit-cost-resolved.md`, reproducible via
+`kindred-care/finance/unit_cost_model.py`.
 
 ## Forecast rule
 
