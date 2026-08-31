@@ -19,7 +19,7 @@ which pathway it counts as — **before the approach**, not at diligence.
 | | |
 |---|---|
 | **Interest** | Shareholder in Bundle of Rays; Advisory Director. Based at The Alfred (`ged.williams@alfred.org.au`) |
-| **Introductions made** | **Confirmed by Brad, 31 Aug 2026.** Fiona (`freed@phcn.vic.gov.au`), **Jenny Dempster** (Gippsland Southern Health Service), **Wendy Christensen** and **Trina Coxon** (Bass Coast Health) — all via the 11 June 2026 outreach on which he was copied. Also **Peninsula Health** |
+| **Introductions made** | **Confirmed by Brad, 31 Aug 2026.** Fiona (`freed@phcn.vic.gov.au`), **Jenny Dempster** (Gippsland Southern Health Service), **Wendy Christensen** and **Trina Coxon** (Bass Coast Health) via the 11 June outreach; **Peninsula Health**; and — also 11 June, off the back of a CNMO meeting — **Elisa McDonald, Chief Midwifery Officer (Vic)** and **Adj Prof Emma Saddington, Chief Nursing Officer (Vic)**. **Effectively the entire Victorian position traces to him** |
 | **Consequence already applied** | **Alfred Health is excluded from the pipeline** because of this shareholding — correctly |
 | **Status** | **DECLARED 31 Aug 2026** |
 
