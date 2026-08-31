@@ -105,3 +105,8 @@ Ordered by what unblocks the most downstream work.
 | 100 | On tenant exit, what happens to mothers' threads? She is enrolled by the service but the conversation is hers | Brad + legal | 30 Aug 2026 | Will appear in the first pilot agreement |
 | 101 | What is the HREC/ethics pathway for the evidence sprint, and how long does it take? | Brad + Lois | 30 Aug 2026 | **The long pole.** Everything else in the sprint can compress; this cannot. Start this week |
 | 102 | Does Companion use correlate with more or fewer midwife contacts? | Evidence sprint | 30 Aug 2026 | The warmth-trap indicator. Fewer looks like success and is the harm |
+| 103 | **Is there any Wishlist funding pathway at all** — a contact, a process, an amount? No correspondence exists | Brad | 31 Aug 2026 | **The pilot's whole funding leg.** "Externally funded" is in the SCHHS ask and currently has no answer |
+| 104 | The national simulation research centre — real arrangement or aspiration? No correspondence found | Brad | 31 Aug 2026 | Third leg of a Triangle that may have one leg |
+| 105 | **"Townsville HHS have signed on as a key clinical site"** — stated to Michelle 23 Jul. What was agreed, with whom? No record | Brad | 31 Aug 2026 | Either materially under-recorded or needs correcting where it was said |
+| 106 | Is the cohort postnatal-only (12 months) or 20 weeks gestation to 12 months postnatal? SCHHS was told the former | Brad + Lois | 31 Aug 2026 | Settle **before** the Maternity Leadership presentation — that is the version they will hold us to |
+| 107 | Is signposting to free and low-cost prevention programs part of the product? Stated to SCHHS, appears nowhere else | Brad + Hector | 31 Aug 2026 | Either a real feature or a claim to withdraw |

@@ -358,3 +358,50 @@ The standing rule holds, and here it is more than procedure: **an apology sent b
 is not an apology.** If Marie ever learned the note about missing her first meeting had been
 auto-sent, that would cost more than the original miss. A and B in particular have to come
 from Brad.
+
+---
+
+# URGENT — Michelle Schmidt reply (31 Aug)
+
+**Six days stale.** Her 25 Aug email asked Jo (SC-DSO-WCS) to coordinate a slot at the WCS
+Maternity Leadership meeting. Nobody has replied. This is the only live door at Sunshine
+Coast and it is not contingent on the failed grant.
+
+*Reply to her thread "Maternity Services - Kindred Care information session", keeping Jo
+(SC-DSO-WCS@health.qld.gov.au) on it. Copy Keppel Schafer — note the spelling, it is
+Schafer.*
+
+> **Subject:** RE: Maternity Services - Kindred Care information session.
+>
+> Hi Michelle, and hello Jo,
+>
+> Thank you — the Maternity Leadership meeting is exactly the right forum, and I'd be glad
+> to present there.
+>
+> Jo, whichever slot suits the team is fine by me; I'll build around your meeting rather
+> than the other way round. Happy with anything from a short overview to a full session,
+> and I'll send material ahead so people can read rather than be presented at.
+>
+> One update for transparency: the Advance Queensland application wasn't shortlisted. That
+> doesn't change anything about the work — the build has moved on considerably since July
+> and we're now planning a small evaluation pilot rather than a grant-funded one. I'd
+> rather tell you that up front than have it come up later.
+>
+> What I'd like to put to the team is fairly specific: a small, time-limited pilot with
+> around 150 women, externally funded, where SCHHS provides the clinical setting and we do
+> the evaluation alongside you. No procurement, no licence, nothing that needs a budget
+> line. If the team's view is that it isn't a fit, that's a genuinely useful answer too.
+>
+> Thanks again Michelle.
+>
+> Brad
+
+**Why it is written this way.**
+- **The grant failure is disclosed up front.** She will find out. Saying it first costs
+  nothing and buys credibility; being caught later costs the relationship.
+- **The ask is scoped and refusable** — 150 women, externally funded, no procurement. A
+  leadership meeting can say yes to that. It cannot say yes to a licence.
+- **"Externally funded" is a commitment.** Before presenting, there must be an answer to
+  where that money comes from. Wishlist is currently unverified.
+- **No ACU naming**, so no Russell sighting needed before it goes.
+

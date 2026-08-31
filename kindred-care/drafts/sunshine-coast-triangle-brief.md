@@ -1,96 +1,132 @@
-# The Sunshine Coast Triangle — brief for Russell
+# Sunshine Coast — what is actually there. v2
 
-**30 Aug 2026.** Identified as a next step in April and never written. It is now the most
-consequential gap in the pack, because it is the **only place in the venture with real
-traction** and it is under-represented in every document — precisely because the written
-strategy says Victoria.
-
----
-
-## What actually exists there
-
-Three institutions, already engaged, each providing something the others do not.
-
-### 1. SCHHS Maternity Services — the clinical partner
-**Michelle Schmidt signed a letter of support on 23 July 2026** for the Advance Queensland
-PSP application. A named maternity service, engaged, with a signature on file.
-
-### 2. Wishlist — the funding pathway
-**Brendan Hogan (CEO) signed the same day.** A health charity able to fund a pilot from
-philanthropic rather than operating money — which resolves the problem running through the
-whole commercial analysis: **health services have no budget line for this yet, and a charity
-does not need one.**
-
-*(Open: whether Brendan Hogan is Wishlist CEO or SCHHS — he signed from a health.qld.gov.au
-address. Settle before attribution.)*
-
-### 3. A national simulation research centre — the evidence partner
-Co-located capability for structured evaluation and academic output.
-
-## Why the combination matters more than any part
-
-Most ventures at this stage have a willing clinician and no money, or money and no site.
-**The Triangle has a signed clinical partner, a funding pathway that bypasses the budget-line
-problem, and evaluation capability, in one geography.** That is the complete set required to
-run the eight-week evidence sprint, and it is the reason the sprint should run there.
+**31 Aug 2026. This replaces v1 (30 Aug), which was wrong in three places.** v1 was built
+from the pipeline sheet and the Customer Discovery summary without checking the primary
+record. The email trail says something different, and the difference matters before any of
+it reaches Russell or a pack.
 
 ---
 
-## The tension, stated rather than finessed
+## The three corrections
 
-**The strategy points at Victoria. The traction points at Queensland.**
+### 1. The grant this was all for was not shortlisted
 
-Victoria: zero sites past step 1 after four months. Peninsula and Gippsland at "meeting
-awaited" since April. Gippsland has no named contact at all. The named channel — ACU
-Midwifery — has stated in writing (Lois, 7 August) that her connections are in South
-Australia. A Business Plan target of 3–4 Victorian LOIs by Oct–Nov that will not be met.
+**12 August 2026**, from DETSI Innovation: *"After careful consideration, we regret to
+inform you that your application has not been shortlisted for further progression."*
+(PSP – HWQ Supporting the Health and Wellbeing of Queenslanders Challenge, application
+PSPHWQC052-2026.)
 
-**The objection, and the answer.** Innovation Victoria requires Victorian economic benefit,
-so does running a Queensland pilot undermine the raise?
+Both letters of support — Michelle Schmidt and Brendan Hogan, 23 July — were written for
+**this bid**. It failed. Any description of them that does not say so is misleading, and a
+diligence process finds it in one search.
 
-No — and the reasoning is straightforward enough to put in the pack:
+### 2. The letters commit nothing, by their own design
 
-1. **Evidence travels; meetings do not.** A Victorian committee reading real engagement data
-   from 150 mothers is in a different conversation from one reading a pipeline of meetings
-   that have not happened.
-2. **The Victorian deployment is what is being funded**, not the pilot. The POC produces the
-   evidence; the commercialisation round deploys it in Victoria. That is the normal shape.
-3. **It de-risks the Victorian ask.** Arriving at Safer Care Victoria with a completed pilot
-   is a materially stronger approach than arriving with a proposal.
-4. **The equity case is the same case.** Regional Queensland and regional Victoria are the
-   same problem — workforce thin, distances long, access unequal.
+Brad's covering email to Michelle, 23 July, describes the letter he drafted for her:
 
-**Recommendation: say this out loud in the UCAC pack** rather than leaving a reader to notice
-that the strategy and the traction point in different directions. A venture that names its
-own tension reads as clear-eyed. One that does not reads as unaware — and the reader finds it
-either way.
+> *"It's written as an expression of clinical and service support — scoping discussions,
+> midwifery perspective on the content and safety design, advisory input on the
+> de-identified insights — and it makes clear that any actual SCHHS participation or
+> resourcing would go through your governance and approvals. **It commits no staff time and
+> no resources.**"*
+
+So "confirmed in-kind clinical partner" — v1's wording — is not supportable. Two further
+points of accuracy: **Brad drafted the letter and Michelle signed it**, which is normal
+practice but weaker than a letter the service authored; and **Michelle is *Acting* Nursing
+and Midwifery Service Director**, so her authority is time-limited and may transfer.
+
+### 3. The other two legs of the "Triangle" are unevidenced
+
+- **Wishlist as a funding pathway.** No correspondence with Wishlist exists in the record.
+  **Brendan Hogan's address is `@health.qld.gov.au`, not Wishlist** — he was cc'd on the
+  letter request alongside Keppel Schafer. v1's claim that Wishlist "can fund a pilot from
+  philanthropic rather than operating money" is an inference I made and cannot substantiate.
+  **Treat as unverified until Brad confirms.**
+- **The national simulation research centre.** No Kindred Care correspondence found. Also
+  unverified.
+
+**So there is no Triangle in the evidence — there is one real relationship and two claims.**
+
+### And one new item, also unverified
+
+Brad to Michelle, 23 July: *"**Townsville HHS have signed on as a key clinical site.**"*
+There is no Townsville correspondence in the record and it appears in no register. Either it
+is real and materially under-recorded, or it needs correcting wherever it was said.
 
 ---
 
-## What this brief asks Russell for
+## What is genuinely there — and it is better than a failed grant
 
-1. **Endorsement to run the evidence sprint at Sunshine Coast**, framed as the POC that
-   de-risks the Victorian deployment.
-2. **A view on the Advance Queensland PSP application** — whether its status affects how the
-   letters can be characterised, and whether ACU is named anywhere in it.
-3. **The parallel Victorian action**, which is not more prospecting: the **Elisa McDonald
-   reconnection Russell himself requested on 7 August and which has not happened.** She is
-   simultaneously the Taskforce implementation lead, the Safer Care Victoria route and the
-   My Maternity Journey route. It is the single highest-value unmade contact in the venture,
-   three weeks old.
+**Michelle Schmidt re-engaged on 25 August, thirteen days *after* the PSP outcome:**
 
-## Probity notes
+> *"I think the best opportunity to present to the team and give an overview is our Maternity
+> leadership meeting. Jo, are you able to coordinate a time for Brad to present at the WCS
+> Maternity Leadership meeting?"*
 
-- The two letters are **letters of support for a grant application, not letters of intent to
-  procure.** Describe them that way everywhere. They are real artefacts and materially better
-  than nothing — overstating them is the only way to lose their value.
-- Neither is currently in the data room. **Add them.**
-- Route per rung 0: record who introduced, their interest, and which pathway it counts as,
-  before the approach.
-- **This document names ACU. Russell sights it before any external use.**
+**That is the asset.** A standing invitation to present to the maternity leadership team of
+a real health service, extended after the grant failed — so it is not contingent on
+anything. It is worth more than the letter ever was.
 
-## What to add to the pack once endorsed
+**It has been unanswered for six days.** Jo (SC-DSO-WCS) was asked to coordinate and no one
+has replied.
 
-A half-page in the Business Plan and the deck: the Triangle as the POC site, the three
-partners, the signed letters accurately described, and the Victoria/Queensland logic above.
-Currently the pack under-sells the one thing that is real.
+**Also real:** the SPARK meeting on **Fri 11 Sept, 10:00–10:30**, with **Jake Penrose (Chief
+Digital Officer)** and **Hayley Farry (Executive Director Workforce)**. That is SCHHS at
+executive level. It is a **different product** — occupational violence — and must not be
+turned into a Kindred Care pitch. But it establishes the relationship at a level maternity
+alone does not reach.
+
+**Settled while checking:** the spelling is **Keppel Schafer** (`Keppel.Schafer@health.qld.gov.au`).
+Closes open question 71.
+
+---
+
+## One inconsistency worth catching now
+
+Brad described Kindred Care to Michelle as *"a non-clinical, plain-language digital companion
+for women **in the year after birth**"* that *"connects women to the free and low-cost
+prevention programs already out there."*
+
+Two departures from the canonical product:
+- **Postnatal-only**, against the canonical cohort of 20 weeks gestation to 12 months
+  postnatal. A 12-month cohort rather than ~16.6 months — which is also the enrolled-period
+  discrepancy sitting in the Pricing Model.
+- **A signposting function** — connecting women to existing programs — that appears in no
+  other product document.
+
+Decide which is right before presenting to the Maternity Leadership meeting, because that is
+the version they will hold us to.
+
+---
+
+## How to actually lock it
+
+**Step 1 — today. Answer Michelle.** Six days stale, and it is the only live door. Accept
+the Maternity Leadership slot, ask Jo for a date, and offer to work around them. Draft ready
+in `2026-08-30-emails-to-send.md`.
+
+**Step 2 — before the presentation.** Settle the cohort definition and drop or keep the
+signposting claim. Present the canonical product, not the July version.
+
+**Step 3 — verify or drop, this week.**
+- Wishlist: is there a funding pathway, and who is the contact? If not, the funding leg of
+  the pilot has no answer and that is the finding.
+- The simulation research centre: real, or an aspiration?
+- Townsville HHS: what was actually agreed, and with whom?
+
+**Step 4 — the ask at the Maternity Leadership meeting.** Not a licence. **A 150-mother
+evidence pilot**, externally funded, with SCHHS providing the clinical setting and enrolment
+pathway. That is a scoped, refusable, specific request — which is what a leadership meeting
+can actually say yes to.
+
+**Step 5 — only then to Russell**, with what is verified rather than what was hoped.
+
+---
+
+## The honest one-liner for the pack
+
+> *Sunshine Coast Health's maternity leadership has invited Kindred Care to present, and a
+> signed letter of clinical support is on file. No procurement commitment exists, and the
+> grant the letter was written for was unsuccessful.*
+
+That is defensible in a diligence room. v1's version was not.
