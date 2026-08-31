@@ -145,6 +145,12 @@ procurement, security-questionnaire, certification or vendor-selection work. **A
 that this is a commercial read and that a privacy lawyer is required before anything is
 warranted to a health service.**
 
+**4b-vi. Always write drafts in the chat.** Brad's standing instruction, 31 Aug 2026. Any
+email, message, letter or short document the agent drafts is written **in full, in the
+reply**, ready to copy — not merely saved to a file and referenced. File it as well for the
+record, but the chat is where he reads and sends from. Never answer a drafting request with
+a pointer to a path.
+
 **4c. The locks are not style preferences.** Always "the Companion", never
 tool/platform/app. Always "midwifery- and nurse-led". Education-only — symptom
 interpretation, triage and diagnosis are never reintroduced, because that is what holds
