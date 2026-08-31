@@ -71,7 +71,7 @@ Lead motion: **Victorian public maternity services** (BVUIP is Victorian money),
 |---|---|---|---|---|---|
 | **Reply to Michelle Schmidt — SCHHS Maternity Leadership session** | Brad | Mon 31 Aug 2026 | **DONE (evidence: email sent 31 Aug — invitation accepted, grant failure disclosed, ACU named with Russell and Bill copied)** | — | 31 Aug 2026 |
 | Await Jo (SC-DSO-WCS) with a Maternity Leadership date | Jo / SCHHS | — | IN PROGRESS | Requested 31 Aug | 31 Aug 2026 |
-| **Identify the external funder for the 150-mother pilot** | Brad | Before the presentation date | NOT STARTED | **"Externally funded" is committed in writing; Wishlist unverified** | 31 Aug 2026 |
+| **Wishlist funding conversation — Brendan Hogan** | Brad | 2pm, next week, Wishlist offices Birtinya | **IN PROGRESS (evidence: phone call 31 Aug, meeting confirmed and emailed, ACU copied)** | Establish what Wishlist funds, how much, on what timeline | 31 Aug 2026 |
 | Settle cohort definition and the signposting claim before presenting | Brad + Lois | Before presentation | NOT STARTED | SCHHS holds the July description | 31 Aug 2026 |
 | **Competitor analysis — standing ask from Russell, 26 Aug** | Brad | Tue 1 Sep 2026 | IN PROGRESS | Draft ready to circulate: GTM v3 §2 + research recon | 30 Aug 2026 |
 | **16 Sept Steering Committee deck — Brad's sections** | Brad | 16 Sep 2026 | IN PROGRESS | Full slide-by-slide content drafted: `drafts/steering-committee-deck-16sep-outline.md`. Lock content 9 Sep; Elena clip 12 Sep; Russell sights 14 Sep | 30 Aug 2026 |
