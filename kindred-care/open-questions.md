@@ -118,3 +118,7 @@ Ordered by what unblocks the most downstream work.
 | 113 | **What is time zero on the ACU-BVUIP pathway?** Russell's own slide asks the question | Russell | 31 Aug 2026 | Everything downstream is undated until answered. Highest-value question at Wednesday's weekly |
 | 114 | Is the SCOPE phase's expected deliverable really a pre-MVP scaffold — and does a near-complete MVP change the POC scope or its value? | Brad + Russell | 31 Aug 2026 | We have massively over-delivered against the phase as drawn. Either the POC de-risks, or the phases need redrawing |
 | 115 | Is BoR's SCOPE-phase investment being recorded anywhere as a contribution? | Brad + Russell | 31 Aug 2026 | Unrecorded contribution is value given away, and it is the strongest card in the HoA conversation |
+| 116 | **Is a BoR cash investment line expected at the POC round, as the industry partner has in the comparable?** | Brad → Russell | 31 Aug 2026 | Decides parity at 33.33% versus trailing ACU by nine points |
+| 117 | What valuation does the POC round assume, and does a near-complete MVP move it off the comparable's ~$1.8M? | Brad → Russell | 31 Aug 2026 | The SCOPE-phase build is unpriced in every version of this |
+| 118 | Who are Kindred Care's named SMEs in the Senior Leaders reserve, and does BoR contribute to that reserve? | Brad → Russell | 31 Aug 2026 | It is where the CEO's equity comes from — the Marie instrument |
+| 119 | Where does Hector sit — founding line, Senior Leaders reserve, or ESOP? | Brad | 31 Aug 2026 | Undefined, and expensive to retrofit |
