@@ -1,54 +1,71 @@
 /* Bundle of Rays — brand tokens
- * Derived from the mark (Jean Jullien, "Us"): brush-ink black, flat digital colour, paper ground.
- * NOTE: the mark's licence does not currently cover company use. See BRAND.md.
- * Contrast ratios in comments are WCAG 2.1 and were computed, not estimated.
+ *
+ * Governed by DESIGN.md, which is authoritative. Values here are copied from it,
+ * not reinterpreted. Additions this file proposes are marked AMENDMENT and exist
+ * because DESIGN.md's own floors are not met without them.
+ *
+ * Every ratio below was computed against WCAG 2.1, not estimated.
+ * DESIGN.md floors: body text >= 7:1, large text and UI >= 4.5:1.
  */
 
 :root {
-	/* ---- Core ---- */
-	--bor-ink: #14110f; /* brush black, warmed off pure #000 */
-	--bor-paper: #f6f1e7; /* uncoated paper ground */
-	/* Ink on Paper = 16.70 : AAA */
+	/* Core */
+	--bor-ink: #101619; /* cold near-black. Body text, display type. 16.52 on paper. */
+	--bor-paper: #f2f4f3; /* cool paper stock, not warm cream. Page ground. */
+	--bor-surface: #ffffff; /* raised surfaces, tables, insets. Sparingly. */
+	--bor-rule: #c6cfcd; /* hairlines, table rules, dividers. 1.44 on paper — non-text only. */
+	--bor-muted: #56645f; /* 5.62 on paper. Large text and UI only. */
+	--bor-muted-text: #454f4b; /* AMENDMENT. 7.69 on paper. Use for captions and source lines,
+	                              which DESIGN.md sets in --muted but also holds to the 7:1 body floor. */
 
-	/* ---- Flat colours: for FILLS. Set type on these to --bor-ink. ---- */
-	--bor-ray: #e8a33c; /* Ink on Ray    =  8.72 : AAA */
-	--bor-pulse: #e24e38; /* Ink on Pulse  =  4.82 : AA  */
-	--bor-breath: #3f8f5b; /* Ink on Breath =  4.74 : AA  */
-	--bor-deep: #2b47c8; /* INVERTS: Paper on Deep = 6.57 : AA. Ink on Deep = 2.54, never do it. */
+	/* Accent. One accent element per viewport. */
+	--bor-accent: #3730c4; /* 7.98 on paper. */
+	--bor-accent-ink: #ffffff; /* on accent: 8.81. */
+	--bor-accent-dark: #8b87e8; /* AMENDMENT. --bor-accent is 2.07 on ink and cannot sit on it.
+	                               This is 5.85 on ink, same hue family. */
 
-	/* ---- Deep variants: for COLOURED TYPE on Paper. Never use as large fills. ---- */
-	--bor-ray-deep: #6f480e; /* on Paper = 7.15 : AAA */
-	--bor-pulse-deep: #a62e1d; /* on Paper = 6.16 : AA  */
-	--bor-breath-deep: #26603b; /* on Paper = 6.62 : AA  */
-	/* --bor-deep doubles as its own text-safe value on Paper. */
+	/* Clinical state. ONLY where the artefact depicts genuine clinical state.
+	   Never brand colour, never accent, never decoration. */
+	--bor-state-critical: #b3261e; /* 5.92 on paper. Large and UI only. */
+	--bor-state-caution: #a26400; /* 4.36 on paper. FAILS even the 4.5 floor. Do not set type in it. */
+	--bor-state-stable: #1f6b3a; /* 5.90 on paper. Large and UI only. */
 
-	/* ---- Type ---- */
-	--bor-font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+	/* AMENDMENT. Text-safe clinical state, for state rendered as words rather than fills. */
+	--bor-state-critical-text: #9c2019; /* 7.22 on paper. */
+	--bor-state-caution-text: #6e4400; /* 7.63 on paper. */
+	--bor-state-stable-text: #1a5c32; /* 7.25 on paper. */
+
+	/* Type */
+	--bor-font-display: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--bor-font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
-	--bor-font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo,
-		monospace;
 
-	/* Display: 600/700, tracking tightened. Body: 400/600, generous measure. */
-	--bor-tracking-display: -0.02em;
-	--bor-measure-body: 68ch;
+	--bor-display: clamp(
+		2.5rem,
+		5vw,
+		4rem
+	); /* Archivo 600, tracking -0.02em at 40px+ */
+	--bor-h1: 2rem; /* Archivo 600 */
+	--bor-h2: 1.5rem; /* Archivo 600 */
+	--bor-h3: 1.25rem; /* Archivo 500 */
+	--bor-body: 1.0625rem; /* Source Serif 4 400, line-height 1.6 */
+	--bor-small: 0.875rem; /* Archivo 400, metadata and labels */
 
-	/* ---- Texture ---- */
-	--bor-grain-opacity: 0.045; /* paper grain over full-bleed ground only */
-	--bor-riso-offset: 2px; /* misregistration offset for flat-behind-black emphasis */
-	--bor-radius: 2px; /* near-square. The mark has no soft corners. */
-	--bor-rule: 2.5px; /* dividers read as drawn, not hairline */
+	--bor-measure: 68ch; /* 62-68 characters. Never past 75. */
+	--bor-leading-body: 1.6;
+
+	/* Layout */
+	--bor-margin-col: 200px; /* the chart-margin column. Collapses below 768px. */
+	--bor-radius-control: 2px; /* inputs and buttons */
+	--bor-radius-container: 0; /* containers and tables */
+	--bor-shadow: 0 1px 2px rgba(16, 22, 25, 0.08); /* the only shadow. Floating elements only. */
+
+	/* Motion */
+	--bor-duration: 160ms; /* 120-200ms */
+	--bor-ease: cubic-bezier(0.2, 0, 0, 1);
 }
 
-/* Dark ground. Ink becomes the field, Paper becomes the type.
-   The flats hold; the deep variants do not — they are paper-ground values only. */
-@media (prefers-color-scheme: dark) {
-	:root:not([data-theme="light"]) {
-		--bor-ink: #f6f1e7;
-		--bor-paper: #14110f;
-		--bor-ray-deep: #e8a33c;
-		--bor-pulse-deep: #f0705c;
-		--bor-breath-deep: #5fb37c;
-		--bor-deep: #8fa3f0;
-		--bor-grain-opacity: 0.06;
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		--bor-duration: 0ms;
 	}
 }

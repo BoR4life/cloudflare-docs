@@ -2,6 +2,10 @@
 /**
  * Bundle of Rays — procedural cover generator.
  *
+ * Palette is governed by DESIGN.md: ink, paper and ONE locked accent. Red, amber
+ * and green are never brand colours — they are reserved for genuine clinical
+ * state — so the earlier four-flat palette is gone and does not come back.
+ *
  * Influence: someform (Matthias Winckelmann, Helge Kiehl) — identity built from logic,
  * with tooling handed over so assets can be generated without a designer in the loop.
  * Rendered in this brand's own vocabulary (ink, paper, flat colour, riso offset) rather
@@ -17,26 +21,16 @@
  */
 
 // ---- palette, mirrored from tokens.json ----
-export const INK = "#14110f";
-export const PAPER = "#f6f1e7";
-export const FLATS = [
-	{ name: "ray", hex: "#e8a33c" },
-	{ name: "pulse", hex: "#e24e38" },
-	{ name: "breath", hex: "#3f8f5b" },
-	{ name: "deep", hex: "#2b47c8" },
-];
+export const INK = "#101619";
+export const PAPER = "#f2f4f3";
+export const FLATS = [{ name: "accent", hex: "#3730c4" }];
 
 /**
- * Flats for a reversed (ink) ground. These are the dark-ground values from
- * tokens.css, not tints — Deep in particular is only 2.54:1 against Ink and
- * has to lift before it can sit on it.
+ * The accent on a reversed (ink) ground. #3730c4 is only 2.07:1 against ink, so
+ * it has to lift before it can sit on it; #8b87e8 is 5.85:1, same hue family.
+ * DESIGN.md has no dark-ground accent — this is the proposed amendment.
  */
-export const FLATS_REVERSED = [
-	{ name: "ray", hex: "#e8a33c" },
-	{ name: "pulse", hex: "#f0705c" },
-	{ name: "breath", hex: "#5fb37c" },
-	{ name: "deep", hex: "#8fa3f0" },
-];
+export const FLATS_REVERSED = [{ name: "accent", hex: "#8b87e8" }];
 
 export const RATIOS = {
 	cover: [1200, 1600],
