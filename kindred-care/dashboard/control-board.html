@@ -1,0 +1,297 @@
+<title>Kindred Care Control Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+  :root{
+    --ground:#F6F9F8; --surface:#FFFFFF; --surface-2:#EFF4F3;
+    --ink:#141F1D; --ink-2:#42544F; --ink-3:#6E817C;
+    --line:#DBE4E1; --line-2:#C6D3CF;
+    --accent:#0F6E63; --accent-soft:#DCEDEA; --accent-ink:#0B4F47;
+    --crit:#A6342B; --crit-soft:#F6E3E0;
+    --warn:#96650E; --warn-soft:#F7EBD6;
+    --good:#2C6E4A; --good-soft:#DFEDE4;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#0E1716; --surface:#151F1D; --surface-2:#1B2725;
+      --ink:#E8F0EE; --ink-2:#A9BAB6; --ink-3:#83948F;
+      --line:#26332F; --line-2:#33433E;
+      --accent:#4FBFAE; --accent-soft:#16302C; --accent-ink:#8FD9CD;
+      --crit:#E8867A; --crit-soft:#33201D;
+      --warn:#DDAE5A; --warn-soft:#302716;
+      --good:#7CC49A; --good-soft:#182C22;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0E1716; --surface:#151F1D; --surface-2:#1B2725;
+    --ink:#E8F0EE; --ink-2:#A9BAB6; --ink-3:#83948F;
+    --line:#26332F; --line-2:#33433E;
+    --accent:#4FBFAE; --accent-soft:#16302C; --accent-ink:#8FD9CD;
+    --crit:#E8867A; --crit-soft:#33201D;
+    --warn:#DDAE5A; --warn-soft:#302716;
+    --good:#7CC49A; --good-soft:#182C22;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:36px 24px 72px;display:flex;flex-direction:column;gap:34px}
+  a{color:var(--accent-ink)}
+  h1,h2,h3{margin:0;text-wrap:balance}
+
+  /* masthead */
+  .mast{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;
+        border-bottom:2px solid var(--ink);padding-bottom:16px}
+  .mast h1{font-family:var(--serif);font-size:clamp(34px,5vw,50px);font-weight:400;letter-spacing:-.01em;line-height:1}
+  .mast h1 em{font-style:italic;color:var(--accent)}
+  .stamp{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);text-align:right;line-height:1.7;font-variant-numeric:tabular-nums}
+  .stamp b{color:var(--ink-2);font-weight:600}
+
+  .eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+
+  /* status strip */
+  .strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;background:var(--line);
+         border:1px solid var(--line);border-radius:3px;overflow:hidden}
+  .cell{background:var(--surface);padding:15px 17px 16px;display:flex;flex-direction:column;gap:5px}
+  .cell .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+  .cell .v{font-family:var(--mono);font-size:30px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .cell .n{font-size:12.5px;color:var(--ink-2);line-height:1.35}
+  .cell.alarm{background:var(--crit-soft)}
+  .cell.alarm .v{color:var(--crit)}
+  .cell.alarm .k{color:var(--crit)}
+
+  /* section */
+  section{display:flex;flex-direction:column;gap:14px}
+  .shead{display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+         border-bottom:1px solid var(--line-2);padding-bottom:7px}
+  .shead h2{font-size:16px;font-weight:600;letter-spacing:-.005em}
+  .shead .note{font-size:12.5px;color:var(--ink-3);text-align:right}
+
+  /* timeline */
+  .rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;background:var(--line);
+        border:1px solid var(--line);border-radius:3px;overflow:hidden}
+  .stop{background:var(--surface);padding:13px 13px 15px;display:flex;flex-direction:column;gap:7px;position:relative}
+  .stop::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--line-2)}
+  .stop.now::before{background:var(--crit)}
+  .stop.gate::before{background:var(--accent)}
+  .stop .d{font-family:var(--mono);font-size:12.5px;font-weight:600;font-variant-numeric:tabular-nums}
+  .stop .c{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+  .stop .t{font-size:12.5px;line-height:1.35;color:var(--ink-2)}
+  .stop.now .d{color:var(--crit)}
+  .stop.gate .d{color:var(--accent-ink)}
+
+  /* three lists */
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px;align-items:start}
+  .col{background:var(--surface);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+  .col > header{padding:13px 16px;border-bottom:1px solid var(--line);background:var(--surface-2);
+                display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  .col > header h3{font-size:14px;font-weight:600}
+  .col > header .who{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase}
+  ol.items{list-style:none;margin:0;padding:0}
+  ol.items li{display:grid;grid-template-columns:4px 1fr;gap:0;border-bottom:1px solid var(--line)}
+  ol.items li:last-child{border-bottom:0}
+  .sev{background:var(--line-2)}
+  .sev.red{background:var(--crit)} .sev.amber{background:var(--warn)} .sev.green{background:var(--good)}
+  .body{padding:11px 15px 13px;display:flex;flex-direction:column;gap:5px}
+  .body .task{font-size:13.5px;line-height:1.4;font-weight:500}
+  .body .meta{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);display:flex;flex-wrap:wrap;gap:9px;font-variant-numeric:tabular-nums}
+  .body .meta .cp{color:var(--crit);font-weight:600}
+
+  /* gate grids */
+  .grids{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start}
+  table{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface)}
+  .tw{border:1px solid var(--line);border-radius:3px;overflow:auto}
+  th{text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+     color:var(--ink-3);font-weight:500;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+  td{padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.4}
+  tr:last-child td{border-bottom:0}
+  .pill{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+        padding:3px 7px;border-radius:2px;font-weight:600;white-space:nowrap}
+  .pill.fail{background:var(--crit-soft);color:var(--crit)}
+  .pill.pass{background:var(--good-soft);color:var(--good)}
+  .pill.part{background:var(--warn-soft);color:var(--warn)}
+  .pill.none{background:var(--surface-2);color:var(--ink-3)}
+
+  /* provenance */
+  .prov{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+        border-radius:3px;padding:18px 20px;display:flex;flex-direction:column;gap:11px}
+  .prov p{margin:0;font-size:13.5px;color:var(--ink-2);max-width:70ch}
+  .prov strong{color:var(--ink)}
+  .layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:2px}
+  .layer{border:1px solid var(--line);border-radius:3px;padding:11px 13px;display:flex;flex-direction:column;gap:3px}
+  .layer .lk{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent-ink)}
+  .layer .lv{font-size:12.5px;color:var(--ink-2);line-height:1.4}
+
+  footer{font-family:var(--mono);font-size:11px;color:var(--ink-3);line-height:1.7;border-top:1px solid var(--line);padding-top:14px}
+</style>
+<div class="wrap">
+
+  <div class="mast">
+    <h1>Kindred&nbsp;Care <em>Control Board</em></h1>
+    <div class="stamp">
+      <b>30 AUG 2026</b> · evening regeneration<br>
+      Bundle of Rays × ACU joint venture<br>
+      Confidential — ACU &amp; BoR
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="cell"><span class="k">Product · TRL</span><span class="v">3</span><span class="n">Held deliberately. TRL 4 needs the eval set — and that epic is 0 of 12</span></div>
+    <div class="cell"><span class="k">Market · CRL</span><span class="v">3</span><span class="n">Two signed letters at Sunshine Coast. Victoria still has no site past step 1</span></div>
+    <div class="cell"><span class="k">Investment · IRL</span><span class="v">3</span><span class="n">Unit cost resolved; entity awaiting ACU's draft</span></div>
+    <div class="cell alarm"><span class="k">Mothers using it</span><span class="v">0</span><span class="n">97 of 148 stories shipped. The build is not the bottleneck — evidence is</span></div>
+    <div class="cell alarm"><span class="k">ACU cash — $650k</span><span class="v">61 d</span><span class="n">50/50 match confirmed; ACU's source unidentified since 1 Jul</span></div>
+    <div class="cell alarm"><span class="k">HoA + IP audit</span><span class="v">61 d</span><span class="n">Now with ACU — they are preparing a draft approach</span></div>
+    <div class="cell alarm"><span class="k">D-23 · avatar vendor</span><span class="v">3 in 1</span><span class="n">Cost, product and sovereignty all turn on it. Still carried out-of-loop</span></div>
+  </div>
+
+  <section>
+    <div class="shead">
+      <h2>Gates ahead</h2>
+      <span class="note">Teal = hard gate · Red = nearest action</span>
+    </div>
+    <div class="rail">
+      <div class="stop now"><span class="d">31 AUG</span><span class="c">tomorrow</span><span class="t">Four emails to send. Start the ethics pathway. Make the Elisa call</span></div>
+      <div class="stop"><span class="d">4 SEP</span><span class="c">5 days</span><span class="t">WS-PROP1 — Proposal Draft-1. Inputs unrun — compress or re-baseline</span></div>
+      <div class="stop"><span class="d">8–11 SEP</span><span class="c">9 days</span><span class="t">IP verification workshop. IP Plan 0.3 now a proposal, not a statement</span></div>
+      <div class="stop"><span class="d">11 SEP</span><span class="c">12 days</span><span class="t">SCHHS SPARK — CDO + ED Workforce. Different product</span></div>
+      <div class="stop gate"><span class="d">16 SEP</span><span class="c">17 days</span><span class="t">ACU Steering Committee. Lock content 9 Sep, Russell sights 14 Sep</span></div>
+      <div class="stop"><span class="d">18 SEP</span><span class="c">19 days</span><span class="t">Pitch pack · IP register v1 · POC snapshot · 3-way model</span></div>
+      <div class="stop now"><span class="d">~22 SEP</span><span class="c">23 days</span><span class="t">Evidence sprint should be enrolling by here to report before UCAC</span></div>
+      <div class="stop"><span class="d">25 SEP</span><span class="c">26 days</span><span class="t">Business plan · TRL 4 dossier · content sign-off · HoA</span></div>
+      <div class="stop"><span class="d">2 OCT</span><span class="c">33 days</span><span class="t">Cap table · Deal Map · cash match · pack assembly begins</span></div>
+      <div class="stop gate"><span class="d">16 OCT</span><span class="c">47 days</span><span class="t">UCAC assessment sitting</span></div>
+      <div class="stop gate"><span class="d">30 OCT</span><span class="c">61 days</span><span class="t">Investment Committee submission → BVIC two-step follows</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <h2>The three lists</h2>
+      <span class="note">Ordered by the gate each feeds. Re-cut every Monday.</span>
+    </div>
+    <div class="cols">
+
+      <div class="col">
+        <header><h3>Brad</h3><span class="who">Capped at five</span></header>
+        <ol class="items">
+          <li><span class="sev red"></span><div class="body"><span class="task">Send the Hector email — endpoint pinning, turn-level addressability, avatar data path. Answers, not work</span><span class="meta"><span>MON 31 AUG</span><span class="cp">HIGHEST VALUE</span><span>drafts/emails §4</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Start the ethics pathway for the evidence sprint — the only part of the timeline that cannot compress</span><span class="meta"><span>MON 31 AUG</span><span class="cp">CRITICAL PATH</span><span>via Lois</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Make the Elisa McDonald call. Taskforce lead, Safer Care Victoria and My Maternity Journey in one person</span><span class="meta"><span>THIS WEEK</span><span class="cp">3 WEEKS OVERDUE</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Send Russell the Triangle brief and own the dropped follow-up; send Michelle Schmidt and Lois</span><span class="meta"><span>MON 31 AUG</span><span>Russell sights before it travels</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Settle pricing: adopt $28/48/72/95k, add the $18k / 150-mother entry tier, cap Enterprise inclusions</span><span class="meta"><span>TUE 1 SEP</span><span>unblocks the consistency sweep</span></span></div></li>
+        </ol>
+      </div>
+
+      <div class="col">
+        <header><h3>The ACU ask</h3><span class="who">Russell · Bill · Lois</span></header>
+        <ol class="items">
+          <li><span class="sev red"></span><div class="body"><span class="task">BVUIP 1:1 cash match — a dated position on ACU's $650,000</span><span class="meta"><span>RUSSELL + BILL</span><span class="cp">61 DAYS OPEN</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Heads of Agreement draft — we are holding our ownership language until it lands</span><span class="meta"><span>RUSSELL</span><span class="cp">61 DAYS OPEN</span><span>checklist ready</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Endorse Sunshine Coast as the POC site, framed as de-risking the Victorian deployment</span><span class="meta"><span>RUSSELL</span><span>brief written</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Ethics pathway for a 150-mother pilot — route and realistic duration</span><span class="meta"><span>LOIS</span><span class="cp">GATES THE SPRINT</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Can regional Victorian services buy as a network? 33 of 52 providers turn on the answer</span><span class="meta"><span>LOIS</span><span>could change the model</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Clinical review of the AI impact assessment before any external use</span><span class="meta"><span>LOIS</span><span>the health-service ask</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Content Advisory Panel — charter and roster</span><span class="meta"><span>LOIS</span><span>SLIPPED — was 14 Aug</span></span></div></li>
+        </ol>
+      </div>
+
+      <div class="col">
+        <header><h3>Hector</h3><span class="who">Pack-facing only</span></header>
+        <ol class="items">
+          <li><span class="sev red"></span><div class="body"><span class="task">Is the Vertex endpoint pinned regionally? Prove it from a live turn, not from config</span><span class="meta"><span>THIS WEEK</span><span class="cp">FREE AND BINARY</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Does the schema carry turn-level addressability? If yes, erasure stays tractable; if no, migrations</span><span class="meta"><span>THIS WEEK</span><span>one question</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Can demonstration clips be pre-rendered from the corpus? Would resolve D-23 on cost and privacy at once</span><span class="meta"><span>THIS WEEK</span><span class="cp">~75% OF UNIT COST</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">FIX-DB-001 — identity-sequence defect. All 12 evals stories sit downstream, so it gates TRL 4</span><span class="meta"><span>IN LOOP</span><span class="cp">CRITICAL PATH</span></span></div></li>
+          <li><span class="sev red"></span><div class="body"><span class="task">Close Q1 and Q2 cross-tenant exposures before any external environment exists</span><span class="meta"><span>READY</span><span>owner-ruled</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Analytics &amp; evals epic — the evidence engine, and the whole TRL 4 claim</span><span class="meta"><span>0 OF 12</span><span>downstream of FIX-DB-001</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Pricing Model fixes — uptake cell reference, 12- vs 16.6-month enrolled period, the backwards margin flag</span><span class="meta"><span>BEFORE THE SWEEP</span></span></div></li>
+          <li><span class="sev amber"></span><div class="body"><span class="task">Close the processor map — what reaches the avatar, STT and TTS vendors, and what support can read</span><span class="meta"><span>PILOT PREREQUISITE</span></span></div></li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <h2>Gates and pack</h2>
+      <span class="note">A level is evidenced, not claimed</span>
+    </div>
+    <div class="grids">
+
+      <div class="tw">
+        <table>
+          <thead><tr><th>TRL 5 hard gate</th><th>State</th></tr></thead>
+          <tbody>
+            <tr><td>Safety — triggers, escalation, scope limits, incident log</td><td><span class="pill part">Residuals</span></td></tr>
+            <tr><td>Privacy architecture — transcripts only, retention, residency</td><td><span class="pill part">Endpoint unproven</span></td></tr>
+            <tr><td>Legal sign-off — privacy notice, S11 ToS</td><td><span class="pill fail">Not started</span></td></tr>
+            <tr><td>Warmth-trap measurement design</td><td><span class="pill part">Designed 30 Aug</span></td></tr>
+            <tr><td>Written TGA classification position</td><td><span class="pill fail">Not started</span></td></tr>
+            <tr><td>HREC approval — ADR-008 k-values, S9e copy</td><td><span class="pill fail">Blocked</span></td></tr>
+            <tr><td>Retention schedule and erasure capability</td><td><span class="pill fail">Not started</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tw">
+        <table>
+          <thead><tr><th>Pack and compliance artefact</th><th>State</th></tr></thead>
+          <tbody>
+            <tr><td>Canonical numbers · unit cost resolved</td><td><span class="pill pass">Live</span></td></tr>
+            <tr><td>Evidence sprint protocol v1.0</td><td><span class="pill pass">Written</span></td></tr>
+            <tr><td>AI impact assessment</td><td><span class="pill part">Awaiting Lois</span></td></tr>
+            <tr><td>Processor map · IR plan · transparency statement</td><td><span class="pill part">Drafts, gaps marked</span></td></tr>
+            <tr><td>VPDSS self-assessment · ISO 42001 alignment</td><td><span class="pill part">Evidence gathered</span></td></tr>
+            <tr><td>Consistency sweep — the change list</td><td><span class="pill part">Ready to run</span></td></tr>
+            <tr><td>Founder's pitch pack A/B/C</td><td><span class="pill fail">Nothing</span></td></tr>
+            <tr><td>Cap table · Deal Map · valuation</td><td><span class="pill fail">Awaiting ACU draft</span></td></tr>
+            <tr><td>Signed letters of support in the data room</td><td><span class="pill fail">Exist, not filed</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <h2>Open across documents</h2>
+      <span class="note">Two closed today. One was closed wrongly first — see below.</span>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th style="width:20%">Item</th><th>Where it stands</th><th style="width:28%">Next move</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Unit cost</strong></td><td><span class="pill pass">Closed</span> Not three contradictory values — four scale points of one engine: AUD $70.49 / $52.04 / $47.88 / $44.60 per active mother per year. Avatar video is 69–80% of it.</td><td>Retire the "unit cost unknown" blocker everywhere it appears.</td></tr>
+          <tr><td><strong>Price list</strong></td><td><span class="pill pass">Resolved</span> The Pricing Model's $28/48/72/95k is canonical, with included-enrolled caps. The Business Plan's $25/45/65k sits 12–15% below and caused a real costing error today.</td><td>Brad confirms; then the sweep runs, Pricing Model first.</td></tr>
+          <tr><td><strong>An error worth keeping</strong></td><td>Earlier today this board would have said every tier was loss-making. It was wrong — Business Plan prices costed against Pricing Model cohorts. The tiers make 70 / 61 / 47 / 6%.</td><td>It is exactly what an inconsistent pack does to a careful reader. Strongest argument for the sweep.</td></tr>
+          <tr><td><strong>Enterprise tier</strong></td><td><span class="pill fail">Broken</span> 6.1% gross margin, −3.7% after platform support. The model flags it; its own proposed $135k fix still only reaches 6.0%.</td><td>Cap inclusions at ~3,000 with per-mother overage above.</td></tr>
+          <tr><td><strong>Ownership</strong></td><td><span class="pill part">Held</span> Five stated versions collapse to one holding line pending ACU's draft. Background IP stays stated and unsoftened.</td><td>Assess ACU's draft against the four structural checks.</td></tr>
+          <tr><td><strong>Data sovereignty</strong></td><td><span class="pill fail">Unproven</span> Google's AI/ML residency commitment covers US and EU only. The Vertex endpoint may be global. A US avatar vendor in the conversational path is an APP 8 disclosure.</td><td>Endpoint check this week; pre-rendering would remove the exposure entirely.</td></tr>
+          <tr><td><strong>Victoria vs Queensland</strong></td><td>The strategy points at Victoria; the traction is entirely in Queensland — two signed letters, a funding path and evaluation capability in one place.</td><td>Name the tension in the pack. A reader finds it either way.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="prov">
+    <span class="eyebrow">How this board works</span>
+    <p><strong>This page is a render, not a source of truth.</strong> If it disagrees with the Programme Register, the register is right and this is stale. It is regenerated at each Monday read and at the end of each Thursday working session — never edited by hand.</p>
+    <div class="layers">
+      <div class="layer"><span class="lk">Tasks</span><span class="lv">Programme Task Register — 87 tasks, 31 on the critical path, Gantt, live data-room status</span></div>
+      <div class="layer"><span class="lk">Judgement</span><span class="lv">Board, decision log, 138 risks, 102 open questions, drafts</span></div>
+      <div class="layer"><span class="lk">View</span><span class="lv">This page. Read-only, regenerated, shareable with Russell and Hector</span></div>
+    </div>
+    <p><strong>Monday is the read</strong> — the agent refreshes, re-prioritises, regenerates this page and drafts what is next. <strong>Thursday is the working session</strong> — items are cleared together and everything is updated live, because the write-up afterwards is the thing that never happens.</p>
+  </div>
+
+  <footer>
+    Regenerated 30 Aug 2026 (evening) · blocker ages measured from 01 Jul 2026 · canonical numbers: kindred-care/canonical-numbers.md<br>
+    The agent drafts and notifies; Brad sends. No external mail, and nothing enters the data room before sign-off.
+  </footer>
+
+</div>
