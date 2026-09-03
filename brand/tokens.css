@@ -1,0 +1,71 @@
+/* Bundle of Rays — brand tokens
+ *
+ * Governed by DESIGN.md, which is authoritative. Values here are copied from it,
+ * not reinterpreted. Additions this file proposes are marked AMENDMENT and exist
+ * because DESIGN.md's own floors are not met without them.
+ *
+ * Every ratio below was computed against WCAG 2.1, not estimated.
+ * DESIGN.md floors: body text >= 7:1, large text and UI >= 4.5:1.
+ */
+
+:root {
+	/* Core */
+	--bor-ink: #101619; /* cold near-black. Body text, display type. 16.52 on paper. */
+	--bor-paper: #f2f4f3; /* cool paper stock, not warm cream. Page ground. */
+	--bor-surface: #ffffff; /* raised surfaces, tables, insets. Sparingly. */
+	--bor-rule: #c6cfcd; /* hairlines, table rules, dividers. 1.44 on paper — non-text only. */
+	--bor-muted: #56645f; /* 5.62 on paper. Large text and UI only. */
+	--bor-muted-text: #454f4b; /* AMENDMENT. 7.69 on paper. Use for captions and source lines,
+	                              which DESIGN.md sets in --muted but also holds to the 7:1 body floor. */
+
+	/* Accent. One accent element per viewport. */
+	--bor-accent: #3730c4; /* 7.98 on paper. */
+	--bor-accent-ink: #ffffff; /* on accent: 8.81. */
+	--bor-accent-dark: #8b87e8; /* AMENDMENT. --bor-accent is 2.07 on ink and cannot sit on it.
+	                               This is 5.85 on ink, same hue family. */
+
+	/* Clinical state. ONLY where the artefact depicts genuine clinical state.
+	   Never brand colour, never accent, never decoration. */
+	--bor-state-critical: #b3261e; /* 5.92 on paper. Large and UI only. */
+	--bor-state-caution: #a26400; /* 4.36 on paper. FAILS even the 4.5 floor. Do not set type in it. */
+	--bor-state-stable: #1f6b3a; /* 5.90 on paper. Large and UI only. */
+
+	/* AMENDMENT. Text-safe clinical state, for state rendered as words rather than fills. */
+	--bor-state-critical-text: #9c2019; /* 7.22 on paper. */
+	--bor-state-caution-text: #6e4400; /* 7.63 on paper. */
+	--bor-state-stable-text: #1a5c32; /* 7.25 on paper. */
+
+	/* Type */
+	--bor-font-display: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--bor-font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+
+	--bor-display: clamp(
+		2.5rem,
+		5vw,
+		4rem
+	); /* Archivo 600, tracking -0.02em at 40px+ */
+	--bor-h1: 2rem; /* Archivo 600 */
+	--bor-h2: 1.5rem; /* Archivo 600 */
+	--bor-h3: 1.25rem; /* Archivo 500 */
+	--bor-body: 1.0625rem; /* Source Serif 4 400, line-height 1.6 */
+	--bor-small: 0.875rem; /* Archivo 400, metadata and labels */
+
+	--bor-measure: 68ch; /* 62-68 characters. Never past 75. */
+	--bor-leading-body: 1.6;
+
+	/* Layout */
+	--bor-margin-col: 200px; /* the chart-margin column. Collapses below 768px. */
+	--bor-radius-control: 2px; /* inputs and buttons */
+	--bor-radius-container: 0; /* containers and tables */
+	--bor-shadow: 0 1px 2px rgba(16, 22, 25, 0.08); /* the only shadow. Floating elements only. */
+
+	/* Motion */
+	--bor-duration: 160ms; /* 120-200ms */
+	--bor-ease: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		--bor-duration: 0ms;
+	}
+}
