@@ -185,7 +185,9 @@ Ratios: `cover` (1200×1600), `social` (1200×630), `square` (1200×1200), `scen
 
 The shape vocabulary is taken from the mark itself and nothing else — the arch (its lung/face
 form), the ray bundle, the pair of eyes. Four composed archetypes keep output composed rather than
-random: `arch-and-rays`, `the-pair`, `corner-rays`, `horizon`. The seed also picks one of the four
+random: `arch-and-rays`, `the-pair`, `corner-rays`, `horizon`, `crew`. Adding to or reordering that
+list reshuffles every existing seed, because the archetype is the first draw — lock it before
+covers go into production. The seed also picks one of the four
 flats and, about a quarter of the time, a reversed ink ground — which uses the dark-ground token
 values, not tints, because Deep is only 2.54:1 against Ink and has to lift before it can sit on it.
 
@@ -196,6 +198,28 @@ generated into the artwork, so covers stay legible and translatable.
 If the mark licence resolves into a new commissioned mark rather than Jullien's *Us*, this
 generator is the part of the kit that survives unchanged: swap the shape vocabulary, keep the
 method.
+
+### Characters
+
+The mark's forms already read as figures with faces, so the cast is not an invention — it is the
+mark at small scale. A crew is a row of three to five of them at varying heights, most wearing a
+headset visor, one keeping the mark's own eyes so the family resemblance stays visible.
+
+The visor sits exactly where the eyes sit. That substitution is the whole idea: these are our
+people, and they are in headsets. The strap stops at the silhouette rather than running the full
+head width — a band jutting into open paper reads as a mistake, not a headset.
+
+**Headsets, not televisions.** A screen for a face is an old and free idea, but a boxy CRT with
+rabbit-ear antennae, worn with a Napoleonic dress uniform, is a specific existing character —
+Prince Robot IV, from *Saga* (Brian K. Vaughan and Fiona Staples, Image Comics). That book is
+actively published and heavily merchandised. Anything with those specifics reads as their
+character no matter what we call it, and this brand cannot afford a second rights problem on top
+of the mark.
+
+A visor avoids all of it and is the stronger choice anyway: a nurse in a VR headset is literally
+what this company does, so the cast says the business out loud and cannot be mistaken for anyone
+else's. Keep the figures flat, keep them silent, give them no antennae, no uniform, and nothing
+playing on the screen.
 
 ## Files
 
