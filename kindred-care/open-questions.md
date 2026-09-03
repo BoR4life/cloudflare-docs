@@ -141,3 +141,10 @@ Ordered by what unblocks the most downstream work.
 | 136 | **Who is the Clinical Safety Officer?** Part-time, named, accountable, with release sign-off | Brad + Lois + the advisory committee | Risk 176. The highest-value clinical appointment available |
 | 137 | **Will a health service accept a Lane 2 queue at all**, and on what service level? | Marie's clinical-team map; the first pilot site | If the answer is no, the model is Lane 1 + Lane 3 only — which is cleaner but has weaker closed-loop evidence |
 | 138 | **What is the expected Lane 1 volume per 1,000 enrolled mothers?** Drives the nuisance-cost conversation with a maternity assessment line | Hector (from trigger rates) + clinical review | A customer will ask "how many extra calls does this generate" in the first procurement meeting and we have no answer |
+| 139 | **Who is the Lead Organisation for ON Accelerate — BoR or ACU?** | Bill Russell, today 2pm | Risk 181 |
+| 140 | **Who are the three core team members who will attend every session, and who carries the FTE-equivalent?** | Brad | Programme requirement; throughput |
+| 141 | **Do the ON Accelerate Important Dates collide with 16 Sep, 16 Oct, 3 Nov or 28 Nov?** Page is egress-blocked from here | Brad, from the portal | Risk 180 |
+| 142 | **Is the product discharge-to-six-weeks (application) or 20 weeks to 12 months (everything else)?** | Brad | Rule 7 — affects pricing caps, pilot, discovery study, Business Plan |
+| 143 | **What is "CLARA"?** A named clinical-reasoning-and-personalisation layer appears in the application and in no register | Brad / Hector | Also: "clinical reasoning" and "risk profile" are SaMD language |
+| 144 | **Has the Victorian Chief Midwifery Officer agreed to be described as "supportive of the approach" in a Commonwealth application?** | Brad | Probity — characterising a senior official's position without consent |
+| 145 | **Has Amy Curran / the Neonatal College actually provided "early support", as stated in the UnitingCare email of 2 Sep?** Not in any register | Brad | Appears in an external email; must be evidenced or withdrawn |
