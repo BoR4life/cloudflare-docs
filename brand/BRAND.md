@@ -38,6 +38,8 @@ contingent on that licence.
 
 ## The premise
 
+Tagline in use: **Interactive education where learning is reality.**
+
 The mark is two black brush-ink forms that read as lungs and as a pair of faces in profile, with
 the wordmark set beneath. It is warm, human, slightly funny, and completely un-clinical.
 
@@ -156,6 +158,63 @@ Headset rendering punishes thin strokes and low contrast. Inside a build: raise 
 weight, never place type below AA, and prefer the Ink-on-Ray and Paper-on-Deep pairings, which
 have the most headroom. Paper grain should be dropped entirely in-headset — at foveated
 resolutions it turns into shimmer.
+
+## What is actually in production
+
+Measured from `BOR001_DL_Flyer_PROOF_V2` (DL, 100 × 210 mm), the first real artefact this kit has
+been checked against. Worth recording, because the kit either matches it or departs from it
+deliberately — it should never drift by accident.
+
+| | In production | This kit | Note |
+| --- | --- | --- | --- |
+| Ink | `#0A0203` | `#14110F` | Same instinct — both warmed off pure black. The kit's is slightly lighter and more olive, which holds ink's character better at large sizes. Adopting it is a real change; make it a decision. |
+| Paper | `#FFFFFF` | `#F6F1E7` | A genuine departure. Production is pure white; the kit proposes warm uncoated. Decide before the next print run. |
+| Colour | none | four flats | The palette has no precedent in anything printed. Consistent with "ink and paper carry the brand", but it means the flats are untested. |
+| Display | Permanent Marker | Archivo | See below. |
+| Body | Merriweather 9 pt | Source Serif 4 | Small step; both serifs, same role. |
+| Stray | Ubuntu 10 pt, 3 glyphs | — | Three characters in a fourth typeface. Almost certainly unintentional, and it drags a whole extra font embed into the print file. Remove. |
+
+### Permanent Marker has to go
+
+This is the single most consequential fix in the pack. Permanent Marker is a free Google font and
+the default "handwritten" face on the internet. Setting headlines in it puts a mass-produced
+imitation of hand-lettering directly beside genuine hand-lettering by a serious illustrator — and
+the imitation doesn't borrow the real one's credibility, it lends it its own cheapness. The real
+lettering starts to look like the same trick.
+
+This is exactly the "don't chase the hand-lettering, contrast with it" rule above, and the flyer is
+what happens when it isn't followed. Archivo in the display role fixes it: it makes no claim to be
+handmade, so the wordmark stays the only handmade thing on the page and keeps all of its value.
+
+### Print notes
+
+Body copy on the flyer is 9 pt Merriweather reversed white out of near-black. That is a real print
+risk rather than a screen one — reversed serifs at that size fill in on uncoated stock and thin out
+on coated. Reversed type is for display. Body copy is ink on paper; if a dark ground is
+unavoidable, set it in Archivo at 10 pt minimum, not a serif at 9.
+
+The logo on the back sits inside a visible white box on a black ground — the baked-white-background
+raster, showing up in production exactly as predicted. The front of the same flyer reverses
+correctly, so usable artwork exists somewhere; the back is a dropped-in PNG. Another reason the
+master-file request matters.
+
+`www.TBC.com.au` is still a placeholder in a file named PROOF_V2. Check this was caught before any
+print run.
+
+## The ink field
+
+The strongest device in the brand is already in use and was not written down, so it is written down
+now. The flyer's front is a single full-bleed field of ink with a torn brush edge, the pair of eyes
+knocked out in paper, and the wordmark beneath. No photograph, no colour, no explanation.
+
+It is better than anything invented for this kit. It is confident, unmistakably the mark, and it
+works at DL, at poster, and as a cover. Treat it as the primary layout for anything whose job is
+recognition rather than information — covers, opening slides, back pages, merchandise.
+
+Rules: the field bleeds off at least three edges; the edge is torn or brushed, never a straight cut
+or a rounded rectangle; the eyes are knocked out to paper, never filled with a flat; and it carries
+either the wordmark or a headline, never both plus body copy. If it needs body copy, it is the
+wrong layout.
 
 ## Generation
 
