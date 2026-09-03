@@ -238,3 +238,13 @@ We would rather these were found now than at diligence.
 Russell is ACU's Commercialisation Manager and the university's commercial lead on Kindred Care. He is structuring the venture: the IP position between ACU and the company, the terms of ACU's participation, and the state co-investment pathway being prepared with his office. He carries the venture through ACU's internal approvals, and is the route to the university's clinical and research networks in Victoria.
 
 In the program he brings institutional commercialisation experience, and tests our structure and terms against ACU's requirements as they are set. He is the person who converts what we design into something the university can sign.
+
+### Team member — Marie Gentile-Andrit, contribution (96 words)
+
+**DO NOT SUBMIT until the four flags below are cleared.**
+
+Marie leads clinical partnerships for Kindred Care under a defined engagement from September 2026. Her contribution is access and judgement: mapping which Australian maternity services can be opened, which cannot, and why. That assessment is the one nobody else on the team can make. She leads engagement with clinical teams and shapes the evaluation design with them, rather than presenting it to them.
+
+In the program she is the counterweight to founder optimism. She tests our commercial assumptions against what a maternity unit will actually adopt, and carries the buyer conversations we are asked to run.
+
+**Flags.** (1) Organisation "ACU" and category "Researcher" are unverified — the 30 Aug brief records that she writes from a personal address and that where she works was an open question for the one-to-one. (2) COI status is **PENDING DISCLOSURE** — prior-application IP (the COVID education app) and current affiliations unresolved; if she is currently inside a Victorian health service, naming her as a team member while that service is a prospective buyer is the probity problem the brief identified. (3) Email blank, and consent plus the CSIRO Privacy Notice is required before listing her. (4) Attendance — Bootcamp and Immersion for all members, 75% to graduate, against a 90-day engagement.
