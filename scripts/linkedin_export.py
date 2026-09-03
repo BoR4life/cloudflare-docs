@@ -24,8 +24,30 @@ def read_csv(z, name):
             return list(csv.DictReader(io.StringIO("\n".join(lines[start:]))))
     return []
 
+STOP = {"the","of","and","hospital","health","service","services","university","college","pty","ltd","private","limited","group"}
+
 def norm(s):
     return re.sub(r"[^a-z0-9 ]", "", (s or "").lower()).strip()
+
+def squash(s):
+    return norm(s).replace(" ", "")
+
+def org_keys(account):
+    """Short, distinctive keys for an account name: 'Southwest Hospital and Health Service'
+    -> ['southwest']; 'Sunshine Coast Hospital and Health Service' -> ['sunshinecoast', 'sunshine coast'];
+    'James Cook University' -> ['jamescook']. Also accepts 'south west' for 'southwest'."""
+    name = account.split("—")[0]
+    toks = [t for t in norm(name).split() if t not in STOP]
+    keys = set()
+    if toks:
+        keys.add("".join(toks[:2]))
+        keys.add(toks[0]) if len(toks[0]) >= 6 else None
+    keys.add(squash(name))
+    return {k for k in keys if k}
+
+def text_has_org(text, account):
+    sq = squash(text)
+    return any(k in sq for k in org_keys(account))
 
 def load_accounts(path):
     names = []
@@ -44,11 +66,9 @@ def load_targets(path):
         return []
 
 def org_match(company, accounts):
-    c = norm(company)
+    if not company: return None
     for a in accounts:
-        key = norm(a.split("—")[0])
-        if key and (key in c or c in key):
-            return a
+        if text_has_org(company, a): return a
     return None
 
 def main():
@@ -90,9 +110,16 @@ def main():
 
     # 3. Inbound invitations by org (received only)
     inbound = [i for i in invites if (i.get("Direction") or "").upper() == "INCOMING"]
+    by_name = {norm(f"{c.get('First Name','')} {c.get('Last Name','')}"): c for c in conns}
     print(f"## Inbound connection requests ({len(inbound)})")
-    cnt = Counter(org_match(i.get("From", ""), accounts) or "other" for i in inbound)
-    for org, n in cnt.most_common(15): print(f"- {org}: {n}")
+    rows = []
+    for i in inbound:
+        who = i.get("From", ""); c = by_name.get(norm(who), {})
+        company = c.get("Company", ""); org = org_match(company, accounts)
+        tag = "TARGET" if norm(who) in targets else ""
+        rows.append((org or "—", who, company or "(company unknown — not yet a connection)", tag, i.get("Sent At","")))
+    for org, who, company, tag, when in sorted(rows, key=lambda r: (r[0]=="—", r[0])):
+        print(f"- {who} — {company}" + (f" → **{org}**" if org != "—" else "") + (f" [{tag}]" if tag else "") + f" ({when})")
     print()
 
     # 4. DMs mentioning CRM accounts
@@ -101,7 +128,7 @@ def main():
     for m in msgs:
         text = " ".join(str(v) for v in m.values())
         for acc in accounts:
-            if norm(acc.split("—")[0]) and norm(acc.split("—")[0]) in norm(text):
+            if text_has_org(text, acc):
                 hits[acc].add(m.get("CONVERSATION ID") or m.get("CONVERSATION TITLE") or m.get("FROM"))
     for acc, ids in sorted(hits.items(), key=lambda kv: -len(kv[1])): print(f"- {acc}: {len(ids)} thread(s)")
     print()
