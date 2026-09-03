@@ -1,52 +1,54 @@
 /* Bundle of Rays — brand tokens
- * Derived from the Jean Jullien primary mark: brush-ink black, flat digital colour, paper ground.
+ * Derived from the mark (Jean Jullien, "Us"): brush-ink black, flat digital colour, paper ground.
+ * NOTE: the mark's licence does not currently cover company use. See BRAND.md.
  * Contrast ratios in comments are WCAG 2.1 and were computed, not estimated.
  */
 
 :root {
-  /* ---- Core ---- */
-  --bor-ink: #14110F;    /* brush black, warmed off pure #000 */
-  --bor-paper: #F6F1E7;  /* uncoated paper ground */
-  /* Ink on Paper = 16.70 : AAA */
+	/* ---- Core ---- */
+	--bor-ink: #14110f; /* brush black, warmed off pure #000 */
+	--bor-paper: #f6f1e7; /* uncoated paper ground */
+	/* Ink on Paper = 16.70 : AAA */
 
-  /* ---- Flat colours: for FILLS. Set type on these to --bor-ink. ---- */
-  --bor-ray: #E8A33C;     /* Ink on Ray    =  8.72 : AAA */
-  --bor-pulse: #E24E38;   /* Ink on Pulse  =  4.82 : AA  */
-  --bor-breath: #3F8F5B;  /* Ink on Breath =  4.74 : AA  */
-  --bor-deep: #2B47C8;    /* INVERTS: Paper on Deep = 6.57 : AA. Ink on Deep = 2.54, never do it. */
+	/* ---- Flat colours: for FILLS. Set type on these to --bor-ink. ---- */
+	--bor-ray: #e8a33c; /* Ink on Ray    =  8.72 : AAA */
+	--bor-pulse: #e24e38; /* Ink on Pulse  =  4.82 : AA  */
+	--bor-breath: #3f8f5b; /* Ink on Breath =  4.74 : AA  */
+	--bor-deep: #2b47c8; /* INVERTS: Paper on Deep = 6.57 : AA. Ink on Deep = 2.54, never do it. */
 
-  /* ---- Deep variants: for COLOURED TYPE on Paper. Never use as large fills. ---- */
-  --bor-ray-deep: #6F480E;     /* on Paper = 7.15 : AAA */
-  --bor-pulse-deep: #A62E1D;   /* on Paper = 6.16 : AA  */
-  --bor-breath-deep: #26603B;  /* on Paper = 6.62 : AA  */
-  /* --bor-deep doubles as its own text-safe value on Paper. */
+	/* ---- Deep variants: for COLOURED TYPE on Paper. Never use as large fills. ---- */
+	--bor-ray-deep: #6f480e; /* on Paper = 7.15 : AAA */
+	--bor-pulse-deep: #a62e1d; /* on Paper = 6.16 : AA  */
+	--bor-breath-deep: #26603b; /* on Paper = 6.62 : AA  */
+	/* --bor-deep doubles as its own text-safe value on Paper. */
 
-  /* ---- Type ---- */
-  --bor-font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
-  --bor-font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --bor-font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+	/* ---- Type ---- */
+	--bor-font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+	--bor-font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+	--bor-font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo,
+		monospace;
 
-  /* Display: 600/700, tracking tightened. Body: 400/600, generous measure. */
-  --bor-tracking-display: -0.02em;
-  --bor-measure-body: 68ch;
+	/* Display: 600/700, tracking tightened. Body: 400/600, generous measure. */
+	--bor-tracking-display: -0.02em;
+	--bor-measure-body: 68ch;
 
-  /* ---- Texture ---- */
-  --bor-grain-opacity: 0.045;  /* paper grain over full-bleed ground only */
-  --bor-riso-offset: 2px;      /* misregistration offset for flat-behind-black emphasis */
-  --bor-radius: 2px;           /* near-square. The mark has no soft corners. */
-  --bor-rule: 2.5px;           /* dividers read as drawn, not hairline */
+	/* ---- Texture ---- */
+	--bor-grain-opacity: 0.045; /* paper grain over full-bleed ground only */
+	--bor-riso-offset: 2px; /* misregistration offset for flat-behind-black emphasis */
+	--bor-radius: 2px; /* near-square. The mark has no soft corners. */
+	--bor-rule: 2.5px; /* dividers read as drawn, not hairline */
 }
 
 /* Dark ground. Ink becomes the field, Paper becomes the type.
    The flats hold; the deep variants do not — they are paper-ground values only. */
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bor-ink: #F6F1E7;
-    --bor-paper: #14110F;
-    --bor-ray-deep: #E8A33C;
-    --bor-pulse-deep: #F0705C;
-    --bor-breath-deep: #5FB37C;
-    --bor-deep: #8FA3F0;
-    --bor-grain-opacity: 0.06;
-  }
+	:root:not([data-theme="light"]) {
+		--bor-ink: #f6f1e7;
+		--bor-paper: #14110f;
+		--bor-ray-deep: #e8a33c;
+		--bor-pulse-deep: #f0705c;
+		--bor-breath-deep: #5fb37c;
+		--bor-deep: #8fa3f0;
+		--bor-grain-opacity: 0.06;
+	}
 }

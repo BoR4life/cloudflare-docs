@@ -2,11 +2,44 @@
 
 Version 0.1 — 03 Sep 2026. Working draft.
 
+## Licence status — read this first
+
+**The mark is not owned by Bundle of Rays, and the permission on record does not cover
+using it as a company logo.** Resolve this before the kit is applied to anything.
+
+The artwork is *Us* by [Jean Jullien](https://en.wikipedia.org/wiki/Jean_Jullien_(designer)).
+It was not commissioned for Bundle of Rays. The email record with Studio Jean Jullien reads:
+
+- **01 Jun 2025** — permission requested to use the existing *Us* artwork for *The Just Us Show*,
+  a monthly 30-minute VR gathering for nurses and teachers, in promotional material and virtual
+  set design, with credit.
+- **02 Jun 2025** — Sarah, Studio Jean Jullien: *"Jean is happy to let you use US, It would have to
+  be limited to this project only, ie not used again over consecutive conferences etc. If you're ok
+  with that, no fee for you."*
+- **02 Jun 2025** — the studio asks how long the show will run. The reply proposes a year, or an
+  initial six months, and raises using it *"potentially as an implied logo for the show"*.
+- **No further reply on record.** The six-month term and the logo use were never agreed.
+
+So the grant is: *Us*, for The Just Us Show, that project only, no fee, no ongoing use. What the
+kit currently assumes is different on every axis — a different entity (Bundle of Rays Academy Pty
+Ltd rather than a community show), indefinite use, trademark use as a company identity, and a
+derivative work, since a hand-lettered "BUNDLE OF RAYS" wordmark has been added beneath the
+artwork. None of that was granted.
+
+**What to do.** Go back to Studio Jean Jullien and ask for a written licence covering company
+identity: scope, territory, term, permitted media (print, digital, garments, XR textures), and
+whether the wordmark lockup is allowed as a derivative. Expect a fee — the free grant was
+explicitly tied to a single community project. If the studio declines, or the fee doesn't work,
+commission a new mark. Do not print, register, or ship the current lockup until one of those two
+things has happened.
+
+Everything below is a sound system for this artwork, and it is worth keeping — but it is
+contingent on that licence.
+
 ## The premise
 
-The primary mark was drawn by [Jean Jullien](https://en.wikipedia.org/wiki/Jean_Jullien_(designer)):
-two black brush-ink forms that read as lungs and as a pair of faces in profile, above hand-lettered
-type. It is warm, human, slightly funny, and completely un-clinical.
+The mark is two black brush-ink forms that read as lungs and as a pair of faces in profile, with
+the wordmark set beneath. It is warm, human, slightly funny, and completely un-clinical.
 
 That mark is the constraint, not a decoration sitting on top of one. Every decision below follows
 from it. A brush-ink logo cannot sit on a gradient, inside a glass card, or beside a glowing
@@ -109,9 +142,13 @@ Reproduce in Ink on Paper, or reversed Paper on Ink. It may sit on Ray. It may n
 Breath or Deep — the black forms lose separation. Never recolour the mark itself, never outline it,
 never add a strapline inside the lockup.
 
-**Open issue:** the file in `logo/` is a 225 × 224 px raster. That is a web thumbnail, not a
-master. Source the original vector or high-resolution artwork from Jean Jullien's studio before
-any print, signage, garment or XR-texture use — everything above 96px will fall apart otherwise.
+Credit Jean Jullien wherever the mark appears. Crediting was a condition of the original
+permission and is the right thing regardless.
+
+**Open issue:** the file in `logo/` is a 225 × 224 px raster with a baked white background. That is
+a web thumbnail, not a master. Any vector or high-resolution artwork has to come from Studio Jean
+Jullien — and asking for it is the same conversation as asking for the licence above, so do both at
+once.
 
 ## XR-specific notes
 
@@ -125,3 +162,7 @@ resolutions it turns into shimmer.
 - `tokens.css` — CSS custom properties, including a dark-ground inversion.
 - `tokens.json` — the same values as design tokens, with contrast ratios and warnings inline.
 - `logo/bundle-of-rays-primary.png` — placeholder raster. See open issue above.
+
+## Status
+
+v0.1 working draft. Blocked on the licence question above, and on palette sign-off.
