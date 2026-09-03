@@ -24,3 +24,14 @@ if [ -n "${CLAUDE_ENV_FILE:-}" ]; then
     echo 'export NODE_OPTIONS="--max-old-space-size=4192"'
   } >> "$CLAUDE_ENV_FILE"
 fi
+
+# Deliberately not run here: `npm run build`. The Vitest suite needs ./dist (the
+# worker's assets.directory binding in wrangler-workers.toml), but a full site
+# build takes several minutes, so it stays an explicit step:
+#
+#   npm run build && npm run test
+#
+# The build also fetches https://api.github.com/repos/cloudflare/workers-sdk/releases
+# for the Wrangler changelog. In a remote session that host is only reachable for
+# repositories in the session's GitHub scope, so the build fails at the last page
+# unless cloudflare/workers-sdk has been added to the session.
