@@ -6,6 +6,7 @@
 | [`tokens.css`](./tokens.css) | CSS custom properties, with a dark-ground inversion. |
 | [`tokens.json`](./tokens.json) | The same values as design tokens, contrast ratios inline. |
 | [`brand-kit.html`](./brand-kit.html) | The visual kit — self-contained, opens in any browser. |
+| [`generate-cover.mjs`](./generate-cover.mjs) | Procedural cover generator. Deterministic, zero dependencies. |
 | [`logo/`](./logo) | Jean Jullien's artwork *Us*. **Placeholder raster, licence unresolved — see BRAND.md.** |
 
 > **Licence blocker.** The mark is Jean Jullien's existing artwork *Us*, not a commission.

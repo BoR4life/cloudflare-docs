@@ -157,10 +157,51 @@ weight, never place type below AA, and prefer the Ink-on-Ray and Paper-on-Deep p
 have the most headroom. Paper grain should be dropped entirely in-headset — at foveated
 resolutions it turns into shimmer.
 
+## Generation
+
+Second influence: [someform](https://someform.studio/) — Matthias Winckelmann and Helge Kiehl,
+Berlin. Their practice is identity built from logic, and they routinely hand clients bespoke
+software so brand assets can be generated in-house rather than commissioned one at a time.
+
+Be clear about what is and isn't borrowed. someform's rendered surface is simulated-photographic
+— high-gloss procedural 3D, immaculate materials. Adopt that literally and it fights the ink mark;
+you'd have two brands arguing on one page. What transfers is the **method**: define the identity
+as rules, then build the tool that applies them. That is rendered here in this brand's own
+vocabulary — flat shapes, ink, paper, riso offset.
+
+This matters practically, not just philosophically. Course modules, XR scenes, cohort material and
+partner decks are needed at volume, and there is no design team to draw each one.
+
+`generate-cover.mjs` produces module artwork from a seed. It is deterministic: `BOR-114` resolves
+to the same cover forever, so the decision never has to be stored, briefed or remembered.
+
+```
+node brand/generate-cover.mjs BOR-114
+node brand/generate-cover.mjs BOR-114 --ratio social --out build/
+node brand/generate-cover.mjs BOR-101 BOR-114 "Deteriorating Patient" --out build/
+```
+
+Ratios: `cover` (1200×1600), `social` (1200×630), `square` (1200×1200), `scene` (1920×1080).
+
+The shape vocabulary is taken from the mark itself and nothing else — the arch (its lung/face
+form), the ray bundle, the pair of eyes. Four composed archetypes keep output composed rather than
+random: `arch-and-rays`, `the-pair`, `corner-rays`, `horizon`. The seed also picks one of the four
+flats and, about a quarter of the time, a reversed ink ground — which uses the dark-ground token
+values, not tints, because Deep is only 2.54:1 against Ink and has to lift before it can sit on it.
+
+Two rules govern the generated layer. It never uses more than ink, paper and one flat, same as
+everything else. And it is a **backdrop** — type is set over it in the normal system, never
+generated into the artwork, so covers stay legible and translatable.
+
+If the mark licence resolves into a new commissioned mark rather than Jullien's *Us*, this
+generator is the part of the kit that survives unchanged: swap the shape vocabulary, keep the
+method.
+
 ## Files
 
 - `tokens.css` — CSS custom properties, including a dark-ground inversion.
 - `tokens.json` — the same values as design tokens, with contrast ratios and warnings inline.
+- `generate-cover.mjs` — procedural cover generator. Deterministic, no dependencies.
 - `logo/bundle-of-rays-primary.png` — placeholder raster. See open issue above.
 
 ## Status
