@@ -122,3 +122,10 @@ Ordered by what unblocks the most downstream work.
 | 117 | What valuation does the POC round assume, and does a near-complete MVP move it off the comparable's ~$1.8M? | Brad → Russell | 31 Aug 2026 | The SCOPE-phase build is unpriced in every version of this |
 | 118 | Who are Kindred Care's named SMEs in the Senior Leaders reserve, and does BoR contribute to that reserve? | Brad → Russell | 31 Aug 2026 | It is where the CEO's equity comes from — the Marie instrument |
 | 119 | Where does Hector sit — founding line, Senior Leaders reserve, or ESOP? | Brad | 31 Aug 2026 | Undefined, and expensive to retrofit |
+| 120 | **What is the ethics pathway for Track A?** Is a BoR-run commercial product-discovery survey, with no ACU investigators and no intent to publish, outside HREC scope — or does ACU involvement pull it in? | Lois McKellar, in writing | **Gates the entire October timeline.** Determine week 1 |
+| 121 | **Does any part of this study feed PhD Paper 5?** | Brad + Prof Robert Tai | Yes/no changes the ethics pathway for everything downstream |
+| 122 | **Are partners/fathers a product segment or research informants?** If a segment, does a partner seat count against the per-enrolled-mother tier cap, or is it free? | Brad + Hector + pricing | Unmodelled cost or a pricing change — either way it is not currently in the tier tables |
+| 123 | **Who is the named investigator on Track B?** Lois, or a nominee | Lois McKellar | Cannot submit ethics without it |
+| 124 | **Who reviews the instrument as the consumer voice**, given the consumer/lived-experience seat on the advisory committee is vacant? | Advisory committee / ACM | We cannot run a study about what parents want whose design no parent has seen |
+| 125 | **What is the recruitment and incentive budget?** Currently unmodelled | Brad | The equity quotas do not fill without paid targeted recruitment |
+| 126 | **Is there a First Nations partnering organisation available to us**, and on what data governance terms? | Advisory committee (cultural safety seat, vacant) | Determines whether First Nations participation is possible at all in this study |
