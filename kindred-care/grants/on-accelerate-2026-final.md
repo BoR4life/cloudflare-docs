@@ -197,10 +197,35 @@ Our gaps are validation discipline and access to investors who understand clinic
 
 ---
 
-## FoR / SEO — verify in the portal picker (ANZSRC 2020)
+## FoR / SEO (ANZSRC 2020) — verified 03 Sep 2026
 
-**FoR:** 4205 Nursing (midwifery) · 4203 Health services and systems · 4602 Artificial intelligence · 3901 Curriculum and pedagogy
-**SEO:** 2005 Specific population health — women's and maternal health · 2002 Evaluation of health and support services
+**Correction to earlier advice: Midwifery is its own four-digit group, 4204. It does not sit
+under Nursing.** Division 42 Health Sciences comprises 4201 Allied health and rehabilitation
+science, 4202 Epidemiology, 4203 Health services and systems, **4204 Midwifery**, 4205
+Nursing, 4206 Public health, 4207 Sports science and exercise, 4208 Traditional,
+complementary and integrative medicine, 4299 Other health sciences.
+
+**Primary FoR Division: 39 EDUCATION.** The question asks for the research underpinning the
+technology. The application's own Q2 names the Andragogical Agent Framework, doctoral
+research supervised in ACU's Faculty of Education and Arts. Health is the application, and
+SEO carries it. *Defensible alternative: 42 Health Sciences, if being read by clinical
+assessors matters more; then 4204 Midwifery is the primary group.*
+
+**Four-digit FoR spread:** 3901 Curriculum and pedagogy · **4204 Midwifery** · 4203 Health
+services and systems · 4602 Artificial intelligence.
+
+**SEO Division 20 Health** (confirmed groups): 2001 Clinical health · **2002 Evaluation of
+health and support services** · 2003 Provision of health and support services · 2005 exists
+with six-digit sub-codes.
+
+**2002 is the strongest SEO fit** — its sub-codes include *health education and promotion*,
+*telehealth*, *health inequalities* and *health system performance*. That is Kindred Care
+described in ANZSRC's own words, and it reinforces the workforce-and-equity framing rather
+than the patient-education framing.
+
+**Authoritative sources:** ABS ANZSRC 2020 (https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/latest-release).
+ACU hosts a browsable FoR 2020 list at https://orion.acu.edu.au/ACU/res/FOR20-list.html —
+use that with Russell and Bill so the codes match what ACU reports.
 
 ---
 
