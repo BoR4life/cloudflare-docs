@@ -214,3 +214,21 @@ Our gaps are validation discipline and access to investors who understand clinic
 - [ ] Every placeholder filled or the sentence removed
 - [ ] Every statistic in Q1 has a citation ready for interview
 - [ ] No "joint venture", no "70/30", no investor named, no "CLARA", no "clinical reasoning"
+
+---
+
+## Team Q — What does your team want to achieve through this program? (225 words)
+
+Three outputs, in priority order.
+
+First, a pricing and business model that survives a hostile read. Our schedule is built from a cost model, not from what an Australian maternity service will actually pay for it. We want it broken in front of people who have sold into this system.
+
+Second, evidence discipline. We hold TRL 3 because the evaluation set that would make it TRL 4 does not yet exist, and we have never systematically asked an Australian parent what she wants. A structured needs-and-preferences study begins this month. We want the rigour to design what follows it, and to publish whichever way it falls.
+
+Third, investor relationships. We have not raised, and we do not know the people who fund clinical software in this country.
+
+Our coverage. Clinical and research are strong: a registered nurse founder, and ACU's Head of Discipline (Midwifery) leading research and clinical governance. Technical is strong: a working build with a dual-agent safety architecture. Commercially, we have closed institutional health-education contracts internationally.
+
+Our gaps. We have never closed an Australian health service. We have no named clinical safety officer accountable for the escalation boundary, and no consumer voice in content governance. Both are appointments we intend to make, and we would value the program's challenge on how.
+
+We would rather these were found now than at diligence.
