@@ -134,5 +134,5 @@ Ordered by what unblocks the most downstream work.
 | 129 | **Can the ten complications and their risk windows be used to generate the gold-standard eval set, and how much does that reduce the 24–30 hour estimate?** | Hector | Directly affects the item that gates TRL 4 |
 | 130 | **Is the clinician-facing content a separate product line (KC-SC / ACM short courses) or corpus material for the Companion — or both, with different governance?** | Brad + Lois + ACM | ACM offered short courses on AI for midwives unprompted in April. This is the content for it, and it is already written |
 | 131 | **Who verifies MBS content before it is used commercially?** The document is a compilation and says so | Brad | Fees, item numbers and rules change. A claim built on a superseded item is worse than no claim |
-| 132 | **Current email addresses for Kelley Lennon, Gabby Earls and Mia Dhillon** — not re-verified in this draft | Brad, from the Gmail record | Pre-send check on the ACM draft |
+| 132 | ~~Email addresses~~ **CLOSED 03 Sep 2026** — kelley.lennon@, gabrielle.earls@, mia.dhillon@midwives.org.au; russell.carrington@, bill.russell@acu.edu.au | Verified from the Gmail record | Closed |
 | 133 | **Will Russell sight the ACM email, and does ACU want Bill introduced this way?** | Russell Carrington | Every external ACU-naming document is sighted by Russell first |
