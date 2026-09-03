@@ -1,0 +1,499 @@
+<title>Bundle of Rays Brand Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+  :root {
+    --ink: #14110F;
+    --paper: #F6F1E7;
+    --ray: #E8A33C;
+    --pulse: #E24E38;
+    --breath: #3F8F5B;
+    --deep: #2B47C8;
+    --ray-deep: #6F480E;
+    --pulse-deep: #A62E1D;
+    --breath-deep: #26603B;
+    --deep-text: #2B47C8;
+
+    /* neutrals biased warm, toward the paper ground */
+    --rule: #14110F;
+    --faint: #DDD4C2;
+    --muted: #6A6157;
+    --panel: #EFE8DA;
+
+    --grain: 0.045;
+    --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #F6F1E7;
+      --paper: #14110F;
+      --rule: #F6F1E7;
+      --faint: #35302A;
+      --muted: #A39A8C;
+      --panel: #1D1916;
+      --ray-deep: #E8A33C;
+      --pulse-deep: #F0705C;
+      --breath-deep: #5FB37C;
+      --deep-text: #8FA3F0;
+      --grain: 0.06;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #F6F1E7;
+    --paper: #14110F;
+    --rule: #F6F1E7;
+    --faint: #35302A;
+    --muted: #A39A8C;
+    --panel: #1D1916;
+    --ray-deep: #E8A33C;
+    --pulse-deep: #F0705C;
+    --breath-deep: #5FB37C;
+    --deep-text: #8FA3F0;
+    --grain: 0.06;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+  }
+
+  /* paper grain, ground only */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: var(--grain);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E");
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 4rem 1.75rem 6rem;
+  }
+
+  /* ---- type scale ---- */
+  h1, h2, h3, .eyebrow, .swatch-name { font-family: var(--f-display); text-wrap: balance; }
+  h1 { font-size: clamp(2.75rem, 8vw, 5rem); font-weight: 700; letter-spacing: -0.03em; line-height: 0.92; margin: 0; }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin: 0; }
+  h3 { font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+  p { margin: 0; max-width: 62ch; }
+
+  .eyebrow {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  /* ---- header, riso misregistration ---- */
+  header { display: grid; gap: 1.75rem; }
+  .riso { position: relative; display: inline-block; isolation: isolate; }
+  .riso::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px; top: 2px;
+    color: var(--ray);
+    z-index: -1;
+    white-space: pre;
+  }
+  .lede { font-size: 1.1875rem; }
+  .mark-row { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+  .mark-row img { width: 104px; height: auto; mix-blend-mode: multiply; }
+  .dark-invert img { filter: none; }
+  :root[data-theme="dark"] .auto-invert { filter: invert(1); mix-blend-mode: screen; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .auto-invert { filter: invert(1); mix-blend-mode: screen; }
+  }
+
+  /* ---- drawn rules ---- */
+  .rule {
+    margin-top: 3.25rem;
+    height: 3px;
+    background: var(--rule);
+    border: 0;
+    margin: 0;
+    filter: url(#roughen-line);
+  }
+
+  section { display: grid; gap: 1.5rem; padding: 3.25rem 0 0; }
+  .sec-head { display: grid; gap: 0.5rem; }
+
+  /* ---- colour ---- */
+  .core {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.25rem;
+  }
+  .core-demo {
+    padding: 1.5rem;
+    border: 2.5px solid var(--rule);
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+  }
+  .core-demo .big { font-family: var(--f-display); font-weight: 700; font-size: 1.75rem; letter-spacing: -0.02em; line-height: 1.05; }
+  .on-paper { background: #F6F1E7; color: #14110F; }
+  .on-ink   { background: #14110F; color: #F6F1E7; }
+
+  .swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr)); gap: 1.25rem; }
+  .swatch { display: grid; gap: 0; border: 2.5px solid var(--rule); }
+  .chip { padding: 1.25rem 1.125rem 1.5rem; display: grid; gap: 0.375rem; min-height: 8.5rem; align-content: space-between; }
+  .swatch-name { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; }
+  .chip .demo { font-family: var(--f-body); font-size: 0.9375rem; line-height: 1.4; }
+  .meta {
+    border-top: 2.5px solid var(--rule);
+    padding: 0.75rem 1.125rem;
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .lvl { font-weight: 600; }
+
+  .c-ray    { background: #E8A33C; color: #14110F; }
+  .c-pulse  { background: #E24E38; color: #14110F; }
+  .c-breath { background: #3F8F5B; color: #14110F; }
+  .c-deep   { background: #2B47C8; color: #F6F1E7; }
+
+  /* ---- tables ---- */
+  .tbl-scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: 0.9375rem; }
+  th, td { text-align: left; padding: 0.625rem 0.875rem; border-bottom: 1.5px solid var(--faint); }
+  th {
+    font-family: var(--f-mono); font-size: 0.6875rem; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+    border-bottom: 2.5px solid var(--rule);
+  }
+  td.num, td.hex { font-family: var(--f-mono); font-size: 0.8125rem; font-variant-numeric: tabular-nums; }
+  .dot { display: inline-block; width: 0.75rem; height: 0.75rem; margin-right: 0.5rem; vertical-align: -1px; }
+
+  /* ---- typography specimens ---- */
+  .spec { display: grid; gap: 0.875rem; padding: 1.5rem 0; border-top: 1.5px solid var(--faint); }
+  .spec:first-of-type { border-top: 2.5px solid var(--rule); }
+  .spec-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  .spec-meta { font-family: var(--f-mono); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .sample-display { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.75rem, 5vw, 2.75rem); letter-spacing: -0.03em; line-height: 1.05; }
+  .sample-body { font-family: var(--f-body); font-size: 1.125rem; line-height: 1.55; max-width: 62ch; }
+  .sample-mono { font-family: var(--f-mono); font-size: 0.9375rem; }
+
+  /* ---- texture demos ---- */
+  .tex { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.25rem; }
+  .tex-card { display: grid; gap: 0; }
+  .tex-stage { height: 9rem; display: grid; place-items: center; position: relative; overflow: hidden; background: var(--panel); border: 2.5px solid var(--rule); }
+  .tex-cap { padding: 0.75rem 0 0; font-size: 0.875rem; color: var(--muted); }
+  .tex-cap strong { color: var(--ink); font-family: var(--f-display); font-weight: 600; display: block; font-size: 0.9375rem; }
+
+  .grain-demo::after {
+    content: ""; position: absolute; inset: 0; opacity: 0.55;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g2)'/%3E%3C/svg%3E");
+  }
+  .brush-box {
+    border: 3px solid var(--ink); padding: 0.75rem 1.25rem;
+    font-family: var(--f-display); font-weight: 600; font-size: 1rem;
+    filter: url(#roughen);
+  }
+  .riso-demo { font-family: var(--f-display); font-weight: 700; font-size: 2rem; letter-spacing: -0.02em; }
+
+  /* ---- logo grounds ---- */
+  .grounds { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 1.25rem; }
+  .ground { display: grid; gap: 0; border: 2.5px solid var(--rule); }
+  .ground-stage { height: 10rem; display: grid; place-items: center; padding: 1.25rem; }
+  .ground-stage img { width: 74px; height: auto; mix-blend-mode: multiply; }
+  .g-paper { background: #F6F1E7; }
+  .g-ink   { background: #14110F; }
+  .g-ink img { filter: invert(1); mix-blend-mode: screen; }
+  .g-ray   { background: #E8A33C; }
+  .g-pulse { background: #E24E38; }
+  .g-deep  { background: #2B47C8; }
+  .verdict {
+    border-top: 2.5px solid var(--rule); padding: 0.625rem 0.875rem;
+    font-family: var(--f-mono); font-size: 0.6875rem; letter-spacing: 0.08em;
+    text-transform: uppercase; font-weight: 600;
+    display: flex; align-items: center; gap: 0.5rem;
+    background: var(--paper); color: var(--ink);
+  }
+  .yes::before { content: "\2713"; color: var(--breath-deep); font-size: 0.9375rem; }
+  .no::before  { content: "\2715"; color: var(--pulse-deep); font-size: 0.9375rem; }
+
+  .clearspace { border: 2.5px solid var(--rule); padding: 1.5rem; display: grid; gap: 1rem; }
+  .cs-stage { position: relative; display: inline-grid; place-items: center; padding: 26px; outline: 1.5px dashed #8C8175; justify-self: start; background: #F6F1E7; }
+  .cs-stage img { width: 96px; height: auto; display: block; mix-blend-mode: multiply; }
+
+  /* ---- prohibited ---- */
+  .banned { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
+  .banned li {
+    font-family: var(--f-mono); font-size: 0.75rem; padding: 0.375rem 0.625rem;
+    border: 1.5px solid var(--pulse-deep); color: var(--pulse-deep);
+    text-decoration: line-through; text-decoration-thickness: 1.5px;
+  }
+
+  /* ---- open issues ---- */
+  .issues { display: grid; gap: 1rem; }
+  .issue { display: grid; grid-template-columns: auto 1fr; gap: 0.875rem; align-items: start; padding: 1.125rem 1.25rem; background: var(--panel); border-left: 5px solid var(--ray); }
+  .issue-tag { font-family: var(--f-mono); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ray-deep); padding-top: 0.2rem; }
+  .issue p { font-size: 0.9375rem; }
+
+  footer { padding: 3.5rem 0 0; color: var(--muted); font-size: 0.875rem; }
+
+  a { color: var(--deep-text); text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
+  a:focus-visible, [tabindex]:focus-visible { outline: 2.5px solid var(--ray-deep); outline-offset: 3px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="roughen-line">
+    <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="4" result="ln"/>
+    <feDisplacementMap in="SourceGraphic" in2="ln" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="roughen">
+    <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="7" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Brand kit &middot; v0.1 &middot; 03 Sep 2026 &middot; working draft</p>
+    <h1><span class="riso" data-text="Bundle">Bundle</span><br><span class="riso" data-text="of Rays">of Rays</span></h1>
+    <div class="mark-row">
+      <img class="auto-invert" src="data:image/png;base64,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" alt="Bundle of Rays primary mark: two black brush-ink forms with eyes above hand-lettered type">
+      <p class="lede">The primary mark was drawn by <a href="https://en.wikipedia.org/wiki/Jean_Jullien_(designer)">Jean&nbsp;Jullien</a> &mdash; two brush-ink forms that read as lungs and as a pair of faces. Warm, human, faintly funny, and completely un&#8209;clinical. Everything below follows from it.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">The premise</p>
+      <h2>The mark is the constraint, not a decoration on top of one</h2>
+    </div>
+    <p>Jullien draws with one black ink brush pen and fills flat block colour in digitally. That method is the whole system: ink and paper do the work, colour arrives flat and unmixed, nothing blends. A brush-ink logo cannot sit on a gradient, inside a glass card, or beside a glowing purple &ldquo;AI&rdquo; flourish without one of the two looking like a mistake &mdash; and it will not be the logo that looks wrong.</p>
+    <p>The strategic value: healthcare and university procurement decks are saturated with clinical blue, stock headset photography and circuit&#8209;board overlays. A hand&#8209;drawn ink mark on uncoated paper is instantly distinguishable in that room. Protect that.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">01 &middot; Colour</p>
+      <h2>Ink and paper carry the brand. The flats are seasoning.</h2>
+      <p>Every ratio below was computed against WCAG&nbsp;2.1, not estimated. Two colours per surface is the maximum &mdash; ink plus one flat. Three only on a cover.</p>
+    </div>
+
+    <div class="core">
+      <div class="core-demo on-paper">
+        <span class="eyebrow" style="color:#6A6157">Default ground</span>
+        <span class="big">Ink on Paper</span>
+        <span style="font-family:var(--f-mono);font-size:0.8125rem">#14110F on #F6F1E7 &middot; 16.70 &middot; AAA</span>
+      </div>
+      <div class="core-demo on-ink">
+        <span class="eyebrow" style="color:#A39A8C">Reversed</span>
+        <span class="big">Paper on Ink</span>
+        <span style="font-family:var(--f-mono);font-size:0.8125rem">#F6F1E7 on #14110F &middot; 16.70 &middot; AAA</span>
+      </div>
+    </div>
+
+    <p>Ink is warmed off pure black &mdash; brush ink on paper is never <span style="font-family:var(--f-mono);font-size:0.875rem">#000</span>. Paper is uncoated and warm, not white.</p>
+
+    <h3>Flats &mdash; for fills</h3>
+    <p>Set type on these to Ink, with one exception. Each panel below shows the real pairing at real size.</p>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="chip c-ray">
+          <span class="swatch-name">Ray</span>
+          <span class="demo">Ink type on Ray. The signature colour &mdash; light through something. If one colour appears, make it this one.</span>
+        </div>
+        <div class="meta"><span>#E8A33C</span><span>8.72 <span class="lvl">AAA</span></span></div>
+      </div>
+      <div class="swatch">
+        <div class="chip c-pulse">
+          <span class="swatch-name">Pulse</span>
+          <span class="demo">Ink type on Pulse. Emphasis and urgency. Headings and short runs, not body copy.</span>
+        </div>
+        <div class="meta"><span>#E24E38</span><span>4.82 <span class="lvl">AA</span></span></div>
+      </div>
+      <div class="swatch">
+        <div class="chip c-breath">
+          <span class="swatch-name">Breath</span>
+          <span class="demo">Ink type on Breath. Oxygen, growth, the lungs in the mark. Use it sparingly.</span>
+        </div>
+        <div class="meta"><span>#3F8F5B</span><span>4.74 <span class="lvl">AA</span></span></div>
+      </div>
+      <div class="swatch">
+        <div class="chip c-deep">
+          <span class="swatch-name">Deep</span>
+          <span class="demo">Paper type on Deep. The only inverting colour. Ink on Deep is 2.54 &mdash; never do it.</span>
+        </div>
+        <div class="meta"><span>#2B47C8</span><span>6.57 <span class="lvl">AA</span></span></div>
+      </div>
+    </div>
+
+    <h3>Deep variants &mdash; for coloured type on paper</h3>
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr><th>Token</th><th>Hex</th><th>On paper ground</th><th>Level</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="dot" style="background:#6F480E"></span>Ray Deep</td><td class="hex">#6F480E</td><td class="num">7.15</td><td class="num">AAA</td></tr>
+          <tr><td><span class="dot" style="background:#A62E1D"></span>Pulse Deep</td><td class="hex">#A62E1D</td><td class="num">6.16</td><td class="num">AA</td></tr>
+          <tr><td><span class="dot" style="background:#26603B"></span>Breath Deep</td><td class="hex">#26603B</td><td class="num">6.62</td><td class="num">AA</td></tr>
+          <tr><td><span class="dot" style="background:#2B47C8"></span>Deep</td><td class="hex">#2B47C8</td><td class="num">6.57</td><td class="num">AA</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="color:var(--muted);font-size:0.9375rem">Never tint, never blend, never gradient between two flats. If you need a lighter Ray, use less Ray &mdash; not a paler Ray.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">02 &middot; Typography</p>
+      <h2>Don&rsquo;t chase the hand&#8209;lettering. Contrast with it.</h2>
+      <p>The wordmark is drawn by hand. Nothing in a type library will match it, and the near&#8209;miss looks worse than an honest contrast.</p>
+    </div>
+
+    <div class="spec">
+      <div class="spec-head"><h3>Archivo &mdash; display</h3><span class="spec-meta">600 / 700 &middot; tracking &minus;0.02em &middot; SIL OFL 1.1</span></div>
+      <div class="sample-display">Simulation before the patient</div>
+      <p style="color:var(--muted);font-size:0.9375rem">A blunt grotesque. Holds its own beside heavy ink without imitating it.</p>
+    </div>
+
+    <div class="spec">
+      <div class="spec-head"><h3>Source Serif 4 &mdash; body</h3><span class="spec-meta">400 / 600 &middot; measure 68ch &middot; SIL OFL 1.1</span></div>
+      <p class="sample-body">Graduate nurses arrive having practised on mannequins that do not deteriorate, do not argue, and do not have a family in the corridor. The gap between that and a real first shift is the gap this company exists to close.</p>
+      <p style="color:var(--muted);font-size:0.9375rem">Grotesque headings over a body serif keeps long&#8209;form pedagogy and academic writing credible. Sans&#8209;on&#8209;sans reads as SaaS marketing and undersells the research.</p>
+    </div>
+
+    <div class="spec">
+      <div class="spec-head"><h3>IBM Plex Mono &mdash; data</h3><span class="spec-meta">400 / 600 &middot; SIL OFL 1.1</span></div>
+      <p class="sample-mono">MODULE BOR-114 &middot; deteriorating patient &middot; 18 min &middot; cohort n=42</p>
+    </div>
+
+    <div class="issue" style="border-left-color:var(--deep)">
+      <span class="issue-tag" style="color:var(--deep-text)">XR</span>
+      <p>All three faces are SIL OFL 1.1, and that is deliberate: <strong>you can embed them in Unity and Unreal builds without a licence problem.</strong> Commercial foundry licences routinely exclude embedding in an application binary &mdash; which is exactly what an XR module is. Don&rsquo;t swap these for a paid face without reading the EULA&rsquo;s embedding clause.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">03 &middot; Texture</p>
+      <h2>Three textures, all of them from print</h2>
+      <p>Because the mark comes from ink. Each panel below is the real effect, not a description of it.</p>
+    </div>
+
+    <div class="tex">
+      <div class="tex-card">
+        <div class="tex-stage grain-demo"></div>
+        <p class="tex-cap"><strong>Paper grain</strong> Full&#8209;bleed grounds only, 0.045 opacity. Higher than that and it eats small type. Drop it entirely in&#8209;headset &mdash; at foveated resolutions it turns to shimmer.</p>
+      </div>
+      <div class="tex-card">
+        <div class="tex-stage"><span class="brush-box">Drawn edge</span></div>
+        <p class="tex-cap"><strong>Brush edge</strong> Rough edges on containers and dividers, derived from the mark&rsquo;s own stroke. Rules are 2.5px, not hairlines. Corner radius 2px &mdash; the mark has no soft corners.</p>
+      </div>
+      <div class="tex-card">
+        <div class="tex-stage"><span class="riso riso-demo" data-text="Misregister">Misregister</span></div>
+        <p class="tex-cap"><strong>Risograph offset</strong> A 2px offset of a flat behind black type. Covers and titles, sparingly. Reads as printed and human &mdash; it is the treatment on this page&rsquo;s own title.</p>
+      </div>
+    </div>
+
+    <h3>Prohibited without exception</h3>
+    <ul class="banned">
+      <li>gradients</li><li>drop shadows</li><li>glassmorphism</li><li>glow</li><li>bevel</li><li>circuit&#8209;board overlays</li><li>stock headset photography</li>
+    </ul>
+    <p style="color:var(--muted);font-size:0.9375rem">Every one of them fights the mark and dates the brand to the vendor category you are trying to leave.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">04 &middot; The mark</p>
+      <h2>Where it may sit, and where it may not</h2>
+    </div>
+
+    <div class="grounds">
+      <div class="ground">
+        <div class="ground-stage g-paper"><img src="data:image/png;base64,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" alt="Mark on paper ground"></div>
+        <div class="verdict yes">Paper</div>
+      </div>
+      <div class="ground">
+        <div class="ground-stage g-ink"><img src="data:image/png;base64,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" alt="Mark reversed on ink ground"></div>
+        <div class="verdict yes">Ink, reversed</div>
+      </div>
+      <div class="ground">
+        <div class="ground-stage g-ray"><img src="data:image/png;base64,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" alt="Mark on Ray ground"></div>
+        <div class="verdict yes">Ray</div>
+      </div>
+      <div class="ground">
+        <div class="ground-stage g-pulse"><img src="data:image/png;base64,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" alt="Mark on Pulse ground, not permitted"></div>
+        <div class="verdict no">Pulse</div>
+      </div>
+      <div class="ground">
+        <div class="ground-stage g-deep"><img src="data:image/png;base64,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" alt="Mark on Deep ground, not permitted"></div>
+        <div class="verdict no">Deep</div>
+      </div>
+    </div>
+    <p style="color:var(--muted);font-size:0.9375rem">On Pulse and Deep the black forms lose separation from the ground. Never recolour the mark, never outline it, never add a strapline inside the lockup. The reversed panel above is simulated by inversion &mdash; a true reversed asset still needs to come from the studio.</p>
+
+    <div class="clearspace">
+      <h3>Clear space and minimum size</h3>
+      <div class="cs-stage"><img src="data:image/png;base64,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" alt="Mark shown with its minimum clear space marked"></div>
+      <p style="font-size:0.9375rem">Clear space on all four sides equals the cap height of the wordmark. Minimum reproduction is 24&nbsp;mm wide in print, 96&nbsp;px on screen &mdash; below that the eyes fill in and the forms go muddy.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">05 &middot; Open</p>
+      <h2>Two things block sign&#8209;off</h2>
+    </div>
+    <div class="issues">
+      <div class="issue">
+        <span class="issue-tag">Blocker</span>
+        <p><strong>The logo file is a 225&nbsp;&times;&nbsp;224&nbsp;px raster.</strong> That is a web thumbnail, not a master. Source the original vector from Jean Jullien&rsquo;s studio before any print, signage, garment or XR&#8209;texture use &mdash; anything above 96&nbsp;px falls apart, and every application in this kit assumes artwork that does not exist yet.</p>
+      </div>
+      <div class="issue">
+        <span class="issue-tag">Decision</span>
+        <p><strong>The palette is proposed, not approved.</strong> Ray, Pulse, Breath and Deep are derived from Jullien&rsquo;s flat&#8209;colour method and pass contrast, but they are one reading of the mark. Sign them off or push back before anything is printed.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Bundle of Rays &mdash; XR and AI healthcare education. Mark by Jean Jullien. Tokens for this kit live in <span style="font-family:var(--f-mono);font-size:0.8125rem">brand/tokens.css</span> and <span style="font-family:var(--f-mono);font-size:0.8125rem">brand/tokens.json</span>.</p>
+  </footer>
+
+</div>
