@@ -273,3 +273,17 @@ Marie leads clinical partnerships for Kindred Care under a defined engagement fr
 In the program she is the counterweight to founder optimism. She tests our commercial assumptions against what a maternity unit will actually adopt, and carries the buyer conversations we are asked to run.
 
 **Flags.** (1) Organisation "ACU" and category "Researcher" are unverified — the 30 Aug brief records that she writes from a personal address and that where she works was an open question for the one-to-one. (2) COI status is **PENDING DISCLOSURE** — prior-application IP (the COVID education app) and current affiliations unresolved; if she is currently inside a Victorian health service, naming her as a team member while that service is a prospective buyer is the probity problem the brief identified. (3) Email blank, and consent plus the CSIRO Privacy Notice is required before listing her. (4) Attendance — Bootcamp and Immersion for all members, 75% to graduate, against a 90-day engagement.
+
+### CORRECTION 03 Sep — the three-outputs text is in the wrong field
+
+The 223-word "Three outputs, in priority order" answer belongs in **"What does your team want
+to achieve through this program?"** (225 words), not in Team member 1's contribution field.
+As of the preview it was in the contribution field and the team-goals field was empty.
+
+### Team member 1 — Brad Chesham, contribution (93 words)
+
+Brad is the founder and leads the venture. He is a practising registered nurse with a master's degree, and authors the clinical content himself, including the postnatal deterioration reference the corpus and the safety triggers are built from. The Andragogical Agent Framework is his doctoral work at ACU.
+
+Commercially he has closed and delivered institutional health-education contracts, including two Indian state government agreements, and he has opened every health service conversation Kindred Care currently holds.
+
+In the program he carries the business model, the customer conversations, and the decisions the team commits to.
