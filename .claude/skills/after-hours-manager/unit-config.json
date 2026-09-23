@@ -1,0 +1,17 @@
+{
+  "_comment": "Unit rules for the after-hours manager skill. Edit values here, not in the script.",
+  "icu_ccu": {
+    "name": "ICU/CCU",
+    "funded_beds": null,
+    "reserved_admission_beds_min": 1,
+    "reserved_admission_beds_target": 2,
+    "rostered_rn": { "day": 3, "night": 3 },
+    "cancel_one_rn_at_or_below_patients": 4,
+    "min_rn_on_floor": 2,
+    "ratios": {
+      "one_to_one": 1.0,
+      "one_to_two": 0.5,
+      "ward_status": 0.5
+    }
+  }
+}
