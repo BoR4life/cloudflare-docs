@@ -20,7 +20,19 @@ Rules live in `unit-config.json` next to this file. Current ICU/CCU rules:
 - Rostered **3 RN day, 3 RN night**.
 - If patient load is **4 or fewer, one RN can be cancelled** — but only when acuity allows (see below).
 
-Other wards: rules not yet configured. Ask Brad for them the first time they matter and suggest adding them to `unit-config.json`.
+## Other units
+
+Each unit is set up in `unit-config.json` under `units`. A `null` value means Brad hasn't confirmed it yet. Ask for it the first time it matters, then suggest he adds it to the file. Never make up a bed count or roster.
+
+The roles below are working assumptions until Brad confirms them.
+
+- **D Pavilion** and **G Pavilion**: the inpatient wards that take ED admissions, post-op patients and ICU/CCU step-downs. The ward-status patient leaving ICU/CCU goes to one of these, so know which one has the bed and a receiving RN before you need it.
+- **Emergency**: the main source of admissions after hours. Track who is waiting for a bed and whether any of them look ICU/CCU-bound, because they're the reason the reserve exists.
+- **Renal Dialysis**: a day service. After hours, the questions are whether an urgent dialysis is needed, who's on call, and whether the patient needs an ICU/CCU bed or a ward bed afterwards.
+- **DPU**: a day unit that closes in the evening. A day patient who can't go home needs a ward bed tonight. Check the DPU list before it closes so nobody is left without a bed at close.
+- **Theatres/OT**: after hours this means emergency cases and the on-call team. Every emergency case needs a bed booked afterwards (ward, or ICU/CCU if ventilated or unstable), so ask where the patient is going before they go in, not when they come out of recovery.
+
+For each unit, the snapshot shows beds (occupied/open), staff (rostered vs required) and one line on what to watch. For the day services it shows whether they're open, the on-call contact, and anyone still waiting for a bed.
 
 ## ICU/CCU check — always run the script
 
@@ -54,7 +66,9 @@ AHM snapshot 23 Sep 2026 2130
 ICU/CCU: 4/6, 2 free — GREEN. 1:1 x0, 1:2 x3, ward-status x1 (ICU 4 → 2B when needed)
 Staff: 3 RN rostered, 2 required → cancel 1 CONDITIONAL (no 1:1 admit cover)
 Recommend: redeploy ICU RN to <ward> 2300–0730 rather than cancel.
-Wards: <ward> <occ>/<beds> <staff ok/short> …
+D Pav: <occ>/<beds>, staff <ok/short>  G Pav: <occ>/<beds>, staff <ok/short>
+ED: <waiting for bed> (<ICU-bound?>)  Theatres: <case(s)> → <destination bed>
+DPU: <overnight stays needing a bed>  Dialysis: <on call / urgent case>
 Watch: <expected admissions, deteriorating patients by bed, pending discharges>
 ```
 
