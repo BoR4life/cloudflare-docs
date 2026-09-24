@@ -18,6 +18,7 @@ Rules live in `unit-config.json` next to this file. Current ICU/CCU rules:
 - ICU/CCU always holds **1–2 beds free for new admissions** (minimum 1, target 2).
 - Ward-status patients may stay in ICU/CCU but are **first to cycle out** when a bed is needed. Their ward bed and receiving RN should be identified early in the shift, not at 0300 when the admission arrives.
 - Rostered **3 RN day, 3 RN night**.
+- **8 beds.** 3 RNs at 1:2 staff 6 patients, which is 8 beds minus the 2 held free, so the roster matches the reserve. Opening bed 7 or 8 means holding a 4th RN, or stepping someone down first. Any 1:1 patient takes that headroom away sooner.
 - If patient load is **4 or fewer, one RN can be cancelled** — but only when acuity allows (see below).
 
 ## Other units
@@ -59,7 +60,7 @@ For each unit, the snapshot shows beds (occupied/open), staff (rostered vs requi
 Don't do ICU/CCU staffing arithmetic in your head. Run:
 
 ```
-python3 .claude/skills/after-hours-manager/icu_check.py --shift night --beds <open beds> \
+python3 .claude/skills/after-hours-manager/icu_check.py --shift night [--beds <open beds if not 8>] \
   --occupied <n> --one-to-one <n> --ward-status <n> [--rostered <n>] [--expected-admissions 1]
 ```
 
@@ -83,7 +84,7 @@ Keep it phone-readable. Short lines. Australian English. Times 24 h.
 **Snapshot**
 ```
 AHM snapshot 23 Sep 2026 2130
-ICU/CCU: 4/6, 2 free — GREEN. 1:1 x0, 1:2 x3, ward-status x1 (ICU 4 → 2B when needed)
+ICU/CCU: 4/8, 4 free — GREEN. 1:1 x0, 1:2 x3, ward-status x1 (ICU 4 → G Pav when needed)
 Staff: 3 RN rostered, 2 required → cancel 1 CONDITIONAL (no 1:1 admit cover)
 Recommend: redeploy ICU RN to <ward> 2300–0730 rather than cancel.
 D Pav: <occ>/<beds>, staff <ok/short>  G Pav: <occ>/<beds>, staff <ok/short>

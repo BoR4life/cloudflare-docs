@@ -2,7 +2,7 @@
   "_comment": "Unit rules for the after-hours manager skill. Edit values here, not in the script. null = not yet confirmed; the agent asks.",
   "icu_ccu": {
     "name": "ICU/CCU",
-    "funded_beds": null,
+    "funded_beds": 8,
     "reserved_admission_beds_min": 1,
     "reserved_admission_beds_target": 2,
     "rostered_rn": {
