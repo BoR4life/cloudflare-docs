@@ -39,20 +39,29 @@
     "g_pavilion": {
       "name": "G Pavilion",
       "type": "inpatient_ward",
-      "funded_beds": null,
+      "funded_beds": 35,
       "rostered_rn": {
         "day": null,
         "evening": null,
         "night": null
       },
-      "min_staff_on_floor": null,
+      "min_staff_on_floor": 2,
       "hours": null,
       "specialty": null,
-      "rostered_en_ain": {
-        "day": null,
-        "evening": null,
-        "night": null
-      }
+      "usual_occupancy": [
+        28,
+        32
+      ],
+      "single_rooms": 19,
+      "patients_per_nurse": {
+        "day": 5,
+        "evening": 5,
+        "night": 10
+      },
+      "allocation_rules": [
+        "Single rooms: clinical need first (isolation/infection control, end of life), then self-funded patients",
+        "Elderly / falls or delirium risk: beds nearest the nurses' station"
+      ]
     },
     "emergency": {
       "name": "Emergency",

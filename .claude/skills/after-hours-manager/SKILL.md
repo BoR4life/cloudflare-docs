@@ -27,6 +27,26 @@ Each unit is set up in `unit-config.json` under `units`. A `null` value means Br
 The roles below are working assumptions until Brad confirms them.
 
 - **D Pavilion** and **G Pavilion**: the inpatient wards that take ED admissions, post-op patients and ICU/CCU step-downs. The ward-status patient leaving ICU/CCU goes to one of these, so know which one has the bed and a receiving RN before you need it.
+
+### G Pavilion (confirmed by Brad)
+
+- It has 35 beds and usually runs at 28–32.
+- Staffing is about 1 nurse to 5 patients on day and evening shifts. Overnight it's 2 nurses per 20 patients at most, so 1:10. The evening ratio is an assumption; confirm it with Brad.
+- It has 19 single rooms, which leaves 16 beds in shared rooms.
+- **Who gets a single room:** clinical need first (isolation or infection control, end of life), then self-funded patients. Don't take a single room off an isolation patient to give it to a self-funded one. If a self-funded patient has to go into a shared room, record it and pass it on at handover so they can move when a single room frees up.
+- **Beds near the nurses' station** go to elderly patients and anyone at risk of falls or delirium. When an admission is one of those patients and no bed near the station is free, move a lower-risk patient away from the station rather than put the high-risk patient at the far end.
+- Overnight at 1:10, the night staff can't take much more. Each admission after about 30 patients adds a nurse (31–40 patients needs 4). Flag it before ED sends the patient up, not after.
+
+### Ward staffing check — run the script
+
+For any ward with a ratio set in `unit-config.json`, run:
+
+```
+python3 .claude/skills/after-hours-manager/ward_check.py --unit g_pavilion --shift night \
+  --occupied <n> --rostered <n> [--expected-admissions <n>] [--expected-discharges <n>]
+```
+
+It reports free beds, the patient count expected by the end of the shift, the nurses needed now and by the end of the shift, and whether the ward is SHORT, OK or OVER.
 - **Emergency**: the main source of admissions after hours. Track who is waiting for a bed and whether any of them look ICU/CCU-bound, because they're the reason the reserve exists.
 - **Renal Dialysis**: a day service. After hours, the questions are whether an urgent dialysis is needed, who's on call, and whether the patient needs an ICU/CCU bed or a ward bed afterwards.
 - **DPU**: a day unit that closes in the evening. A day patient who can't go home needs a ward bed tonight. Check the DPU list before it closes so nobody is left without a bed at close.
