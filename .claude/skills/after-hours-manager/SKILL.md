@@ -53,6 +53,18 @@ It reports free beds, the patient count expected by the end of the shift, the nu
 - **DPU**: a day unit that closes in the evening. A day patient who can't go home needs a ward bed tonight. Check the DPU list before it closes so nobody is left without a bed at close.
 - **Theatres/OT**: after hours this means emergency cases and the on-call team. Every emergency case needs a bed booked afterwards (ward, or ICU/CCU if ventilated or unstable), so ask where the patient is going before they go in, not when they come out of recovery.
 
+### Theatres after hours (confirmed by Brad)
+
+When a surgeon wants an emergency case:
+
+1. **Get a "time to skin" from the surgeon**: the time they want to make the first cut, as an actual clock time. "Soon" or "ASAP" isn't a time.
+2. **Check the 45-minute rule.** The on-call team needs at least 45 minutes' notice before time to skin. If the surgeon's time is less than 45 minutes after you can call the team, say so and agree a later time with the surgeon. Don't promise a time the team can't make.
+3. **Call the on-call team** and give them the time to skin.
+4. **Tell the Perioperative Services Manager** if it's between 05:00 and 23:00. Between 23:00 and 05:00, don't call them; the AHM runs it and hands it over in the morning.
+5. **Book the bed afterwards** (ward or ICU/CCU). If it's ICU/CCU, run the ICU check, because it may use one of the reserved beds.
+
+Write it down as: time the surgeon called, time to skin, time the on-call team was called, notice given in minutes, where the patient goes afterwards, whether the manager was told (yes/no), and why.
+
 For each unit, the snapshot shows beds (occupied/open), staff (rostered vs required) and one line on what to watch. For the day services it shows whether they're open, the on-call contact, and anyone still waiting for a bed.
 
 ## ICU/CCU check — always run the script

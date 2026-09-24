@@ -114,7 +114,14 @@
       "min_staff_on_floor": null,
       "hours": null,
       "after_hours_on_call_team": null,
-      "pacu_hours": null
+      "pacu_hours": null,
+      "manager_role": "Perioperative Services Manager",
+      "manager_call_window": {
+        "from": "05:00",
+        "to": "23:00",
+        "note": "Call the manager 05:00-23:00 only; 23:00-05:00 the AHM calls the on-call team directly"
+      },
+      "on_call_min_notice_minutes": 45
     }
   }
 }
