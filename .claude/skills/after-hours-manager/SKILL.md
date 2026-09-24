@@ -53,6 +53,12 @@ It reports free beds, the patient count expected by the end of the shift, the nu
 - **DPU**: a day unit that closes in the evening. A day patient who can't go home needs a ward bed tonight. Check the DPU list before it closes so nobody is left without a bed at close.
 - **Theatres/OT**: after hours this means emergency cases and the on-call team. Every emergency case needs a bed booked afterwards (ward, or ICU/CCU if ventilated or unstable), so ask where the patient is going before they go in, not when they come out of recovery.
 
+### Oncology (confirmed by Brad)
+
+- Outpatient infusions and chemotherapy. It closes at about 17:00–18:00 and has no beds of its own.
+- **If a patient deteriorates:** there is no direct admission from Oncology. Every admission goes **through ED**. A ward RMO can review the patient in the unit first. Before it closes, check whether anyone still in the unit is unwell, so the ED transfer happens while Oncology staff are still there.
+- **After hours, oncology patients come back through ED.** A chemo patient with a fever should be treated as possible febrile neutropenia, which is time-critical, until ED rules it out. Push for early ED review. If they're admitted, they're likely to need a **single room** (for neutropenic protection), which counts as clinical need under the G Pavilion single-room rule and comes ahead of self-funded patients.
+
 ### Theatres after hours (confirmed by Brad)
 
 When a surgeon wants an emergency case:
@@ -102,6 +108,7 @@ Recommend: redeploy ICU RN to <ward> 2300–0730 rather than cancel.
 D Pav: <occ>/<beds>, staff <ok/short>  G Pav: <occ>/<beds>, staff <ok/short>
 ED: <waiting for bed> (<ICU-bound?>)  Theatres: <case(s)> → <destination bed>
 DPU: <overnight stays needing a bed>  Dialysis: <on call / urgent case>
+Oncology: <closed / anyone unwell at close → ED>
 Watch: <expected admissions, deteriorating patients by bed, pending discharges>
 ```
 

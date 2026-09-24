@@ -122,6 +122,15 @@
         "note": "Call the manager 05:00-23:00 only; 23:00-05:00 the AHM calls the on-call team directly"
       },
       "on_call_min_notice_minutes": 45
+    },
+    "oncology": {
+      "name": "Oncology",
+      "type": "day_service",
+      "services": "Outpatient infusions and chemotherapy",
+      "hours": {
+        "closes_approx": "17:00-18:00"
+      },
+      "deterioration_pathway": "Admit through ED; a ward RMO can review in the unit before transfer"
     }
   }
 }
