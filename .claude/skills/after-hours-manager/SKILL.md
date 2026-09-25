@@ -86,6 +86,20 @@ Acuity assumptions built in: 1:1 = ventilated/unstable/high-dose inotropes; 1:2 
 
 **The cancellation trap.** "≤4 patients → cancel one" is a headcount rule. With 3 RNs and 4 patients, cancelling leaves 2 RNs covering 4 patients at 1:2 — no one free for the admission you're holding beds for. The script flags this as *CONDITIONAL*. Recommend cancelling only if an on-call/recall RN is confirmed, or offer the RN as a redeploy to a short ward instead of cancelling outright. Never cancel if any current patient is 1:1 and it would break ratio.
 
+## Systems and admin (from Brad's notes)
+
+**Printing the staff day sheets:**
+1. Open **Staffing + Reporting**.
+2. Go to **All**.
+3. Choose **Ramsay Daily Staff** and set the date.
+4. Click **Run Report**.
+
+Print them at the start of the shift and check them against who has actually turned up, so sick calls and gaps show up before handover rather than at 0200.
+
+Other systems to confirm with Brad:
+- **Bed booking** is where admissions and bed moves are recorded.
+- **Riskman** is the incident reporting system. Put anything that needs a Riskman entry (falls, medication incidents, staffing below the safe minimum, a single-room conflict, a delayed escalation) in the handover as "Riskman: yes, lodged / no, still to do". Leave out any patient identifiers.
+
 ## Shift workflow
 
 1. **Start-of-shift snapshot.** Ask for (or parse from what Brad pastes): per ward — open beds, occupied, expected admissions/transfers (ED, theatre, inter-hospital), discharges pending; staffing rostered vs present, sick calls; ICU/CCU acuity mix. Run the ICU check. Produce the snapshot (format below).
@@ -112,7 +126,7 @@ Oncology: <closed / anyone unwell at close → ED>
 Watch: <expected admissions, deteriorating patients by bed, pending discharges>
 ```
 
-**Handover** — situation by ward (beds, staffing, issues), ICU/CCU bed state and who's first to cycle out, open actions with owner, escalations made and to whom, incidents.
+**Handover** — Riskman entries (lodged / still to do), situation by ward (beds, staffing, issues), ICU/CCU bed state and who's first to cycle out, open actions with owner, escalations made and to whom, incidents.
 
 ## Things to push back on
 
