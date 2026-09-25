@@ -1,0 +1,136 @@
+{
+  "_comment": "Unit rules for the after-hours manager skill. Edit values here, not in the script. null = not yet confirmed; the agent asks.",
+  "icu_ccu": {
+    "name": "ICU/CCU",
+    "funded_beds": 8,
+    "reserved_admission_beds_min": 1,
+    "reserved_admission_beds_target": 2,
+    "rostered_rn": {
+      "day": 3,
+      "night": 3
+    },
+    "cancel_one_rn_at_or_below_patients": 4,
+    "min_rn_on_floor": 2,
+    "ratios": {
+      "one_to_one": 1.0,
+      "one_to_two": 0.5,
+      "ward_status": 0.5
+    }
+  },
+  "units": {
+    "d_pavilion": {
+      "name": "D Pavilion",
+      "type": "inpatient_ward",
+      "funded_beds": null,
+      "rostered_rn": {
+        "day": null,
+        "evening": null,
+        "night": null
+      },
+      "min_staff_on_floor": null,
+      "hours": null,
+      "specialty": null,
+      "rostered_en_ain": {
+        "day": null,
+        "evening": null,
+        "night": null
+      }
+    },
+    "g_pavilion": {
+      "name": "G Pavilion",
+      "type": "inpatient_ward",
+      "funded_beds": 35,
+      "rostered_rn": {
+        "day": null,
+        "evening": null,
+        "night": null
+      },
+      "min_staff_on_floor": 2,
+      "hours": null,
+      "specialty": null,
+      "usual_occupancy": [
+        28,
+        32
+      ],
+      "single_rooms": 19,
+      "patients_per_nurse": {
+        "day": 5,
+        "evening": 5,
+        "night": 10
+      },
+      "allocation_rules": [
+        "Single rooms: clinical need first (isolation/infection control, end of life), then self-funded patients",
+        "Elderly / falls or delirium risk: beds nearest the nurses' station"
+      ]
+    },
+    "emergency": {
+      "name": "Emergency",
+      "type": "admission_source",
+      "funded_beds": null,
+      "rostered_rn": {
+        "day": null,
+        "evening": null,
+        "night": null
+      },
+      "min_staff_on_floor": null,
+      "hours": null,
+      "cubicles": null
+    },
+    "renal_dialysis": {
+      "name": "Renal Dialysis",
+      "type": "day_service",
+      "funded_beds": null,
+      "rostered_rn": {
+        "day": null,
+        "evening": null,
+        "night": null
+      },
+      "min_staff_on_floor": null,
+      "hours": null,
+      "after_hours_on_call": null
+    },
+    "dpu": {
+      "name": "DPU",
+      "type": "day_service",
+      "funded_beds": null,
+      "rostered_rn": {
+        "day": null,
+        "evening": null,
+        "night": null
+      },
+      "min_staff_on_floor": null,
+      "hours": null,
+      "overnight_overflow_ward": null
+    },
+    "theatres": {
+      "name": "Theatres/OT",
+      "type": "procedural",
+      "funded_beds": null,
+      "rostered_rn": {
+        "day": null,
+        "evening": null,
+        "night": null
+      },
+      "min_staff_on_floor": null,
+      "hours": null,
+      "after_hours_on_call_team": null,
+      "pacu_hours": null,
+      "manager_role": "Perioperative Services Manager",
+      "manager_call_window": {
+        "from": "05:00",
+        "to": "23:00",
+        "note": "Call the manager 05:00-23:00 only; 23:00-05:00 the AHM calls the on-call team directly"
+      },
+      "on_call_min_notice_minutes": 45
+    },
+    "oncology": {
+      "name": "Oncology",
+      "type": "day_service",
+      "services": "Outpatient infusions and chemotherapy",
+      "hours": {
+        "closes_approx": "17:00-18:00"
+      },
+      "deterioration_pathway": "Admit through ED; a ward RMO can review in the unit before transfer"
+    }
+  }
+}
